@@ -1,0 +1,84 @@
+\section[Desenvolvimento do Projeto]{Desenvolvimento do Projeto}
+
+Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Toda a documentação do projeto pode ser encontrada na wiki do mesmo \cite{wikiDecola}.
+
+\subsection{Repositório do Código Fonte do Projeto}
+  Todo o código do projeto encontra-se distribuído em dois repositórios:
+\begin{itemize}
+    \item código do backend;
+    \item código do frontend.
+\end{itemize}
+
+Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto \cite{wikiDecola}.
+
+\subsection{Banco de Dados Utilizado}
+  O banco de dados está organizado e gerencia informações relacionadas a uma plataforma de aprendizado, onde usuários podem se inscrever em cursos, concluir módulos e atividades, e interagir com conteúdos educativos. Ele armazena informações sobre contas, que podem representar organizações, e os usuários associados a essas contas. Também define tipos de contas e papéis de usuários, como administradores e colaboradores.
+
+  Dentro da plataforma, os cursos são estruturados e categorizados por tipos e grupos. Cada curso pode conter múltiplos módulos, que são unidades menores de aprendizado dentro do curso. Esses módulos incluem atividades que os usuários devem completar, como conteúdo de mídia ou questionários. O banco de dados rastreia o progresso dos usuários em cursos e módulos, registrando atividades concluídas e permitindo a avaliação de seu desempenho e progresso.
+
+  Os questionários, parte essencial das atividades, contêm perguntas com alternativas corretas e incorretas, permitindo a avaliação das respostas dos usuários. O banco de dados facilita a criação e organização de cursos, módulos e atividades, ajudando no gerenciamento de um currículo educativo.
+
+  Além de gerenciar conteúdo, o banco de dados mantém registros do progresso dos usuários, permitindo que administradores vejam quais cursos e módulos foram concluídos. Com contas e áreas associadas, diferentes organizações podem personalizar o conteúdo e gerenciar seus próprios usuários e materiais educativos. A inclusão de questionários e atividades interativas permite avaliar a compreensão e o aprendizado dos usuários de maneira dinâmica, tornando a plataforma mais interativa e eficiente.
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Modelo Relacional do banco de dados}
+    \fbox{\parbox[c][7cm][c]{0.9\linewidth}{\centering \textit{[Inserir imagem]}}}
+
+    Fonte: Wiki do projeto \cite{wikiDecola}
+    \label{fig:decola-mr}
+\end{figure}
+
+\subsection{Arquitetura Utilizada}
+
+\subsubsection{Backend}
+  O backend do projeto é uma API REST construída utilizando o NestJS \cite{nestjs}, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Modelo de autenticação}
+    \fbox{\parbox[c][7cm][c]{0.9\linewidth}{\centering \textit{[Inserir imagem]}}}
+
+    Fonte: Wiki do projeto \cite{wikiDecola}
+    \label{fig:decola-auth}
+\end{figure}
+
+  Utilizamos JWT (\textit{JSON Web Token}) para autenticação e autorização. O JWT é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato JSON, que podem ser usadas para autenticação de usuários em aplicativos web e mobile, bem como para comunicação entre sistemas.
+
+  O fluxo de trabalho do JWT é dividido em três etapas:
+\begin{itemize}
+    \item \textbf{Geração do Token:} a primeira etapa é a geração do token JWT. Um servidor ou aplicativo gera um token JWT contendo as informações necessárias para autenticar o usuário. O token é geralmente gerado após o usuário fornecer suas credenciais (como nome de usuário e senha) e o servidor verificar essas credenciais. O token é assinado com uma chave secreta conhecida apenas pelo servidor ou aplicativo que o gerou.
+    \item \textbf{Envio do Token:} a segunda etapa é o envio do token JWT. O servidor ou aplicativo envia o token JWT para o cliente, geralmente em um cabeçalho HTTP \texttt{Authorization}. O cliente armazena o token para uso posterior, como em solicitações subsequentes para o servidor.
+    \item \textbf{Verificação do Token:} a terceira etapa é a verificação do token JWT. O servidor ou aplicativo verifica se o token JWT enviado pelo cliente é válido. A verificação da assinatura do token é feita usando a chave secreta. Se a assinatura estiver correta, o servidor extrai as informações do token e verifica se o usuário tem permissão para acessar o recurso solicitado. Se o token for inválido ou expirado, o servidor nega o acesso ao recurso solicitado.
+\end{itemize}
+
+\subsubsection{Frontend}
+  Nossa arquitetura de frontend aplica os conceitos de \textit{Domain Driven Development} (DDD) e \textit{Separation of Concerns} (SoC). Com DDD, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com SoC, nosso objetivo é separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao MVC (\textit{Model-View-Controller}).
+
+\subsection{Protótipos das Telas Desenvolvidas}
+  Os protótipos deste projeto estão disponíveis no Figma do projeto \cite{figma}.
+
+\subsection{Tecnologias Utilizadas}
+
+\subsubsection{PostgreSQL}
+  Sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, extensibilidade e conformidade com os padrões SQL \cite{postgresql}.
+
+\subsubsection{TypeORM}
+  Biblioteca ORM para TypeScript e JavaScript que facilita a interação com bancos de dados relacionais através de um mapeamento objeto-relacional eficiente e intuitivo \cite{typeorm}.
+
+\subsubsection{AWS}
+  Plataforma de computação em nuvem fornecida pela Amazon, oferecendo uma ampla gama de serviços, incluindo armazenamento, redes, bancos de dados e ferramentas de desenvolvimento, para escalabilidade e flexibilidade na construção de aplicações \cite{aws}.
+
+\subsubsection{TypeScript}
+  Linguagem de programação de código aberto desenvolvida pela Microsoft que adiciona tipagem estática opcional ao JavaScript, melhorando a produtividade e a qualidade do código \cite{typescript}.
+
+\subsubsection{NestJS}
+  Framework progressivo para Node.js que permite a construção de aplicativos do lado do servidor escaláveis e eficientes utilizando TypeScript \cite{nestjs}.
+
+\subsubsection{React}
+  Biblioteca JavaScript de código aberto para a construção de interfaces de usuário, desenvolvida pelo Facebook, amplamente utilizada para criar aplicações web e mobile dinâmicas e interativas \cite{react}.
+
+\subsubsection{Sass}
+  Extensão do CSS que permite o uso de variáveis, aninhamento e \textit{mixins}, facilitando a escrita e manutenção de estilos, tornando o desenvolvimento \textit{front-end} mais eficiente \cite{sass}.

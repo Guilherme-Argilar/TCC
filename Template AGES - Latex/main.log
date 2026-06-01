@@ -1,0 +1,38 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.23)  30 MAY 2026 17:57
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/Guilherme.Argilar/Desktop/TCC/Template AGES - Latex/main.tex"
+(c:/Users/Guilherme.Argilar/Desktop/TCC/Template AGES - Latex/main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-04-28>
+(c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
+Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
+(c:/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+
+! LaTeX Error: File `memoir.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls:82: Emergency stop.
+<read *> 
+         
+l.82 ^^M
+        
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 136 strings out of 467343
+ 2677 string characters out of 5419647
+ 435244 words of memory out of 5000000
+ 29318 multiletter control sequences out of 15000+600000
+ 627721 words of font info for 40 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,0n,51p,196b,17s stack positions out of 10000i,1000n,20000p,200000b,200000s
+c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls:82:  ==> Fatal error occurred, no output PDF file produced!

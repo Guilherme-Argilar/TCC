@@ -1,0 +1,12 @@
+PWD c:/Users/Guilherme.Argilar/Desktop/TCC/TCC
+INPUT c:/texlive/2026/texmf.cnf
+INPUT c:/texlive/2026/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/Guilherme.Argilar/Desktop/TCC/TCC/main.tex
+OUTPUT main.log
+INPUT c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
+INPUT c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
+INPUT c:/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/texlive/2026/texmf-dist/tex/latex/memoir/memoir.cls
+INPUT c:/texlive/2026/texmf-dist/tex/latex/memoir/memoir.cls
