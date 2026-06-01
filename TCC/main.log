@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.23)  31 MAY 2026 16:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.20)  1 JUN 2026 11:04
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
@@ -493,30 +492,31 @@ Package: memhfixc 2025/09/16 v1.24 hyperref package fixes for memoir class
 \c@mem@Hpagenote=\count347
 )
 (c:/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2026-05-21 v1.32 PDF bookmarks (HO)
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
 (c:/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-File: bkm-pdftex.def 2026-05-21 v1.32 bookmark driver for pdfTeX (HO)
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
+)
 \BKM@id=\count348
 ))
 (c:/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2026/05/20 v26.8 The multilingual framework for LuaLaTeX, pdfLaT
+Package: babel 2026/05/03 v26.7 The multilingual framework for LuaLaTeX, pdfLaT
 eX and XeLaTeX
 \babel@savecnt=\count349
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2084.
+ne 2080.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2086.
+ne 2082.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2088.
+e 2084.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2089.
+e 2085.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2090.
+on input line 2086.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2092.
+on input line 2088.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2117.
+on input line 2113.
 \U@D=\dimen199
 \l@unhyphenated=\language91
 
@@ -527,7 +527,7 @@ on input line 2117.
 (c:/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
 (c:/texlive/2026/texmf-dist/tex/generic/babel/locale/invalid/babel-brazil.tex)
 Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 4356.
+(babel)             from babel-en.ini. Reported on input line 4348.
 
 (c:/texlive/2026/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -541,10 +541,10 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 
 Package babel Warning: Name 'brazil' is deprecated.
 (babel)                Use 'brazilian' instead.
-(babel)                Reported on input line 4356.
+(babel)                Reported on input line 4348.
 
 Package babel Info: Importing font and identification data for brazil
-(babel)             from babel-pt-BR.ini. Reported on input line 4356.
+(babel)             from babel-pt-BR.ini. Reported on input line 4348.
 (c:/texlive/2026/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
@@ -958,7 +958,7 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
 (c:/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@reset=\count498
 \csq@gtype=\count499
 \csq@glevel=\count500
@@ -968,7 +968,7 @@ Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
 \csq@ltx@everypar=\toks30
 
 (c:/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
@@ -1388,31 +1388,85 @@ although it is yet undefined on input line 3.
 
 (./conteudo/4 - ages III/index.tex
 Cap\'{\i }tulo 4.
-(./conteudo/4 - ages III/conteudo/1 - introducao.tex)
-(./conteudo/4 - ages III/conteudo/2 - desenvolvimento.tex)
-(./conteudo/4 - ages III/conteudo/3 - atividades.tex
-(./conteudo/4 - ages III/conteudo/sprints/sprint 0.tex)
-(./conteudo/4 - ages III/conteudo/sprints/sprint 1.tex)
-(./conteudo/4 - ages III/conteudo/sprints/sprint 2.tex [33
+(./conteudo/4 - ages III/conteudo/1 - introducao.tex
+<conteudo/4 - ages III/images/fig6-time.jpg, id=415, 1284.8pt x 963.6pt>
+File: conteudo/4 - ages III/images/fig6-time.jpg Graphic file (type jpg)
+<use conteudo/4 - ages III/images/fig6-time.jpg>
+Package pdftex.def Info: conteudo/4 - ages III/images/fig6-time.jpg  used on in
+put line 13.
+(pdftex.def)             Requested size: 409.71692pt x 307.28496pt.
+)
+(./conteudo/4 - ages III/conteudo/2 - desenvolvimento.tex [33
 
 
 
 
-])
-(./conteudo/4 - ages III/conteudo/sprints/sprint 3.tex)
-(./conteudo/4 - ages III/conteudo/sprints/sprint 4.tex))
-(./conteudo/4 - ages III/conteudo/4 - conclusao.tex)) [34]
+] [34 <./conteudo/4 - ages III/images/fig6-time.jpg>]
+<conteudo/4 - ages III/images/fig7-modelo-relacional.png, id=434, 944.02687pt x
+ 489.32813pt>
+File: conteudo/4 - ages III/images/fig7-modelo-relacional.png Graphic file (typ
+e png)
+<use conteudo/4 - ages III/images/fig7-modelo-relacional.png>
+Package pdftex.def Info: conteudo/4 - ages III/images/fig7-modelo-relacional.pn
+g  used on input line 27.
+(pdftex.def)             Requested size: 409.71692pt x 212.37814pt.
+ [35 <./conteudo/4 - ages III/images/fig7-modelo-relacional.png>]
+Overfull \hbox (7.57475pt too wide) in paragraph at lines 36--37
+[]\T1/phv/m/n/12 O pro-jeto To-tem In-te-ra-tivo foi de-sen-vol-vido uti-li-zan
+do uma ar-qui-te-tura cliente-servidor
+ []
+
+[36] [37] [38]) (./conteudo/4 - ages III/conteudo/3 - atividades.tex
+(./conteudo/4 - ages III/conteudo/sprints/sprint 0.tex [39])
+(./conteudo/4 - ages III/conteudo/sprints/sprint 1.tex [40])
+(./conteudo/4 - ages III/conteudo/sprints/sprint 2.tex [41])
+(./conteudo/4 - ages III/conteudo/sprints/sprint 3.tex [42]
+<conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg, id=544, 1606.0pt x 80
+9.0225pt>
+File: conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg Graphic file (typ
+e jpg)
+<use conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg>
+Package pdftex.def Info: conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jp
+g  used on input line 13.
+(pdftex.def)             Requested size: 409.71692pt x 206.3906pt.
+ [43]
+<conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg, id=558, 1224.575pt x 8
+07.015pt>
+File: conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg Graphic file (type
+ jpg)
+<use conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg>
+Package pdftex.def Info: conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg
+  used on input line 31.
+(pdftex.def)             Requested size: 409.71692pt x 270.00998pt.
+ [44 <./conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg>] [45 <./conteu
+do/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg>])
+(./conteudo/4 - ages III/conteudo/sprints/sprint 4.tex
+<conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png, id=577, 1072.75781
+pt x 579.66562pt>
+File: conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png Graphic file (
+type png)
+<use conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png>
+Package pdftex.def Info: conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final
+.png  used on input line 13.
+(pdftex.def)             Requested size: 409.71692pt x 221.38968pt.
+ [46] [47 <./conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png>]))
+(./conteudo/4 - ages III/conteudo/4 - conclusao.tex
+Overfull \hbox (2.11508pt too wide) in paragraph at lines 3--4
+[]\T1/phv/m/n/12 Minha ex-pe-ri-ên-cia como [][] III no pro-jeto To-tem In-te-r
+a-tivo re-pre-sen-tou um marco
+ []
+
+[48])) [49]
 \openout2 = `"conteudo/5 - ages IV/index.aux"'.
 
-
-(./conteudo/5 - ages IV/index.tex
+ (./conteudo/5 - ages IV/index.tex
 Cap\'{\i }tulo 5.
 (./conteudo/5 - ages IV/conteudo/1 - introducao.tex)
 (./conteudo/5 - ages IV/conteudo/2 - desenvolvimento.tex)
 (./conteudo/5 - ages IV/conteudo/3 - atividades.tex
 (./conteudo/5 - ages IV/conteudo/sprints/sprint 0.tex)
 (./conteudo/5 - ages IV/conteudo/sprints/sprint 1.tex)
-(./conteudo/5 - ages IV/conteudo/sprints/sprint 2.tex [35
+(./conteudo/5 - ages IV/conteudo/sprints/sprint 2.tex [50
 
 
 
@@ -1420,13 +1474,13 @@ Cap\'{\i }tulo 5.
 ])
 (./conteudo/5 - ages IV/conteudo/sprints/sprint 3.tex)
 (./conteudo/5 - ages IV/conteudo/sprints/sprint 4.tex))
-(./conteudo/5 - ages IV/conteudo/4 - conclusao.tex)) [36]
+(./conteudo/5 - ages IV/conteudo/4 - conclusao.tex)) [51]
 \openout2 = `"conteudo/6 - consideracoes/consideracoes.aux"'.
 
 
 (./conteudo/6 - consideracoes/consideracoes.tex
 Cap\'{\i }tulo 6.
-) [37
+) [52
 
 
 
@@ -1434,16 +1488,16 @@ Cap\'{\i }tulo 6.
 ]
 \openout2 = `"conteudo/7 - pos/referencias.aux"'.
 
- (./conteudo/7 - pos/referencias.tex [38
+ (./conteudo/7 - pos/referencias.tex [53
 
 
 
 
-]) [39]
+]) [54]
 \openout2 = `"conteudo/8 - apendices/apendices.aux"'.
 
 
-(./conteudo/8 - apendices/apendices.tex) [40
+(./conteudo/8 - apendices/apendices.tex) [55
 
 
 
@@ -1479,10 +1533,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26667 strings out of 467343
- 485664 string characters out of 5419647
- 1471671 words of memory out of 5000000
- 55057 multiletter control sequences out of 15000+600000
+ 26762 strings out of 467341
+ 488205 string characters out of 5419596
+ 1470550 words of memory out of 5000000
+ 55118 multiletter control sequences out of 15000+600000
  652925 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,107p,1320b,4312s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1491,10 +1545,10 @@ live/2026/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/texlive/2026/
 texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2026/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/hel
 vetic/uhvro8a.pfb>
-Output written on main.pdf (41 pages, 150827 bytes).
+Output written on main.pdf (56 pages, 908151 bytes).
 PDF statistics:
- 625 PDF objects out of 1000 (max. 8388607)
- 566 compressed objects within 6 object streams
- 172 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 829 PDF objects out of 1000 (max. 8388607)
+ 746 compressed objects within 8 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

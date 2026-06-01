@@ -69,6 +69,31 @@
       \field{title}{Wiki do projeto Focus}
       \field{year}{2023}
     \endentry
+    \entry{wikiTotem}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24e55f4bed92a3f5eb2753db6de65d44}{%
+           family={{AGES}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{24e55f4bed92a3f5eb2753db6de65d44}
+      \strng{fullhash}{24e55f4bed92a3f5eb2753db6de65d44}
+      \strng{fullhashraw}{24e55f4bed92a3f5eb2753db6de65d44}
+      \strng{bibnamehash}{24e55f4bed92a3f5eb2753db6de65d44}
+      \strng{authorbibnamehash}{24e55f4bed92a3f5eb2753db6de65d44}
+      \strng{authornamehash}{24e55f4bed92a3f5eb2753db6de65d44}
+      \strng{authorfullhash}{24e55f4bed92a3f5eb2753db6de65d44}
+      \strng{authorfullhashraw}{24e55f4bed92a3f5eb2753db6de65d44}
+      \field{extraname}{3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Disponível em: \url{https://tools.ages.pucrs.br/totem-interativo/wiki/-/wikis/home}. Acesso em: 19 jun 2025}
+      \field{title}{Wiki do Totem Interativo}
+      \field{year}{2025}
+    \endentry
     \entry{aws}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b3b3a6ac74ecbd56bcdbefa4799fb9df}{%
@@ -364,6 +389,54 @@
       \field{title}{NestJS}
       \field{year}{2025}
     \endentry
+    \entry{nodejs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6f965774e9941cd00d986a26eaeac316}{%
+           family={{Node.js Foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f965774e9941cd00d986a26eaeac316}
+      \strng{fullhash}{6f965774e9941cd00d986a26eaeac316}
+      \strng{fullhashraw}{6f965774e9941cd00d986a26eaeac316}
+      \strng{bibnamehash}{6f965774e9941cd00d986a26eaeac316}
+      \strng{authorbibnamehash}{6f965774e9941cd00d986a26eaeac316}
+      \strng{authornamehash}{6f965774e9941cd00d986a26eaeac316}
+      \strng{authorfullhash}{6f965774e9941cd00d986a26eaeac316}
+      \strng{authorfullhashraw}{6f965774e9941cd00d986a26eaeac316}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Disponível em: \url{https://nodejs.org/}. Acesso em: 19 jun 2025}
+      \field{title}{Node.js}
+      \field{year}{2025}
+    \endentry
+    \entry{swagger}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2140293a9301207642312840ece53671}{%
+           family={{OpenAPI Initiative}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{2140293a9301207642312840ece53671}
+      \strng{fullhash}{2140293a9301207642312840ece53671}
+      \strng{fullhashraw}{2140293a9301207642312840ece53671}
+      \strng{bibnamehash}{2140293a9301207642312840ece53671}
+      \strng{authorbibnamehash}{2140293a9301207642312840ece53671}
+      \strng{authornamehash}{2140293a9301207642312840ece53671}
+      \strng{authorfullhash}{2140293a9301207642312840ece53671}
+      \strng{authorfullhashraw}{2140293a9301207642312840ece53671}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Disponível em: \url{https://swagger.io/}. Acesso em: 19 jun 2025}
+      \field{title}{Swagger}
+      \field{year}{2025}
+    \endentry
     \entry{postgresql}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=36423acfb135ffe286ea438eafcb0bc6}{%
@@ -412,6 +485,54 @@
       \field{title}{Sass: Syntactically Awesome Style Sheets}
       \field{year}{2024}
     \endentry
+    \entry{sqlite}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=497757a9c5b2ec17ded656170b51c788}{%
+           family={{SQLite}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{497757a9c5b2ec17ded656170b51c788}
+      \strng{fullhash}{497757a9c5b2ec17ded656170b51c788}
+      \strng{fullhashraw}{497757a9c5b2ec17ded656170b51c788}
+      \strng{bibnamehash}{497757a9c5b2ec17ded656170b51c788}
+      \strng{authorbibnamehash}{497757a9c5b2ec17ded656170b51c788}
+      \strng{authornamehash}{497757a9c5b2ec17ded656170b51c788}
+      \strng{authorfullhash}{497757a9c5b2ec17ded656170b51c788}
+      \strng{authorfullhashraw}{497757a9c5b2ec17ded656170b51c788}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Disponível em: \url{https://www.sqlite.org/}. Acesso em: 19 jun 2025}
+      \field{title}{SQLite}
+      \field{year}{2025}
+    \endentry
+    \entry{threejs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=51f641e10b8aa2eb498b0108db22c059}{%
+           family={{Three.js}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{51f641e10b8aa2eb498b0108db22c059}
+      \strng{fullhash}{51f641e10b8aa2eb498b0108db22c059}
+      \strng{fullhashraw}{51f641e10b8aa2eb498b0108db22c059}
+      \strng{bibnamehash}{51f641e10b8aa2eb498b0108db22c059}
+      \strng{authorbibnamehash}{51f641e10b8aa2eb498b0108db22c059}
+      \strng{authornamehash}{51f641e10b8aa2eb498b0108db22c059}
+      \strng{authorfullhash}{51f641e10b8aa2eb498b0108db22c059}
+      \strng{authorfullhashraw}{51f641e10b8aa2eb498b0108db22c059}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Disponível em: \url{https://threejs.org/}. Acesso em: 19 jun 2025}
+      \field{title}{Three.js}
+      \field{year}{2025}
+    \endentry
     \entry{typeorm}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=90fea71a5d5a987525ef90fffe274e3d}{%
@@ -435,6 +556,30 @@
       \field{howpublished}{Disponível em: \url{https://typeorm.io/}. Acesso em: 30 jun 2024}
       \field{title}{TypeORM}
       \field{year}{2024}
+    \endentry
+    \entry{nextjs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dc173d57136dbe619cbccee88ee6421c}{%
+           family={{Vercel}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Disponível em: \url{https://nextjs.org/}. Acesso em: 19 jun 2025}
+      \field{title}{Next.js}
+      \field{year}{2025}
     \endentry
   \enddatalist
 \endrefsection
