@@ -20,13 +20,35 @@
 % Espacamento vertical entre titulo do capitulo e conteudo deve ser de 24pts
 \setlength\afterchapskip{24pt}
 
-% Define colores para links
+% Define cores para links
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
     citecolor=black,
     urlcolor=black,
 }
+
+% Permite quebra das URLs após qualquer caractere (evita estouro de margem).
+\usepackage{xurl}
+
+% URLs sublinhadas. O \underLine do lua-ul (requer LuaLaTeX) desenha um
+% sublinhado tipográfico que acompanha as quebras de linha da URL em qualquer
+% ponto, sem encaixotar o conteúdo (ao contrário do ulem/soul). \hyper@normalise
+% sanitiza a URL (trata & ? # etc.) antes de processá-la.
+%
+% IMPORTANTE: lua-ul/luacolor só funcionam com LuaLaTeX. Sob pdfLaTeX eles
+% travam a compilação (\LuaULResetUnderline fica indefinido). Por isso só
+% carregamos este bloco quando o motor for LuaTeX; sob pdfLaTeX as URLs apenas
+% não ficam sublinhadas, mas o documento compila normalmente.
+\ifdefined\directlua
+  \usepackage{luacolor}
+  \usepackage{lua-ul}
+  \makeatletter
+  \let\orig@url\url
+  \renewcommand{\url}{\hyper@normalise\ul@url@aux}
+  \newcommand{\ul@url@aux}[1]{\underLine{\hyper@linkurl{{\UrlFont\nolinkurl{#1}}}{#1}}}
+  \makeatother
+\fi
 
 % Páginas sem cabeçalho
 \pagestyle{simple}

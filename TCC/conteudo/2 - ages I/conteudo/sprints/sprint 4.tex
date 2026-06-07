@@ -1,24 +1,24 @@
 \subsection{\textbf{Sprint 4}}
 
-Após a entrega da Sprint 3, foram identificados vários bugs relacionados às notificações, incluindo:
+Após a entrega da Sprint 3, foram identificados vários \textit{bugs} relacionados às notificações, incluindo:
 \begin{itemize}
-    \item Ao realizar qualquer alteração no aplicativo, o timer era resetado e uma notificação era enviada.
-    \item Os timers não estavam sendo editados corretamente.
-    \item O timer da tela principal não funcionava em segundo plano.
+    \item Ao realizar qualquer alteração no aplicativo, o \textit{timer} era resetado e uma notificação era enviada.
+    \item Os \textit{timers} não estavam sendo editados corretamente.
+    \item O \textit{timer} da tela principal não funcionava em segundo plano.
 \end{itemize}
 
-Devido ao meu amplo conhecimento sobre o código, fui encarregado de encontrar e resolver esses bugs.
+Devido ao meu amplo conhecimento sobre o código, fui encarregado de encontrar e resolver esses \textit{bugs}.
 
-Para corrigir o problema de edição dos timers, criei uma função no arquivo responsável pela coleta do tempo de tela. Essa função cancelava o timer atual e criava um novo timer, com a duração correspondente ao novo valor, subtraindo o tempo que já havia passado no timer antigo. Em seguida, chamei essa função no local onde a função de edição do tempo estava sendo invocada.
+Para corrigir o problema de edição dos \textit{timers}, criei uma função no arquivo responsável pela coleta do tempo de tela. Essa função cancelava o \textit{timer} atual e criava um novo \textit{timer}, com a duração correspondente ao novo valor, subtraindo o tempo que já havia passado no \textit{timer} antigo. Em seguida, chamei essa função no local onde a função de edição do tempo estava sendo invocada.
 
-No caso do bug relacionado às notificações, percebi que não havia um erro no código em si, mas sim no comportamento do aplicativo. Toda vez que uma ação era executada no app, a tela inicial era recriada, o que também recriava o método de coleta do tempo de tela. Para solucionar esse problema, adicionei um booleano para verificar se os timers já haviam sido criados.
+No caso do \textit{bug} relacionado às notificações, percebi que não havia um erro no código em si, mas sim no comportamento do aplicativo. Toda vez que uma ação era executada no app, a tela inicial era recriada, o que também recriava o método de coleta do tempo de tela. Para solucionar esse problema, adicionei um booleano para verificar se os \textit{timers} já haviam sido criados.
 
-Por fim, para resolver o problema do timer da tela inicial, foi necessário recriá-lo completamente, utilizando uma biblioteca para contar o tempo e outra para criar uma barra de progresso em formato circular. Devido à complexidade dessa tarefa, consegui concluí-la apenas no penúltimo dia da fase de \textit{Freezing}.
+Por fim, para resolver o problema do \textit{timer} da tela inicial, foi necessário recriá-lo completamente, utilizando uma biblioteca para contar o tempo e outra para criar uma barra de progresso em formato circular. Devido à complexidade dessa tarefa, consegui concluí-la apenas no penúltimo dia da fase de \textit{Freezing}.
 
 Durante a fase de \textit{Freezing}, novamente me reuni com a equipe para ajudar e também aprender a lidar com conflitos de código. Como eu era um dos poucos capazes de utilizar o emulador do Android Studio para executar o projeto, fiquei responsável por testar e validar se os \ac{pr} aceitos não estavam quebrando o projeto. Devido ao grande número de tarefas a serem entregues, enfrentamos vários conflitos, o que atrasou consideravelmente a conclusão do projeto.
 
-No final da fase de \textit{Freezing}, juntei-me aos \ac{ages} III do projeto para realizar um \textit{hotfix} no timer da tela inicial. Nessa Sprint, eles haviam implementado o uso de \textit{providers} no código para atualizar as telas dinamicamente, sem a necessidade de reconstruí-las. Utilizamos a mesma técnica para permitir que, quando o usuário desejasse alterar a meta diária, a barra de progresso e o tempo total fossem atualizados dinamicamente, trazendo maior qualidade ao aplicativo.
+No final da fase de \textit{Freezing}, juntei-me aos \ac{ages} III do projeto para realizar um \textit{hotfix} no \textit{timer} da tela inicial. Nessa Sprint, eles haviam implementado o uso de \textit{providers} no código para atualizar as telas dinamicamente, sem a necessidade de reconstruí-las. Utilizamos a mesma técnica para permitir que, quando o usuário desejasse alterar a meta diária, a barra de progresso e o tempo total fossem atualizados dinamicamente, trazendo maior qualidade ao aplicativo.
 
-No dia da entrega para o stakeholder, recebi uma mensagem do Vitor pedindo para verificar um bug que estava ocorrendo. O bug estava relacionado à multiplicação incorreta do tempo de notificação ao ser editado. Devido ao meu amplo envolvimento com essa parte do código ao longo do semestre, estava familiarizado com o local onde poderia encontrar esse erro e corrigi-lo. Tive a oportunidade de enviar o último \ac{pr} para a branch \textit{Development} antes da apresentação para o stakeholder.
+No dia da entrega para o \textit{stakeholder}, recebi uma mensagem do Vitor pedindo para verificar um \textit{bug} que estava ocorrendo. O \textit{bug} estava relacionado à multiplicação incorreta do tempo de notificação ao ser editado. Devido ao meu amplo envolvimento com essa parte do código ao longo do semestre, estava familiarizado com o local onde poderia encontrar esse erro e corrigi-lo. Tive a oportunidade de enviar o último \ac{pr} para a \textit{branch} \textit{Development} antes da apresentação para o \textit{stakeholder}.
 
-Durante a Sprint 4, nossa equipe conseguiu entregar o aplicativo com todas as funcionalidades previstas, superando os desafios e corrigindo os bugs identificados. Foi gratificante ver o cliente satisfeito com o resultado final, demonstrando que atendemos às suas expectativas. Além disso, nos orgulhamos de ter entregado um código de qualidade, com as devidas correções e melhorias, garantindo um produto robusto e confiável.
+Durante a Sprint 4, nossa equipe conseguiu entregar o aplicativo com todas as funcionalidades previstas, superando os desafios e corrigindo os \textit{bugs} identificados. Foi gratificante ver o cliente satisfeito com o resultado final, demonstrando que atendemos às suas expectativas. Além disso, nos orgulhamos de ter entregado um código de qualidade, com as devidas correções e melhorias, garantindo um produto robusto e confiável.

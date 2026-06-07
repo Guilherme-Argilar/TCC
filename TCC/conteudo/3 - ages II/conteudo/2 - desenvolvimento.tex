@@ -1,15 +1,15 @@
 \section[Desenvolvimento do Projeto]{Desenvolvimento do Projeto}
 
-Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Toda a documentação do projeto pode ser encontrada na wiki do mesmo \cite{wikiDecola}.
+Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Toda a documentação do projeto pode ser encontrada na wiki do mesmo: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/home}.
 
 \subsection{Repositório do Código Fonte do Projeto}
   Todo o código do projeto encontra-se distribuído em dois repositórios:
 \begin{itemize}
-    \item código do backend;
-    \item código do frontend.
+    \item código do \textit{backend}: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-api};
+    \item código do \textit{frontend}: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-frontend}.
 \end{itemize}
 
-Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto \cite{wikiDecola}.
+Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/home}.
 
 \subsection{Banco de Dados Utilizado}
   O banco de dados está organizado e gerencia informações relacionadas a uma plataforma de aprendizado, onde usuários podem se inscrever em cursos, concluir módulos e atividades, e interagir com conteúdos educativos. Ele armazena informações sobre contas, que podem representar organizações, e os usuários associados a essas contas. Também define tipos de contas e papéis de usuários, como administradores e colaboradores.
@@ -24,28 +24,28 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \centering
     \small
     \caption{Modelo Relacional do banco de dados}
-    \fbox{\parbox[c][7cm][c]{0.9\linewidth}{\centering \textit{[Inserir imagem]}}}
+    \includegraphics[width=0.9\linewidth]{conteudo/3 - ages II/images/fig4-modelo-relacional.png}
 
-    Fonte: Wiki do projeto \cite{wikiDecola}
+    Fonte: Wiki do projeto
     \label{fig:decola-mr}
 \end{figure}
 
 \subsection{Arquitetura Utilizada}
 
 \subsubsection{Backend}
-  O backend do projeto é uma API REST construída utilizando o NestJS \cite{nestjs}, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
+  O \textit{backend} do projeto é uma API REST construída utilizando o NestJS, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
 
 \begin{figure}[H]
     \centering
     \small
     \caption{Modelo de autenticação}
-    \fbox{\parbox[c][7cm][c]{0.9\linewidth}{\centering \textit{[Inserir imagem]}}}
+    \includegraphics[width=0.9\linewidth]{conteudo/3 - ages II/images/fig5-modelo-autenticacao.png}
 
-    Fonte: Wiki do projeto \cite{wikiDecola}
+    Fonte: Wiki do projeto
     \label{fig:decola-auth}
 \end{figure}
 
-  Utilizamos JWT (\textit{JSON Web Token}) para autenticação e autorização. O JWT é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato JSON, que podem ser usadas para autenticação de usuários em aplicativos web e mobile, bem como para comunicação entre sistemas.
+  Utilizamos JWT (\textit{JSON Web Token}) para autenticação e autorização. O JWT é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato JSON, que podem ser usadas para autenticação de usuários em aplicativos web e \textit{mobile}, bem como para comunicação entre sistemas.
 
   O fluxo de trabalho do JWT é dividido em três etapas:
 \begin{itemize}
@@ -55,30 +55,30 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \end{itemize}
 
 \subsubsection{Frontend}
-  Nossa arquitetura de frontend aplica os conceitos de \textit{Domain Driven Development} (DDD) e \textit{Separation of Concerns} (SoC). Com DDD, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com SoC, nosso objetivo é separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao MVC (\textit{Model-View-Controller}).
+  Nossa arquitetura de \textit{frontend} aplica os conceitos de \textit{Domain Driven Development} (DDD) e \textit{Separation of Concerns} (SoC). Com DDD, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com SoC, nosso objetivo é separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao MVC (\textit{Model-View-Controller}).
 
 \subsection{Protótipos das Telas Desenvolvidas}
-  Os protótipos deste projeto estão disponíveis no Figma do projeto \cite{figma}.
+  Os protótipos deste projeto estão disponíveis no Figma do projeto: \url{https://www.figma.com/file/NXKKrdIufqEwiV9t1jyhMh/Decola?type=design&node-id=5-5&mode=design&t=16V6sKM1CRPvbuqm-0}.
 
 \subsection{Tecnologias Utilizadas}
 
 \subsubsection{PostgreSQL}
-  Sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, extensibilidade e conformidade com os padrões SQL \cite{postgresql}.
+  Sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, extensibilidade e conformidade com os padrões SQL.
 
 \subsubsection{TypeORM}
-  Biblioteca ORM para TypeScript e JavaScript que facilita a interação com bancos de dados relacionais através de um mapeamento objeto-relacional eficiente e intuitivo \cite{typeorm}.
+  Biblioteca ORM para TypeScript e JavaScript que facilita a interação com bancos de dados relacionais através de um mapeamento objeto-relacional eficiente e intuitivo.
 
 \subsubsection{AWS}
-  Plataforma de computação em nuvem fornecida pela Amazon, oferecendo uma ampla gama de serviços, incluindo armazenamento, redes, bancos de dados e ferramentas de desenvolvimento, para escalabilidade e flexibilidade na construção de aplicações \cite{aws}.
+  Plataforma de computação em nuvem fornecida pela Amazon, oferecendo uma ampla gama de serviços, incluindo armazenamento, redes, bancos de dados e ferramentas de desenvolvimento, para escalabilidade e flexibilidade na construção de aplicações.
 
 \subsubsection{TypeScript}
-  Linguagem de programação de código aberto desenvolvida pela Microsoft que adiciona tipagem estática opcional ao JavaScript, melhorando a produtividade e a qualidade do código \cite{typescript}.
+  Linguagem de programação de código aberto desenvolvida pela Microsoft que adiciona tipagem estática opcional ao JavaScript, melhorando a produtividade e a qualidade do código.
 
 \subsubsection{NestJS}
-  Framework progressivo para Node.js que permite a construção de aplicativos do lado do servidor escaláveis e eficientes utilizando TypeScript \cite{nestjs}.
+  Framework progressivo para Node.js que permite a construção de aplicativos do lado do servidor escaláveis e eficientes utilizando TypeScript.
 
 \subsubsection{React}
-  Biblioteca JavaScript de código aberto para a construção de interfaces de usuário, desenvolvida pelo Facebook, amplamente utilizada para criar aplicações web e mobile dinâmicas e interativas \cite{react}.
+  Biblioteca JavaScript de código aberto para a construção de interfaces de usuário, desenvolvida pelo Facebook, amplamente utilizada para criar aplicações web e \textit{mobile} dinâmicas e interativas.
 
 \subsubsection{Sass}
-  Extensão do CSS que permite o uso de variáveis, aninhamento e \textit{mixins}, facilitando a escrita e manutenção de estilos, tornando o desenvolvimento \textit{front-end} mais eficiente \cite{sass}.
+  Extensão do CSS que permite o uso de variáveis, aninhamento e \textit{mixins}, facilitando a escrita e manutenção de estilos, tornando o desenvolvimento \textit{front-end} mais eficiente.

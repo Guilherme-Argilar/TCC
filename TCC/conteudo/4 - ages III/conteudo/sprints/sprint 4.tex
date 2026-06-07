@@ -12,7 +12,7 @@ Durante a primeira semana, Alessandro obteve o mapa prometido pela equipe do Tec
     \caption{Versão final do mapa do Tecnopuc}
     \includegraphics[width=0.9\linewidth]{conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png}
 
-    Fonte: Código-fonte do \textit{frontend} \cite{wikiTotem}
+    Fonte: Código-fonte do \textit{frontend}
     \label{fig:totem-tecnopuc-final}
 \end{figure}
 
@@ -20,13 +20,13 @@ No \textit{backend}, a única funcionalidade pendente era aquela que havia ficad
 
 Durante o desenvolvimento desta \textit{sprint}, observei um fenômeno preocupante: um relaxamento generalizado da equipe, incluindo os próprios \ac{ages} IV. O sucesso alcançado até então parecia ter criado uma falsa sensação de conclusão, quando na realidade diversos ajustes importantes ainda demandavam atenção. Essa situação resultou em acúmulo de tarefas para os momentos finais do projeto.
 
-Na última semana, durante o \textit{code freeze}, identifiquei funcionalidades críticas do \textit{frontend} que permaneciam não implementadas, incluindo a integração do \textit{endpoint} de popular o banco com a página de administração. Em discussão com o \ac{ages} III Eduardo Felber Eichner, estabelecemos uma divisão: ele finalizaria a integração da tela de QR Code, trabalho já iniciado na \textit{sprint} anterior, enquanto eu assumiria a integração do \textit{endpoint} de importação de dados.
+Na última semana, durante o \textit{code freeze}, identifiquei funcionalidades críticas do \textit{frontend} que permaneciam não implementadas, incluindo a integração do \textit{endpoint} de popular o banco com a página de administração. Em discussão com o \ac{ages} III Eduardo Felber Eichner, estabelecemos uma divisão: ele finalizaria a integração da tela de \textit{QR Code}, trabalho já iniciado na \textit{sprint} anterior, enquanto eu assumiria a integração do \textit{endpoint} de importação de dados.
 
 A implementação transcorreu sem grandes obstáculos, pois a complexidade técnica era inferior aos desafios que havia enfrentado anteriormente. Desenvolvi uma tela intermediária, realizei a integração necessária e aguardei Eduardo concluir sua parte. Posteriormente, colaboramos na implementação do último elemento da interface administrativa: o botão de exportação de dados dos usuários e suas pesquisas no totem.
 
 No dia da apresentação, dediquei-me a adicionar refinamentos que enriquecessem a experiência do usuário. Percebi que não havíamos implementado um método adequado para acessar a área administrativa. Solucionei essa lacuna criando um botão discreto que, ao ser acionado, exibia uma \textit{modal} solicitando senha de acesso ao painel administrativo.
 
-Durante a validação final com os \ac{ages} IV, fui informado sobre um serviço \ac{aws} implementado para geração dinâmica de QR Codes durante a apresentação. Nos testes, identifiquei uma incompatibilidade: o \textit{frontend} esperava QR Codes com texto em português, enquanto o serviço gerava conteúdo em inglês. Rapidamente criei uma \textit{branch} específica para a apresentação e implementei a correção necessária, garantindo o funcionamento perfeito do sistema.
+Durante a validação final com os \ac{ages} IV, fui informado sobre um serviço \ac{aws} implementado para geração dinâmica de \textit{QR Codes} durante a apresentação. Nos testes, identifiquei uma incompatibilidade: o \textit{frontend} esperava \textit{QR Codes} com texto em português, enquanto o serviço gerava conteúdo em inglês. Rapidamente criei uma \textit{branch} específica para a apresentação e implementei a correção necessária, garantindo o funcionamento perfeito do sistema.
 
 A apresentação final superou todas as expectativas. Além do \textit{stakeholder} Igor Daudt, contamos com a presença ilustre de Jorge Audy, um dos principais idealizadores do Tecnopuc. A demonstração não apenas impressionou nosso cliente original, mas despertou genuíno interesse do convidado especial. Jorge Audy compartilhou que o Tecnopuc enfrenta desafios significativos com a localização de auditórios, pois visitantes frequentemente se perdem entre os diversos prédios ao procurar salas de palestras.
 

@@ -1,18 +1,18 @@
 \section[Desenvolvimento do Projeto]{Desenvolvimento do Projeto}
 
-Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Toda a documentação do projeto pode ser encontrada na wiki do mesmo \cite{wikiTotem}.
+Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Toda a documentação do projeto pode ser encontrada na wiki do mesmo: \url{https://tools.ages.pucrs.br/totem-interativo/wiki/-/wikis/home}.
 
 \subsection{Repositório do Código Fonte do Projeto}
   Todo o código do projeto encontra-se distribuído em dois repositórios:
 \begin{itemize}
-    \item código do backend;
-    \item código do frontend.
+    \item código do \textit{backend}: \url{https://tools.ages.pucrs.br/totem-interativo/backend};
+    \item código do \textit{frontend}: \url{https://tools.ages.pucrs.br/totem-interativo/frontend}.
 \end{itemize}
 
-Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto \cite{wikiTotem}.
+Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto: \url{https://tools.ages.pucrs.br/totem-interativo/wiki/-/wikis/home}.
 
 \subsection{Banco de Dados Utilizado}
-  Para o desenvolvimento do projeto, optamos pelo SQLite \cite{sqlite} como sistema de gerenciamento de banco de dados. Essa escolha foi estratégica, considerando dois fatores críticos: a necessidade de operação \textit{offline} e as limitações de \textit{hardware} dos totens. O SQLite, sendo extremamente leve e eficiente, consome recursos mínimos de memória e processamento, ideal para dispositivos com capacidade limitada.
+  Para o desenvolvimento do projeto, optamos pelo SQLite como sistema de gerenciamento de banco de dados. Essa escolha foi estratégica, considerando dois fatores críticos: a necessidade de operação \textit{offline} e as limitações de \textit{hardware} dos totens. O SQLite, sendo extremamente leve e eficiente, consome recursos mínimos de memória e processamento, ideal para dispositivos com capacidade limitada.
 
   O banco foi estruturado para gerenciar informações de feiras e eventos de forma otimizada. A arquitetura prioriza consultas rápidas e diretas, organizando dados de visitantes (\textit{leads}), expositores, produtos e categorias para minimizar operações complexas.
 
@@ -26,7 +26,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \caption{Modelo Relacional do banco de dados}
     \includegraphics[width=0.9\linewidth]{conteudo/4 - ages III/images/fig7-modelo-relacional.png}
 
-    Fonte: Documentação do projeto \cite{wikiTotem}
+    Fonte: Documentação do projeto
     \label{fig:totem-mr}
 \end{figure}
 
@@ -56,7 +56,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \item \textit{assets}: recursos gráficos gerais da aplicação.
 \end{itemize}
 
-  As rotas da aplicação são diferenciadas conforme o perfil do usuário: visitantes acessam a interface principal do totem, enquanto administradores dispõem de páginas específicas para importação de dados (\textit{admin-import}) e exportação de relatórios (\textit{admin}). A funcionalidade de QR Code possui um módulo próprio com componentes dedicados.
+  As rotas da aplicação são diferenciadas conforme o perfil do usuário: visitantes acessam a interface principal do totem, enquanto administradores dispõem de páginas específicas para importação de dados (\textit{admin-import}) e exportação de relatórios (\textit{admin}). A funcionalidade de \textit{QR Code} possui um módulo próprio com componentes dedicados.
 
 \subsubsection{Backend}
   A arquitetura do \textit{backend} adotou padrões de desenvolvimento em camadas, garantindo uma clara segregação de responsabilidades e facilitando os processos de teste e manutenção.
@@ -84,31 +84,31 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
   A estrutura de testes replica a organização principal, com diretórios específicos para \textit{controllers} e \textit{services}, assegurando uma cobertura adequada das funcionalidades críticas.
 
 \subsection{Protótipos das Telas Desenvolvidas}
-  Os protótipos deste projeto estão disponíveis no Figma do projeto \cite{figma}.
+  Os protótipos deste projeto estão disponíveis no Figma do projeto: \url{https://www.figma.com/design/zB7tV4pp4kEuaHi6dc8OgU/Totem-Interativo?t=0vS3DlL51cQ192pY-0}.
 
 \subsection{Tecnologias Utilizadas}
   Nesta seção serão apresentadas as principais tecnologias empregadas no desenvolvimento do projeto Totem Interativo, destacando suas contribuições para o sucesso da implementação.
 
 \subsubsection{React}
-  Biblioteca JavaScript de código aberto para construção de interfaces de usuário reativas e componentes reutilizáveis, fundamental para criar a interface interativa do totem com atualizações dinâmicas \cite{react}.
+  Biblioteca JavaScript de código aberto para construção de interfaces de usuário reativas e componentes reutilizáveis, fundamental para criar a interface interativa do totem com atualizações dinâmicas.
 
 \subsubsection{Three.js}
-  Biblioteca JavaScript para renderização 3D no navegador, responsável pela criação e manipulação do mapa tridimensional interativo, permitindo visualização imersiva dos espaços e interações com elementos 3D \cite{threejs}.
+  Biblioteca JavaScript para renderização 3D no navegador, responsável pela criação e manipulação do mapa tridimensional interativo, permitindo visualização imersiva dos espaços e interações com elementos 3D.
 
 \subsubsection{Next.js}
-  \textit{Framework} React para desenvolvimento \textit{web} com renderização híbrida e otimizações automáticas de \textit{performance}, garantindo resposta rápida mesmo em \textit{hardware} limitado \cite{nextjs}.
+  \textit{Framework} React para desenvolvimento \textit{web} com renderização híbrida e otimizações automáticas de \textit{performance}, garantindo resposta rápida mesmo em \textit{hardware} limitado.
 
 \subsubsection{Node.js}
-  Ambiente de execução JavaScript \textit{server-side} com natureza assíncrona e eficiência no gerenciamento de I/O, ideal para múltiplas requisições simultâneas \cite{nodejs}.
+  Ambiente de execução JavaScript \textit{server-side} com natureza assíncrona e eficiência no gerenciamento de I/O, ideal para múltiplas requisições simultâneas.
 
 \subsubsection{NestJS}
-  \textit{Framework} progressivo para Node.js que permite construção de aplicativos escaláveis com arquitetura modular e suporte nativo para TypeScript \cite{nestjs}.
+  \textit{Framework} progressivo para Node.js que permite construção de aplicativos escaláveis com arquitetura modular e suporte nativo para TypeScript.
 
 \subsubsection{TypeScript}
-  \textit{Superset} do JavaScript que adiciona tipagem estática opcional, reduzindo \textit{bugs} em tempo de desenvolvimento e facilitando manutenção do código \cite{typescript}.
+  \textit{Superset} do JavaScript que adiciona tipagem estática opcional, reduzindo \textit{bugs} em tempo de desenvolvimento e facilitando manutenção do código.
 
 \subsubsection{Swagger}
-  Ferramenta para documentação e testes interativos de APIs RESTful, integrada ao NestJS para gerar documentação automática dos \textit{endpoints} \cite{swagger}.
+  Ferramenta para documentação e testes interativos de APIs RESTful, integrada ao NestJS para gerar documentação automática dos \textit{endpoints}.
 
 \subsubsection{SQLite}
-  Sistema de banco de dados relacional \textit{serverless} e baseado em arquivo único, escolhido por sua leveza e capacidade de operar sem dependências externas em ambiente \textit{offline} \cite{sqlite}.
+  Sistema de banco de dados relacional \textit{serverless} e baseado em arquivo único, escolhido por sua leveza e capacidade de operar sem dependências externas em ambiente \textit{offline}.
