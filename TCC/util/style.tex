@@ -53,8 +53,15 @@
 % Páginas sem cabeçalho
 \pagestyle{simple}
 
-% Subseção não no sumário: (para ir, trocar para 2)
-\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+% Profundidade do sumário: 3 inclui seções, subseções e subsubseções
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+
+% Recuo à esquerda dos subitens e subsubitens no Sumário.
+% (indent = deslocamento da entrada; numwidth = largura reservada ao número)
+\setlength{\cftsubsectionindent}{1.8em}
+\setlength{\cftsubsectionnumwidth}{3.3em}
+\setlength{\cftsubsubsectionindent}{4.2em}
+\setlength{\cftsubsubsectionnumwidth}{4.2em}
 
 % Captions com negrito
 % \usepackage[font=bf]{caption}

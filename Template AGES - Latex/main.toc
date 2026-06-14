@@ -1,0 +1,78 @@
+\changetocdepth {4}
+\setcounter {tocdepth}{1}
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{APRESENTAÇÃO DA TRAJETÓRIA DO ALUNO}}{9}{chapter.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{AGES I --- “NOME DO PROJETO XXXX”}}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introdução}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Desenvolvimento do Projeto}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Repositório do Código Fonte do Projeto}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Banco de Dados Utilizado}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Arquitetura Utilizada}{11}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Protótipos das Telas Desenvolvidas}{11}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Tecnologias Utilizadas}{11}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Atividades Desempenhadas Pelo Aluno no Projeto}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Sprint 0}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Sprint 1}{11}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Sprint 2}{11}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Sprint 3}{11}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Sprint 4}{11}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Conclusão}{11}{section.2.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{AGES II --- “NOME DO PROJETO XXXX”}}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introdução}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Desenvolvimento do Projeto}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Repositório do Código Fonte do Projeto}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Banco de Dados Utilizado}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Arquitetura Utilizada}{13}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Protótipos das Telas Desenvolvidas}{13}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Tecnologias Utilizadas}{13}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Atividades Desempenhadas Pelo Aluno no Projeto}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Sprint 0}{13}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Sprint 1}{14}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Sprint 2}{14}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Sprint 3}{14}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Sprint 4}{14}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Conclusão}{14}{section.3.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{AGES III --- “NOME DO PROJETO XXXX”}}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introdução}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Desenvolvimento do Projeto}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Repositório do Código Fonte do Projeto}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Banco de Dados Utilizado}{15}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Arquitetura Utilizada}{15}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Protótipos das Telas Desenvolvidas}{15}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Tecnologias Utilizadas}{15}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Atividades Desempenhadas Pelo Aluno no Projeto}{15}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Sprint 0}{15}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Sprint 1}{16}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Sprint 2}{16}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Sprint 3}{16}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Sprint 4}{16}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Conclusão}{16}{section.4.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{AGES IV --- “NOME DO PROJETO XXXX”}}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introdução}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Desenvolvimento do Projeto}{17}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Repositório do Código Fonte do Projeto}{17}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Banco de Dados Utilizado}{17}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Arquitetura Utilizada}{17}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Protótipos das Telas Desenvolvidas}{17}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Tecnologias Utilizadas}{17}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}Atividades Desempenhadas Pelo Aluno no Projeto}{17}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Sprint 0}{17}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Sprint 1}{18}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Sprint 2}{18}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Sprint 3}{18}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Sprint 4}{18}{subsection.5.3.5}%
+\contentsline {section}{\numberline {5.4}Conclusão}{18}{section.5.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{19}{chapter.6}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Referências}{20}{section*.14}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}

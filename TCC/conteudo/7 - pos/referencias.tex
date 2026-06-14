@@ -2,5 +2,19 @@
 % Memorial descritivo: as fontes consultadas são listadas apenas nas Referências,
 % sem citações no corpo do texto. O \nocite inclui as entradas na lista sem
 % gerar vínculo (citação) inline.
-\nocite{wikiFocus,flutter,firebase,golang,asyncDart,asyncFlutter,wikiDecola,nestjs,figma,postgresql,typeorm,aws,typescript,react,sass,wikiTotem,sqlite,threejs,nextjs,nodejs,swagger,wikiEstudify,prisma,reactnative,expo}
+% Ordem: (1) wikis dos projetos em sequência AGES I→IV; (2) tecnologias por AGES,
+% na primeira aparição (sem repetir). Refs suplementares vão no AGES de origem:
+% asyncDart/asyncFlutter (AGES I), figma (AGES II).
+\nocite{%
+  % --- Wikis dos projetos (AGES I → IV) ---
+  wikiFocus,wikiDecola,wikiTotem,wikiEstudify,
+  % --- AGES I (Focus) ---
+  flutter,firebase,golang,asyncDart,asyncFlutter,
+  % --- AGES II (Decola) ---
+  postgresql,typeorm,aws,typescript,nestjs,react,sass,figma,
+  % --- AGES III (Totem) ---
+  threejs,nextjs,nodejs,swagger,sqlite,
+  % --- AGES IV (Estudify) ---
+  prisma,reactnative,expo%
+}
 \printbibliography[title=Referências]

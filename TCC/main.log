@@ -1,46 +1,12 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.23)  7 JUN 2026 18:14
- restricted system commands enabled.
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.23)  14 JUN 2026 02:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
-Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
-Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
-collection.
-luaotfload | conf : Root cache directory is "C:/texlive/2026/texmf-var/luatex-ca
-che/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
-olved path "c:/texlive/2026/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-
-28.lua".
-Lua-only attribute luaotfload@noligature = 1
-luaotfload | init : Context OpenType loader version 3.134
-Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
-Inserting `luaotfload.node_processor' in `hpack_filter'.
-Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
-Inserting `luaotfload.define_font' in `define_font'.
-Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "C:/texlive/2026/texmf-var/luatex-ca
-che/generic/names".
-Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
-Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
-Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
-Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
-Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
-Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
-Inserting `luaotfload.cleanup_files' in `wrapup_run'.
-Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
-Inserting `luaotfload.glyphinfo' in `glyph_info'.
-Lua-only attribute luaotfload.letterspace_done = 3
-Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
-Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
-Inserting `tracingstacklevels' in `input_level_string'. (c:/texlive/2026/texmf-
-dist/tex/latex/abntex2/abntex2.cls
+(c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
 (c:/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
@@ -52,10 +18,10 @@ cument class
 (c:/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2026-04-28 L3 programming layer (loader) 
 
-(c:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2026-02-18 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count274
-Inserting `l3color' in `luaotfload.parse_color'.))
+(c:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count276
+))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
 (c:/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -63,13 +29,13 @@ Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 (c:/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count275
+\etb@tempcnta=\count277
 ))
 \onelineskip=\skip49
 \lxvchars=\skip50
 \xlvchars=\skip51
-\@memcnta=\count276
-\c@@memmarkcntra=\count277
+\@memcnta=\count278
+\c@@memmarkcntra=\count279
 
 (c:/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
@@ -79,8 +45,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 
 (c:/texlive/2026/texmf-dist/tex/latex/memoir/mem12.clo
 File: mem12.clo 2022/07/29 v0.5 memoir class 12pt size option
-luaotfload | db : Font names database loaded from C:/texlive/2026/texmf-var/luat
-ex-cache/generic/names/luaotfload-names.luc.gz)
+)
 \binding=\skip54
 \spinemargin=\skip55
 \foremargin=\skip56
@@ -91,20 +56,20 @@ ex-cache/generic/names/luaotfload-names.luc.gz)
 \mem@maxheadheight=\skip61
 \mem@maxfootheight=\skip62
 \headwidth=\skip63
-\c@storedpagenumber=\count278
-\memPD=\dimen149
+\c@storedpagenumber=\count280
+\memPD=\dimen150
 \m@mabparskip=\skip64
 \thanksmarkwidth=\skip65
 \thanksmarksep=\skip66
 \droptitle=\skip67
-\c@book=\count279
-\c@part=\count280
-\c@chapter=\count281
-\c@section=\count282
-\c@subsection=\count283
-\c@subsubsection=\count284
-\c@paragraph=\count285
-\c@subparagraph=\count286
+\c@book=\count281
+\c@part=\count282
+\c@chapter=\count283
+\c@section=\count284
+\c@subsection=\count285
+\c@subsubsection=\count286
+\c@paragraph=\count287
+\c@subparagraph=\count288
 \beforechapskip=\skip68
 \midchapskip=\skip69
 \afterchapskip=\skip70
@@ -126,10 +91,10 @@ ex-cache/generic/names/luaotfload-names.luc.gz)
 \beforesubparaskip=\skip86
 \aftersubparaskip=\skip87
 \pfbreakskip=\skip88
-\c@@ppsavesec=\count287
-\c@@ppsaveapp=\count288
-\ragrparindent=\dimen150
-\everylistparindent=\dimen151
+\c@@ppsavesec=\count289
+\c@@ppsaveapp=\count290
+\ragrparindent=\dimen151
+\everylistparindent=\dimen152
 \parsepi=\skip89
 \topsepi=\skip90
 \itemsepi=\skip91
@@ -145,35 +110,35 @@ ex-cache/generic/names/luaotfload-names.luc.gz)
 \@enLab=\toks17
 \abstitleskip=\skip101
 \absleftindent=\skip102
-\abs@leftindent=\dimen152
+\abs@leftindent=\dimen153
 \absrightindent=\skip103
 \absparindent=\skip104
 \absparsep=\skip105
-\c@vslineno=\count289
-\c@poemline=\count290
-\c@modulo@vs=\count291
-\c@memfvsline=\count292
+\c@vslineno=\count291
+\c@poemline=\count292
+\c@modulo@vs=\count293
+\c@memfvsline=\count294
 \vleftskip=\skip106
 \vrightskip=\skip107
 \stanzaskip=\skip108
 \versewidth=\skip109
 \vgap=\skip110
 \vindent=\skip111
-\vleftmargin=\dimen153
-\c@verse=\count293
-\c@chrsinstr=\count294
+\vleftmargin=\dimen154
+\c@verse=\count295
+\c@chrsinstr=\count296
 \beforepoemtitleskip=\skip112
 \afterpoemtitleskip=\skip113
-\c@poem=\count295
+\c@poem=\count297
 \beforePoemTitleskip=\skip114
 \midPoemTitleskip=\skip115
 \afterPoemTitleskip=\skip116
 
 (c:/texlive/2026/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen154
+\col@sep=\dimen155
 \ar@mcellbox=\box53
-\extrarowheight=\dimen155
+\extrarowheight=\dimen156
 \NC@list=\toks18
 \extratabsurround=\skip117
 \backup@length=\skip118
@@ -187,43 +152,43 @@ Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
 )
 (c:/texlive/2026/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen156
-\TX@old@table=\dimen157
-\TX@old@col=\dimen158
-\TX@target=\dimen159
-\TX@delta=\dimen160
-\TX@cols=\count296
+\TX@col@width=\dimen157
+\TX@old@table=\dimen158
+\TX@old@col=\dimen159
+\TX@target=\dimen160
+\TX@delta=\dimen161
+\TX@cols=\count298
 \TX@ftn=\toks19
 )
 (c:/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen161
-\lightrulewidth=\dimen162
-\cmidrulewidth=\dimen163
-\belowrulesep=\dimen164
-\belowbottomsep=\dimen165
-\aboverulesep=\dimen166
-\abovetopsep=\dimen167
-\cmidrulesep=\dimen168
-\cmidrulekern=\dimen169
-\defaultaddspace=\dimen170
-\@cmidla=\count297
-\@cmidlb=\count298
-\@aboverulesep=\dimen171
-\@belowrulesep=\dimen172
-\@thisruleclass=\count299
-\@lastruleclass=\count300
-\@thisrulewidth=\dimen173
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count299
+\@cmidlb=\count300
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count301
+\@lastruleclass=\count302
+\@thisrulewidth=\dimen174
 )
 \ctableftskip=\skip119
 \ctabrightskip=\skip120
-\abovecolumnspenalty=\count301
-\@linestogo=\count302
-\@cellstogo=\count303
-\@cellsincolumn=\count304
+\abovecolumnspenalty=\count303
+\@linestogo=\count304
+\@cellstogo=\count305
+\@cellsincolumn=\count306
 \crtok=\toks20
-\@mincolumnwidth=\dimen174
-\c@newflo@tctr=\count305
+\@mincolumnwidth=\dimen175
+\c@newflo@tctr=\count307
 \mem@margin@floatbox=\box55
 \@contcwidth=\skip121
 \@contindw=\skip122
@@ -234,17 +199,17 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \subfloatcaptopadj=\skip127
 \subfloatbottomskip=\skip128
 \subfloatlabelskip=\skip129
-\subfloatcapmargin=\dimen175
-\c@@contsubnum=\count306
+\subfloatcapmargin=\dimen176
+\c@@contsubnum=\count308
 \m@mscap@capbox=\box56
 \m@mscap@fbox=\box57
-\sidecapsep=\dimen176
-\sidecapwidth=\dimen177
-\m@m@tempdima=\dimen178
-\m@mscapraise=\dimen179
-\sidecapraise=\dimen180
-\m@mscapmainwidth=\dimen181
-\m@mscaplkern=\dimen182
+\sidecapsep=\dimen177
+\sidecapwidth=\dimen178
+\m@m@tempdima=\dimen179
+\m@mscapraise=\dimen180
+\sidecapraise=\dimen181
+\m@mscapmainwidth=\dimen182
+\m@mscaplkern=\dimen183
 \beforeepigraphskip=\skip130
 \afterepigraphskip=\skip131
 \epigraphwidth=\skip132
@@ -275,14 +240,14 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 (c:/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )))
-\c@section@level=\count307
+\c@section@level=\count309
 )
 \tocentryskip=\skip134
 \tocbaseline=\skip135
 \cftparskip=\skip136
 \cftbeforebookskip=\skip137
-\cftbookindent=\dimen183
-\cftbooknumwidth=\dimen184
+\cftbookindent=\dimen184
+\cftbooknumwidth=\dimen185
 \cftbeforepartskip=\skip138
 \cftpartindent=\skip139
 \cftpartnumwidth=\skip140
@@ -304,9 +269,9 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 \cftbeforesubparagraphskip=\skip156
 \cftsubparagraphindent=\skip157
 \cftsubparagraphnumwidth=\skip158
-\prechapterprecisshift=\dimen185
-\c@maxsecnumdepth=\count308
-\bibindent=\dimen186
+\prechapterprecisshift=\dimen186
+\c@maxsecnumdepth=\count310
+\bibindent=\dimen187
 \bibitemsep=\skip159
 \indexcolsep=\skip160
 \indexrule=\skip161
@@ -314,8 +279,8 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 \@indexbox=\insert252
 LaTeX Info: Redefining \raggedbottom on input line 8095.
 LaTeX Info: Redefining \flushbottom on input line 8099.
-\glossarycolsep=\dimen187
-\glossaryrule=\dimen188
+\glossarycolsep=\dimen188
+\glossaryrule=\dimen189
 \sideparvshift=\skip162
 \sideins=\insert251
 \sidebartopsep=\skip163
@@ -328,8 +293,8 @@ LaTeX Info: Redefining \flushbottom on input line 8099.
 \footinsdim=\skip170
 \footinsv@r=\insert250
 \@mpfootinsv@r=\insert249
-\m@m@k=\count309
-\m@m@h=\dimen189
+\m@m@k=\count311
+\m@m@h=\dimen190
 \m@mipn@skip=\skip171
 \sidefootins=\insert248
 \sidefootadjust=\skip172
@@ -338,12 +303,12 @@ LaTeX Info: Redefining \flushbottom on input line 8099.
 \sidefootvsep=\skip175
 \sidefootwidth=\skip176
 \m@mdownsf=\skip177
-\c@sidefootnote=\count310
+\c@sidefootnote=\count312
 \sidefootmarkwidth=\skip178
 \sidefootmarksep=\skip179
 \sidefootparindent=\skip180
-\c@pagenote=\count311
-\c@pagenoteshadow=\count312
+\c@pagenote=\count313
+\c@pagenoteshadow=\count314
 \mem@pn@lastkern=\skip181
 
 (c:/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
@@ -360,35 +325,35 @@ Package: shortvrb 2024/12/25 v3.0q Standard LaTeX documentation package V3 (FMi
 )
 )
 \bvboxsep=\skip183
-\c@memfbvline=\count313
-\c@bvlinectr=\count314
+\c@memfbvline=\count315
+\c@bvlinectr=\count316
 \bvnumlength=\skip184
-\fb@frw=\dimen190
-\fb@frh=\dimen191
-\FrameRule=\dimen192
-\FrameSep=\dimen193
-\c@cp@cntr=\count315
-\c@ism@mctr=\count316
-\c@xsm@mctr=\count317
-\c@csm@mctr=\count318
-\c@ksm@mctr=\count319
-\c@xksm@mctr=\count320
-\c@cksm@mctr=\count321
-\c@msm@mctr=\count322
-\c@xmsm@mctr=\count323
-\c@cmsm@mctr=\count324
-\c@bsm@mctr=\count325
-\c@workm@mctr=\count326
-\c@sheetsequence=\count327
-\c@lastsheet=\count328
-\c@lastpage=\count329
-\c@figure=\count330
-\c@lofdepth=\count331
+\fb@frw=\dimen191
+\fb@frh=\dimen192
+\FrameRule=\dimen193
+\FrameSep=\dimen194
+\c@cp@cntr=\count317
+\c@ism@mctr=\count318
+\c@xsm@mctr=\count319
+\c@csm@mctr=\count320
+\c@ksm@mctr=\count321
+\c@xksm@mctr=\count322
+\c@cksm@mctr=\count323
+\c@msm@mctr=\count324
+\c@xmsm@mctr=\count325
+\c@cmsm@mctr=\count326
+\c@bsm@mctr=\count327
+\c@workm@mctr=\count328
+\c@sheetsequence=\count329
+\c@lastsheet=\count330
+\c@lastpage=\count331
+\c@figure=\count332
+\c@lofdepth=\count333
 \cftbeforefigureskip=\skip185
 \cftfigureindent=\skip186
 \cftfigurenumwidth=\skip187
-\c@table=\count332
-\c@lotdepth=\count333
+\c@table=\count334
+\c@lotdepth=\count335
 \cftbeforetableskip=\skip188
 \cfttableindent=\skip189
 \cfttablenumwidth=\skip190
@@ -439,7 +404,6 @@ Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks25
 ))
 (c:/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
@@ -448,20 +412,24 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen194
-\Hy@linkcounter=\count334
-\Hy@pagecounter=\count335
+\@linkdim=\dimen195
+\Hy@linkcounter=\count336
+\Hy@pagecounter=\count337
 
 (c:/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
 (c:/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count336
+\Hy@SavedSpaceFactor=\count338
 
 (c:/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Hyper figures OFF on input line 4199.
 Package hyperref Info: Link nesting OFF on input line 4204.
@@ -470,14 +438,14 @@ Package hyperref Info: Plain pages OFF on input line 4214.
 Package hyperref Info: Backreferencing OFF on input line 4219.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4466.
-\c@Hy@tempcnt=\count337
+\c@Hy@tempcnt=\count339
 
 (c:/texlive/2026/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4805.
-\XeTeXLinkMargin=\dimen195
+\XeTeXLinkMargin=\dimen196
 
 (c:/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -486,9 +454,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count338
-\Field@Width=\dimen196
-\Fld@charsize=\dimen197
+\Fld@menulength=\count340
+\Field@Width=\dimen197
+\Fld@charsize=\dimen198
 Package hyperref Info: Hyper figures OFF on input line 6091.
 Package hyperref Info: Link nesting OFF on input line 6096.
 Package hyperref Info: Hyper index ON on input line 6099.
@@ -496,16 +464,16 @@ Package hyperref Info: backreferencing OFF on input line 6106.
 Package hyperref Info: Link coloring OFF on input line 6111.
 Package hyperref Info: Link coloring with OCG OFF on input line 6116.
 Package hyperref Info: PDF/A mode OFF on input line 6121.
-\Hy@abspage=\count339
-\c@Item=\count340
-\c@Hfootnote=\count341
+\Hy@abspage=\count341
+\c@Item=\count342
+\c@Hfootnote=\count343
 )
-Package hyperref Info: Driver (autodetected): hluatex.
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-(c:/texlive/2026/texmf-dist/tex/latex/hyperref/hluatex.def
-File: hluatex.def 2026-04-24 v7.01q Hyperref driver for luaTeX
-\Fld@listcount=\count342
-\c@bookmark@seq@number=\count343
+(c:/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
+\Fld@listcount=\count344
+\c@bookmark@seq@number=\count345
 
 (c:/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
@@ -520,117 +488,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (c:/texlive/2026/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2025/09/16 v1.24 hyperref package fixes for memoir class
-\c@memhycontfloat=\count344
-\c@mem@Hpagenote=\count345
+\c@memhycontfloat=\count346
+\c@mem@Hpagenote=\count347
 )
 (c:/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2026-05-21 v1.32 PDF bookmarks (HO)
 
-(c:/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-luatex.def
-File: bkm-luatex.def 2026-05-21 v1.32 bookmark driver for luaTeX (HO)
-\BKM@id=\count346
+(c:/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2026-05-21 v1.32 bookmark driver for pdfTeX (HO)
+\BKM@id=\count348
 ))
 (c:/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2026/05/20 v26.8 The multilingual framework for LuaLaTeX, pdfLaT
 eX and XeLaTeX
-
-(c:/texlive/2026/texmf-dist/tex/generic/babel/luababel.def
-\bbl@readstream=\read3
-\l@dumylang=\language2
-Package babel Info: Non-standard hyphenation setup on input line 118.
-\l@nohyphenation=\language3
-\l@german-x-2024-02-28=\language4
-\l@ngerman-x-2024-02-28=\language5
-\l@afrikaans=\language6
-\l@albanian=\language7
-\l@ancientgreek=\language8
-\l@ibycus=\language9
-\l@arabic=\language10
-\l@armenian=\language11
-\l@basque=\language12
-\l@belarusian=\language13
-\l@bulgarian=\language14
-\l@catalan=\language15
-\l@pinyin=\language16
-\l@churchslavonic=\language17
-\l@coptic=\language18
-\l@croatian=\language19
-\l@czech=\language20
-\l@danish=\language21
-\l@dutch=\language22
-\l@ukenglish=\language23
-\l@usenglishmax=\language24
-\l@esperanto=\language25
-\l@estonian=\language26
-\l@ethiopic=\language27
-\l@farsi=\language28
-\l@finnish=\language29
-\l@schoolfinnish=\language30
-\l@french=\language31
-\l@friulan=\language32
-\l@galician=\language33
-\l@georgian=\language34
-\l@german=\language35
-\l@ngerman=\language36
-\l@swissgerman=\language37
-\l@greek=\language38
-\l@monogreek=\language39
-\l@hebrew=\language40
-\l@hungarian=\language41
-\l@icelandic=\language42
-\l@assamese=\language43
-\l@bengali=\language44
-\l@gujarati=\language45
-\l@hindi=\language46
-\l@kannada=\language47
-\l@malayalam=\language48
-\l@marathi=\language49
-\l@oriya=\language50
-\l@pali=\language51
-\l@panjabi=\language52
-\l@tamil=\language53
-\l@telugu=\language54
-\l@indonesian=\language55
-\l@interlingua=\language56
-\l@irish=\language57
-\l@italian=\language58
-\l@kazakh=\language59
-\l@kurmanji=\language60
-\l@classiclatin=\language61
-\l@latin=\language62
-\l@liturgicallatin=\language63
-\l@latvian=\language64
-\l@lithuanian=\language65
-\l@macedonian=\language66
-\l@mongolian=\language67
-\l@mongolianlmc=\language68
-\l@bokmal=\language69
-\l@nynorsk=\language70
-\l@occitan=\language71
-\l@piedmontese=\language72
-\l@polish=\language73
-\l@portuguese=\language74
-\l@romanian=\language75
-\l@romansh=\language76
-\l@russian=\language77
-\l@sanskrit=\language78
-\l@serbian=\language79
-\l@serbianc=\language80
-\l@slovak=\language81
-\l@slovenian=\language82
-\l@spanish=\language83
-\l@swedish=\language84
-\l@thai=\language85
-\l@turkish=\language86
-\l@turkmen=\language87
-\l@ukrainian=\language88
-\l@uppersorbian=\language89
-\l@vietnamese=\language90
-\l@welsh=\language91
-\babelcatcodetablenum=\catcodetable14
-\bbl@pattcodes=\catcodetable15
-)
-\babel@savecnt=\count347
+\babel@savecnt=\count349
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
 ne 2084.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
@@ -645,12 +516,13 @@ LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?)
 on input line 2092.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
 on input line 2117.
-\U@D=\dimen198
-\l@unhyphenated=\language92
+\U@D=\dimen199
+\l@unhyphenated=\language91
 
-(c:/texlive/2026/texmf-dist/tex/generic/babel/luababel.def
-\bbl@attr@locale=\attribute4
-)
+(c:/texlive/2026/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count350
+
 (c:/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
 (c:/texlive/2026/texmf-dist/tex/generic/babel/locale/invalid/babel-brazil.tex)
 Package babel Info: Importing font and identification data for english
@@ -661,9 +533,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language23). Reported on input line 105.
+(babel)             (\language22). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language23). Reported on input line 108.
+(babel)             (\language22). Reported on input line 108.
 )
 
 Package babel Warning: Name 'brazil' is deprecated.
@@ -675,32 +547,29 @@ Package babel Info: Importing font and identification data for brazil
 (c:/texlive/2026/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language74). Reported on input line 100.
+(babel)             (\language73). Reported on input line 100.
 Package babel Info: Making " an active character on input line 132.
-
-(c:/texlive/2026/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-pt.tex
-UTF-8 Portuguese hyphenation patterns
-(c:/texlive/2026/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-pt.tex))))
+))
 (c:/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip192
-\enit@outerparindent=\dimen199
-\enit@toks=\toks26
+\enit@outerparindent=\dimen256
+\enit@toks=\toks25
 \enit@inbox=\box58
-\enit@count@id=\count348
-\enitdp@description=\count349
+\enit@count@id=\count351
+\enitdp@description=\count352
 )
 (c:/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count350
-\calc@Bcount=\count351
-\calc@Adimen=\dimen256
-\calc@Bdimen=\dimen257
+\calc@Acount=\count353
+\calc@Bcount=\count354
+\calc@Adimen=\dimen257
+\calc@Bdimen=\dimen258
 \calc@Askip=\skip193
 \calc@Bskip=\skip194
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count352
+\calc@Ccount=\count355
 \calc@Cskip=\skip195
 )
 
@@ -723,7 +592,7 @@ Sidefoothsep and sidefootwidth: 7pt and 42pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-\c@abntex@bookmarkcounter=\count353
+\c@abntex@bookmarkcounter=\count356
 \cftlastnumwidth=\skip196
 
 Class memoir Warning: \settocpreprocessor is marked deprecated and will be
@@ -734,13 +603,13 @@ Class memoir Warning: \settocpreprocessor is marked deprecated and will be
 
 \chapternamenumlength=\skip197
 \ABNTEXcitacaorecuo=\skip198
-\c@alineasi=\count354
-\c@alineasii=\count355
-\enitdp@alineas=\count356
-\c@subalineasi=\count357
-\enitdp@subalineas=\count358
-\c@incisosi=\count359
-\enitdp@incisos=\count360
+\c@alineasi=\count357
+\c@alineasii=\count358
+\enitdp@alineas=\count359
+\c@subalineasi=\count360
+\enitdp@subalineas=\count361
+\c@incisosi=\count362
+\enitdp@incisos=\count363
 \ABNTEXsignwidth=\skip199
 \ABNTEXsignthickness=\skip256
 \ABNTEXsignskip=\skip257
@@ -750,18 +619,18 @@ Package: geometry 2026/03/07 v6.0 Page Geometry
 (c:/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count361
-\Gm@cntv=\count362
-\c@Gm@tempcnt=\count363
-\Gm@bindingoffset=\dimen258
-\Gm@wd@mp=\dimen259
-\Gm@odd@mp=\dimen260
-\Gm@even@mp=\dimen261
-\Gm@layoutwidth=\dimen262
-\Gm@layoutheight=\dimen263
-\Gm@layouthoffset=\dimen264
-\Gm@layoutvoffset=\dimen265
-\Gm@dimlist=\toks27
+\Gm@cnth=\count364
+\Gm@cntv=\count365
+\c@Gm@tempcnt=\count366
+\Gm@bindingoffset=\dimen259
+\Gm@wd@mp=\dimen260
+\Gm@odd@mp=\dimen261
+\Gm@even@mp=\dimen262
+\Gm@layoutwidth=\dimen263
+\Gm@layoutheight=\dimen264
+\Gm@layouthoffset=\dimen265
+\Gm@layoutvoffset=\dimen266
+\Gm@dimlist=\toks26
 )
 (c:/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
@@ -775,25 +644,20 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 (c:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 106.
+Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(c:/texlive/2026/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
+(c:/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen266
-\Gin@req@width=\dimen267
+\Gin@req@height=\dimen267
+\Gin@req@width=\dimen268
 )
 (c:/texlive/2026/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 )
 (c:/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-6.
-
-(c:/texlive/2026/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (./util/style.tex
+) (./util/style.tex
 (c:/texlive/2026/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
@@ -802,69 +666,38 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 29.
 (c:/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
-(c:/texlive/2026/texmf-dist/tex/latex/luacolor/luacolor.sty
-Package: luacolor 2023-08-18 v1.18 Color support via LuaTeX's attributes (HO)
-
-(c:/texlive/2026/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
-
-(c:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: luatex.def on input line 149.
-
-(c:/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Inserting `luacolor.process' in `pre_shipout_filter'.
-\LuaCol@Attribute=\attribute5
-)
-(c:/texlive/2026/texmf-dist/tex/lualatex/lua-ul/lua-ul.sty
-Package: lua-ul 2024-02-26 v0.2.1 Underlining and related functionality for Lua
-TeX
-Lua function luaul.restore_everyhbox = 31
-Lua function luaul.new_underline_type = 32
-Lua function luaul.set_underline_func = 33
-Lua function luaul.reset_underline_func = 34
-Module luatexbase Info: Uninstalling kernel luatexbase code on input line 36
-Inserting `add underlines to list' in `pre_append_to_vlist_filter'.
-Inserting `add underlines to list' in `hpack_filter'.
-Inserting `add underlines to list' in `vpack_filter'.
-Lua function sw@slant = 35
-\l__luaul_top_dim=\dimen268
-\l__luaul_bottom_dim=\dimen269
-\l__luaul_height_dim=\dimen270
-)
 (c:/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (c:/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen271
-\captionmargin=\dimen272
-\caption@leftmargin=\dimen273
-\caption@rightmargin=\dimen274
-\caption@width=\dimen275
-\caption@indent=\dimen276
-\caption@parindent=\dimen277
-\caption@hangindent=\dimen278
+\caption@tempdima=\dimen269
+\captionmargin=\dimen270
+\caption@leftmargin=\dimen271
+\caption@rightmargin=\dimen272
+\caption@width=\dimen273
+\caption@indent=\dimen274
+\caption@parindent=\dimen275
+\caption@hangindent=\dimen276
 Package caption Info: memoir document class detected.
 
 (c:/texlive/2026/texmf-dist/tex/latex/caption/caption-memoir.sto
 File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to th
 e memoir document class (AR)
 ))
-\c@caption@flags=\count364
-\c@continuedfloat=\count365
+\c@caption@flags=\count367
+\c@continuedfloat=\count368
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen279
-\caption@adjustwidth@linewidth=\dimen280
+\caption@adjustwidth@hsize=\dimen277
+\caption@adjustwidth@linewidth=\dimen278
 Package caption Info: hyperref package is loaded.
 )
 (c:/texlive/2026/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count366
-\float@exts=\toks28
+\c@float@type=\count369
+\float@exts=\toks27
 \float@box=\box59
-\@float@everytoks=\toks29
+\@float@everytoks=\toks28
 \@floatcapt=\box60
 ))
 (c:/texlive/2026/texmf-dist/tex/latex/acronym/acronym.sty
@@ -875,66 +708,66 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 (c:/texlive/2026/texmf-dist/tex/generic/xstring/xstring.sty
 (c:/texlive/2026/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count367
-\xs_countb=\count368
+\xs_counta=\count370
+\xs_countb=\count371
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
-\AC@clearlist=\toks30
+\AC@clearlist=\toks29
 )
 (c:/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
 
 (c:/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count369
+\lrq@indent=\count372
 
 (c:/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count370
-\c@listtotal=\count371
-\c@listcount=\count372
-\c@liststart=\count373
-\c@liststop=\count374
-\c@citecount=\count375
-\c@citetotal=\count376
-\c@multicitecount=\count377
-\c@multicitetotal=\count378
-\c@instcount=\count379
-\c@maxnames=\count380
-\c@minnames=\count381
-\c@maxitems=\count382
-\c@minitems=\count383
-\c@citecounter=\count384
-\c@maxcitecounter=\count385
-\c@savedcitecounter=\count386
-\c@uniquelist=\count387
-\c@uniquename=\count388
-\c@refsection=\count389
-\c@refsegment=\count390
-\c@maxextratitle=\count391
-\c@maxextratitleyear=\count392
-\c@maxextraname=\count393
-\c@maxextradate=\count394
-\c@maxextraalpha=\count395
-\c@abbrvpenalty=\count396
-\c@highnamepenalty=\count397
-\c@lownamepenalty=\count398
-\c@maxparens=\count399
-\c@parenlevel=\count400
-\blx@tempcnta=\count401
-\blx@tempcntb=\count402
-\blx@tempcntc=\count403
-\c@blx@maxsection=\count404
-\blx@maxsegment@0=\count405
-\blx@notetype=\count406
-\blx@parenlevel@text=\count407
-\blx@parenlevel@foot=\count408
-\blx@sectionciteorder@0=\count409
-\blx@sectionciteorderinternal@0=\count410
-\blx@entrysetcounter=\count411
-\blx@biblioinstance=\count412
+\c@tabx@nest=\count373
+\c@listtotal=\count374
+\c@listcount=\count375
+\c@liststart=\count376
+\c@liststop=\count377
+\c@citecount=\count378
+\c@citetotal=\count379
+\c@multicitecount=\count380
+\c@multicitetotal=\count381
+\c@instcount=\count382
+\c@maxnames=\count383
+\c@minnames=\count384
+\c@maxitems=\count385
+\c@minitems=\count386
+\c@citecounter=\count387
+\c@maxcitecounter=\count388
+\c@savedcitecounter=\count389
+\c@uniquelist=\count390
+\c@uniquename=\count391
+\c@refsection=\count392
+\c@refsegment=\count393
+\c@maxextratitle=\count394
+\c@maxextratitleyear=\count395
+\c@maxextraname=\count396
+\c@maxextradate=\count397
+\c@maxextraalpha=\count398
+\c@abbrvpenalty=\count399
+\c@highnamepenalty=\count400
+\c@lownamepenalty=\count401
+\c@maxparens=\count402
+\c@parenlevel=\count403
+\blx@tempcnta=\count404
+\blx@tempcntb=\count405
+\blx@tempcntc=\count406
+\c@blx@maxsection=\count407
+\blx@maxsegment@0=\count408
+\blx@notetype=\count409
+\blx@parenlevel@text=\count410
+\blx@parenlevel@foot=\count411
+\blx@sectionciteorder@0=\count412
+\blx@sectionciteorderinternal@0=\count413
+\blx@entrysetcounter=\count414
+\blx@biblioinstance=\count415
 \labelnumberwidth=\skip258
 \labelalphawidth=\skip259
 \biblabelsep=\skip260
@@ -944,10 +777,10 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip264
 \blx@bcfin=\read4
 \blx@bcfout=\write4
-\blx@langwohyphens=\language93
-\c@mincomprange=\count413
-\c@maxcomprange=\count414
-\c@mincompwidth=\count415
+\blx@langwohyphens=\language92
+\c@mincomprange=\count416
+\c@maxcomprange=\count417
+\c@mincompwidth=\count418
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -958,74 +791,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count416
-\c@savedafterword=\count417
-\c@annotator=\count418
-\c@savedannotator=\count419
-\c@author=\count420
-\c@savedauthor=\count421
-\c@bookauthor=\count422
-\c@savedbookauthor=\count423
-\c@commentator=\count424
-\c@savedcommentator=\count425
-\c@editor=\count426
-\c@savededitor=\count427
-\c@editora=\count428
-\c@savededitora=\count429
-\c@editorb=\count430
-\c@savededitorb=\count431
-\c@editorc=\count432
-\c@savededitorc=\count433
-\c@foreword=\count434
-\c@savedforeword=\count435
-\c@holder=\count436
-\c@savedholder=\count437
-\c@introduction=\count438
-\c@savedintroduction=\count439
-\c@namea=\count440
-\c@savednamea=\count441
-\c@nameb=\count442
-\c@savednameb=\count443
-\c@namec=\count444
-\c@savednamec=\count445
-\c@translator=\count446
-\c@savedtranslator=\count447
-\c@shortauthor=\count448
-\c@savedshortauthor=\count449
-\c@shorteditor=\count450
-\c@savedshorteditor=\count451
-\c@labelname=\count452
-\c@savedlabelname=\count453
-\c@institution=\count454
-\c@savedinstitution=\count455
-\c@lista=\count456
-\c@savedlista=\count457
-\c@listb=\count458
-\c@savedlistb=\count459
-\c@listc=\count460
-\c@savedlistc=\count461
-\c@listd=\count462
-\c@savedlistd=\count463
-\c@liste=\count464
-\c@savedliste=\count465
-\c@listf=\count466
-\c@savedlistf=\count467
-\c@location=\count468
-\c@savedlocation=\count469
-\c@organization=\count470
-\c@savedorganization=\count471
-\c@origlocation=\count472
-\c@savedoriglocation=\count473
-\c@origpublisher=\count474
-\c@savedorigpublisher=\count475
-\c@publisher=\count476
-\c@savedpublisher=\count477
-\c@language=\count478
-\c@savedlanguage=\count479
-\c@origlanguage=\count480
-\c@savedoriglanguage=\count481
-\c@pageref=\count482
-\c@savedpageref=\count483
+\c@afterword=\count419
+\c@savedafterword=\count420
+\c@annotator=\count421
+\c@savedannotator=\count422
+\c@author=\count423
+\c@savedauthor=\count424
+\c@bookauthor=\count425
+\c@savedbookauthor=\count426
+\c@commentator=\count427
+\c@savedcommentator=\count428
+\c@editor=\count429
+\c@savededitor=\count430
+\c@editora=\count431
+\c@savededitora=\count432
+\c@editorb=\count433
+\c@savededitorb=\count434
+\c@editorc=\count435
+\c@savededitorc=\count436
+\c@foreword=\count437
+\c@savedforeword=\count438
+\c@holder=\count439
+\c@savedholder=\count440
+\c@introduction=\count441
+\c@savedintroduction=\count442
+\c@namea=\count443
+\c@savednamea=\count444
+\c@nameb=\count445
+\c@savednameb=\count446
+\c@namec=\count447
+\c@savednamec=\count448
+\c@translator=\count449
+\c@savedtranslator=\count450
+\c@shortauthor=\count451
+\c@savedshortauthor=\count452
+\c@shorteditor=\count453
+\c@savedshorteditor=\count454
+\c@labelname=\count455
+\c@savedlabelname=\count456
+\c@institution=\count457
+\c@savedinstitution=\count458
+\c@lista=\count459
+\c@savedlista=\count460
+\c@listb=\count461
+\c@savedlistb=\count462
+\c@listc=\count463
+\c@savedlistc=\count464
+\c@listd=\count465
+\c@savedlistd=\count466
+\c@liste=\count467
+\c@savedliste=\count468
+\c@listf=\count469
+\c@savedlistf=\count470
+\c@location=\count471
+\c@savedlocation=\count472
+\c@organization=\count473
+\c@savedorganization=\count474
+\c@origlocation=\count475
+\c@savedoriglocation=\count476
+\c@origpublisher=\count477
+\c@savedorigpublisher=\count478
+\c@publisher=\count479
+\c@savedpublisher=\count480
+\c@language=\count481
+\c@savedlanguage=\count482
+\c@origlanguage=\count483
+\c@savedoriglanguage=\count484
+\c@pageref=\count485
+\c@savedpageref=\count486
 \shorthandwidth=\skip265
 \shortjournalwidth=\skip266
 \shortserieswidth=\skip267
@@ -1040,10 +873,6 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorttitlewidth=\skip276
 \localshortauthorwidth=\skip277
 \localshorteditorwidth=\skip278
-Package biblatex Info: Trying to load enhanced support for Unicode engines...
-Package biblatex Info: ... file 'blx-unicode.def' found.
-
-(c:/texlive/2026/texmf-dist/tex/latex/biblatex/blx-unicode.def)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1055,19 +884,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (c:/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count484
-\c@textcitetotal=\count485
-\c@textcitemaxnames=\count486
-\c@biburlbigbreakpenalty=\count487
-\c@biburlbreakpenalty=\count488
-\c@biburlnumpenalty=\count489
-\c@biburlucpenalty=\count490
-\c@biburllcpenalty=\count491
+\c@textcitecount=\count487
+\c@textcitetotal=\count488
+\c@textcitemaxnames=\count489
+\c@biburlbigbreakpenalty=\count490
+\c@biburlbreakpenalty=\count491
+\c@biburlnumpenalty=\count492
+\c@biburlucpenalty=\count493
+\c@biburllcpenalty=\count494
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count492
+\c@smartand=\count495
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
@@ -1079,8 +908,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (c:/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count493
-\c@bbx:relatedtotal=\count494
+\c@bbx:relatedcount=\count496
+\c@bbx:relatedtotal=\count497
 ))
 Package biblatex Info: Trying to load citation style 'abnt'...
 Package biblatex Info: ... file 'abnt.cbx' found.
@@ -1120,8 +949,7 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (c:/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
-Package biblatex Info: LuaTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
 (biblatex)             2026-04-28 L3 programming layer (loader) 
@@ -1133,13 +961,13 @@ Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
 (c:/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
-\csq@reset=\count495
-\csq@gtype=\count496
-\csq@glevel=\count497
-\csq@qlevel=\count498
-\csq@maxlvl=\count499
-\csq@tshold=\count500
-\csq@ltx@everypar=\toks31
+\csq@reset=\count498
+\csq@gtype=\count499
+\csq@glevel=\count500
+\csq@qlevel=\count501
+\csq@maxlvl=\count502
+\csq@tshold=\count503
+\csq@ltx@everypar=\toks30
 
 (c:/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
@@ -1160,22 +988,21 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 49
 (c:/texlive/2026/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (./main.aux
-("./conteudo/0 - pre/0.1 - capa.aux")
+(./conteudo/0 - pre/0.1 - capa.aux)
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 15.
- ("./conteudo/0 - pre/0.2 - dedicatoria.aux") ("./conteudo/0 - pre/0.3 - agrade
-cimentos.aux")
-("./conteudo/0 - pre/0.4 - epigrafe.aux") ("./conteudo/0 - pre/0.5 - resumo.aux
-") ("./conteudo/0 - pre/0.6 - ilustracoes.aux")
-("./conteudo/0 - pre/0.7 - tabelas.aux") ("./conteudo/0 - pre/0.8 - siglas.aux"
-) ("./conteudo/0 - pre/0.9 - sumario.aux")
-("./conteudo/1 - apresentacao/apresentacao.aux")
-("./conteudo/2 - ages I/index.aux") ("./conteudo/3 - ages II/index.aux")
-("./conteudo/4 - ages III/index.aux") ("./conteudo/5 - ages IV/index.aux")
-("./conteudo/6 - consideracoes/consideracoes.aux")
-("./conteudo/7 - pos/referencias.aux") ("./conteudo/8 - apendices/apendices.aux
-"))
-\openout1 = main.aux
+ (./conteudo/0 - pre/0.2 - dedicatoria.aux)
+(./conteudo/0 - pre/0.3 - agradecimentos.aux)
+(./conteudo/0 - pre/0.4 - epigrafe.aux) (./conteudo/0 - pre/0.5 - resumo.aux)
+(./conteudo/0 - pre/0.6 - ilustracoes.aux)
+(./conteudo/0 - pre/0.7 - tabelas.aux) (./conteudo/0 - pre/0.8 - siglas.aux)
+(./conteudo/0 - pre/0.9 - sumario.aux)
+(./conteudo/1 - apresentacao/apresentacao.aux) (./conteudo/2 - ages I/index.aux
+) (./conteudo/3 - ages II/index.aux) (./conteudo/4 - ages III/index.aux)
+(./conteudo/5 - ages IV/index.aux)
+(./conteudo/6 - consideracoes/consideracoes.aux)
+(./conteudo/7 - pos/referencias.aux) (./conteudo/8 - apendices/apendices.aux))
+\openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
@@ -1187,8 +1014,6 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
@@ -1197,14 +1022,24 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 49.
 \myptabbox=\box61
 \myptabboxwidth=\skip279
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: luatex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: luatex
+* driver: pdftex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1237,17 +1072,17 @@ Package hyperref Info: Link coloring ON on input line 49.
 
 (c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count501
-\scratchdimen=\dimen281
+\scratchcounter=\count504
+\scratchdimen=\dimen279
 \scratchbox=\box62
-\nofMPsegments=\count502
-\nofMParguments=\count503
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count504
-\MPscratchDim=\dimen282
-\MPnumerator=\count505
-\makeMPintoPDFobject=\count506
-\everyMPtoPDFconversion=\toks33
+\nofMPsegments=\count505
+\nofMParguments=\count506
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count507
+\MPscratchDim=\dimen280
+\MPnumerator=\count508
+\makeMPintoPDFobject=\count509
+\everyMPtoPDFconversion=\toks32
 ) (c:/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1361,21 +1196,20 @@ Package biblatex Info: ... file 'english.lbx' found.
 (c:/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 ))
-Package biblatex Info: LuaTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
 
-\openout4 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 49.
 Package biblatex Info: Reference segment=0 on input line 49.
+\openout2 = `"conteudo/0 - pre/0.1 - capa.aux"'.
 
-\openout2 = conteudo/0 - pre/0.1 - capa.aux
 
-("./conteudo/0 - pre/0.1 - capa.tex"
+(./conteudo/0 - pre/0.1 - capa.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1385,29 +1219,37 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 
-{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-\openout2 = conteudo/0 - pre/0.2 - dedicatoria.aux
- ("./conteudo/0
- - pre/0.2 - dedicatoria.tex"
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1
+{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/
+texmf-dist/fonts/enc/dvips/base/8r.enc}])
+\openout2 = `"conteudo/0 - pre/0.2 - dedicatoria.aux"'.
+
+
+(./conteudo/0 - pre/0.2 - dedicatoria.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 \end{dedicatoria}
+                       [1
 
 
 
 
 
 ])
-\openout2 = conteudo/0 - pre/0.3 - agradecimentos.aux
- ("./conteudo/0 - pre/0.3 - agradecimentos.tex" [2
+\openout2 = `"conteudo/0 - pre/0.3 - agradecimentos.aux"'.
+
+ (./conteudo/0 - pre/0.3 - agradecimentos.tex
+[2
 
 
 
 
 
 ])
-\openout2 = conteudo/0 - pre/0.4 - epigrafe.aux
+\openout2 = `"conteudo/0 - pre/0.4 - epigrafe.aux"'.
 
-("./conteudo/0 - pre/0.4 - epigrafe.tex"
+ (./conteudo/0 - pre/0.4 - epigrafe.tex
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
  [3
@@ -1416,46 +1258,50 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 
 
 ])
-\openout2 = conteudo/0 - pre/0.5 - resumo.aux
+\openout2 = `"conteudo/0 - pre/0.5 - resumo.aux"'.
 
-("./conteudo/0 - pre/0.5 - resumo.tex" [4
+
+(./conteudo/0 - pre/0.5 - resumo.tex [4
 
 
 
 
 ])
-\openout2 = conteudo/0 - pre/0.6 - ilustracoes.aux
-
-("./conteudo/0 - pre/0.6 - ilustracoes.tex" (./main.lof)) [5
+\openout2 = `"conteudo/0 - pre/0.6 - ilustracoes.aux"'.
 
 
+(./conteudo/0 - pre/0.6 - ilustracoes.tex (./main.lof)) [5
 
-
-]
-\openout2 = conteudo/0 - pre/0.7 - tabelas.aux
-
-("./conteudo/0 - pre/0.7 - tabelas.tex" (./main.lot)) [6
 
 
 
 ]
-\openout2 = conteudo/0 - pre/0.8 - siglas.aux
-
-("./conteudo/0 - pre/0.8 - siglas.tex") [7
+\openout2 = `"conteudo/0 - pre/0.7 - tabelas.aux"'.
 
 
-
-]
-\openout2 = conteudo/0 - pre/0.9 - sumario.aux
-
-("./conteudo/0 - pre/0.9 - sumario.tex" (./main.toc)) [8
+(./conteudo/0 - pre/0.7 - tabelas.tex (./main.lot)) [6
 
 
 
 ]
-\openout2 = conteudo/1 - apresentacao/apresentacao.aux
+\openout2 = `"conteudo/0 - pre/0.8 - siglas.aux"'.
 
-("./conteudo/1 - apresentacao/apresentacao.tex"
+
+(./conteudo/0 - pre/0.8 - siglas.tex) [7
+
+
+
+]
+\openout2 = `"conteudo/0 - pre/0.9 - sumario.aux"'.
+
+ (./conteudo/0 - pre/0.9 - sumario.tex (./main.toc [8
+
+
+
+] [9])) [10]
+\openout2 = `"conteudo/1 - apresentacao/apresentacao.aux"'.
+
+ (./conteudo/1 - apresentacao/apresentacao.tex
 Cap\'{\i }tulo 1.
 Package acronym Info: Label `acro:pucrs' newly defined as it shall be overridde
 n
@@ -1463,259 +1309,253 @@ although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:ages' newly defined as it shall be overridden
 
 although it is yet undefined on input line 5.
-) [9
+) [11
 
 
 
 
-] [10]
-\openout2 = conteudo/2 - ages I/index.aux
- ("./conteudo/2 - ages I/index.tex"
+] [12]
+\openout2 = `"conteudo/2 - ages I/index.aux"'.
+
+ (./conteudo/2 - ages I/index.tex
 Cap\'{\i }tulo 2.
-("./conteudo/2 - ages I/conteudo/1 - introducao.tex"
-<conteudo/2 - ages I/images/fig1-time-focus.png, id=200, 1027.84pt x 578.16pt>
+(./conteudo/2 - ages I/conteudo/1 - introducao.tex
+<conteudo/2 - ages I/images/fig1-time-focus.png, id=286, 1027.84pt x 578.16pt>
 File: conteudo/2 - ages I/images/fig1-time-focus.png Graphic file (type png)
 <use conteudo/2 - ages I/images/fig1-time-focus.png>
-Package luatex.def Info: conteudo/2 - ages I/images/fig1-time-focus.png  used o
+Package pdftex.def Info: conteudo/2 - ages I/images/fig1-time-focus.png  used o
 n input line 15.
-(luatex.def)             Requested size: 409.71692pt x 230.46591pt.
+(pdftex.def)             Requested size: 409.71692pt x 230.46591pt.
 )
-("./conteudo/2 - ages I/conteudo/2 - desenvolvimento.tex" [11
+(./conteudo/2 - ages I/conteudo/2 - desenvolvimento.tex [13
 
 
 
 
 ]
-Lua-only attribute luaul1 = 6
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-.
-
-(c:/texlive/2026/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
 .
 
 (c:/texlive/2026/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-) [12<./conteudo/2 - ages I/images/fig1-time-focus.png>]
-<conteudo/2 - ages I/images/fig2-mer-focus.png, id=218, 455.20062pt x 247.42438
+) [14{c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./c
+onteudo/2 - ages I/images/fig1-time-focus.png (PNG copy)>]
+<conteudo/2 - ages I/images/fig2-mer-focus.png, id=300, 455.20062pt x 247.42438
 pt>
 File: conteudo/2 - ages I/images/fig2-mer-focus.png Graphic file (type png)
 <use conteudo/2 - ages I/images/fig2-mer-focus.png>
-Package luatex.def Info: conteudo/2 - ages I/images/fig2-mer-focus.png  used on
+Package pdftex.def Info: conteudo/2 - ages I/images/fig2-mer-focus.png  used on
  input line 21.
-(luatex.def)             Requested size: 409.71692pt x 222.7063pt.
- [13<./conteudo/2 - ages I/images/fig2-mer-focus.png>]) ("./conteudo/2 - ages I
-/conteudo/3 - atividades.tex"
-("./conteudo/2 - ages I/conteudo/sprints/sprint 0.tex" [14])
-("./conteudo/2 - ages I/conteudo/sprints/sprint 1.tex" [15]
+(pdftex.def)             Requested size: 409.71692pt x 222.7063pt.
+ [15 <./conteudo/2 - ages I/images/fig2-mer-focus.png>]) (./conteudo/2 - ages I
+/conteudo/3 - atividades.tex
+(./conteudo/2 - ages I/conteudo/sprints/sprint 0.tex [16])
+(./conteudo/2 - ages I/conteudo/sprints/sprint 1.tex [17]
 Package acronym Info: Label `acro:ui' newly defined as it shall be overridden
 although it is yet undefined on input line 9.
 )
-("./conteudo/2 - ages I/conteudo/sprints/sprint 2.tex"
+(./conteudo/2 - ages I/conteudo/sprints/sprint 2.tex
 Package acronym Info: Label `acro:us' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
- [16]
+ [18]
 Package acronym Info: Label `acro:apk' newly defined as it shall be overridden
 although it is yet undefined on input line 9.
 )
-("./conteudo/2 - ages I/conteudo/sprints/sprint 3.tex" [17] [18])
-("./conteudo/2 - ages I/conteudo/sprints/sprint 4.tex"
+(./conteudo/2 - ages I/conteudo/sprints/sprint 3.tex [19])
+(./conteudo/2 - ages I/conteudo/sprints/sprint 4.tex [20]
 Package acronym Info: Label `acro:pr' newly defined as it shall be overridden
 although it is yet undefined on input line 18.
- [19]))
-("./conteudo/2 - ages I/conteudo/4 - conclusao.tex" [20])) [21]
-\openout2 = conteudo/3 - ages II/index.aux
+ [21]))
+(./conteudo/2 - ages I/conteudo/4 - conclusao.tex [22])) [23]
+\openout2 = `"conteudo/3 - ages II/index.aux"'.
 
-("./conteudo/3 - ages II/index.tex"
+
+(./conteudo/3 - ages II/index.tex
 Cap\'{\i }tulo 3.
-("./conteudo/3 - ages II/conteudo/1 - introducao.tex"
-<conteudo/3 - ages II/images/fig3-time-decola.jpg, id=300, 1027.84pt x 441.65pt
+(./conteudo/3 - ages II/conteudo/1 - introducao.tex
+<conteudo/3 - ages II/images/fig3-time-decola.jpg, id=365, 1027.84pt x 441.65pt
 >
 File: conteudo/3 - ages II/images/fig3-time-decola.jpg Graphic file (type jpg)
 <use conteudo/3 - ages II/images/fig3-time-decola.jpg>
-Package luatex.def Info: conteudo/3 - ages II/images/fig3-time-decola.jpg  used
+Package pdftex.def Info: conteudo/3 - ages II/images/fig3-time-decola.jpg  used
  on input line 13.
-(luatex.def)             Requested size: 409.71692pt x 176.05035pt.
+(pdftex.def)             Requested size: 409.71692pt x 176.05035pt.
 )
-("./conteudo/3 - ages II/conteudo/2 - desenvolvimento.tex" [22
+(./conteudo/3 - ages II/conteudo/2 - desenvolvimento.tex [24
 
 
 
 
-] [23<./conteudo/3 - ages II/images/fig3-time-decola.jpg>]
-<conteudo/3 - ages II/images/fig4-modelo-relacional.png, id=321, 660.96938pt x 
+] [25 <./conteudo/3 - ages II/images/fig3-time-decola.jpg>]
+<conteudo/3 - ages II/images/fig4-modelo-relacional.png, id=383, 660.96938pt x 
 506.6428pt>
 File: conteudo/3 - ages II/images/fig4-modelo-relacional.png Graphic file (type
  png)
 <use conteudo/3 - ages II/images/fig4-modelo-relacional.png>
-Package luatex.def Info: conteudo/3 - ages II/images/fig4-modelo-relacional.png
+Package pdftex.def Info: conteudo/3 - ages II/images/fig4-modelo-relacional.png
   used on input line 27.
-(luatex.def)             Requested size: 409.71692pt x 314.06117pt.
- [24]
-<conteudo/3 - ages II/images/fig5-modelo-autenticacao.png, id=326, 630.355pt x 
+(pdftex.def)             Requested size: 409.71692pt x 314.06117pt.
+ [26]
+<conteudo/3 - ages II/images/fig5-modelo-autenticacao.png, id=388, 630.355pt x 
 390.45876pt>
 File: conteudo/3 - ages II/images/fig5-modelo-autenticacao.png Graphic file (ty
 pe png)
 <use conteudo/3 - ages II/images/fig5-modelo-autenticacao.png>
-Package luatex.def Info: conteudo/3 - ages II/images/fig5-modelo-autenticacao.p
+Package pdftex.def Info: conteudo/3 - ages II/images/fig5-modelo-autenticacao.p
 ng  used on input line 42.
-(luatex.def)             Requested size: 409.71692pt x 253.78922pt.
- [25<./conteudo/3 - ages II/images/fig4-modelo-relacional.png>] [26<./conteudo/3
- - ages II/images/fig5-modelo-autenticacao.png>] [27]) ("./conteudo/3 - ages II
-/conteudo/3 - atividades.tex"
-("./conteudo/3 - ages II/conteudo/sprints/sprint 0.tex" [28])
-("./conteudo/3 - ages II/conteudo/sprints/sprint 1.tex")
-("./conteudo/3 - ages II/conteudo/sprints/sprint 2.tex" [29]
+(pdftex.def)             Requested size: 409.71692pt x 253.78922pt.
+ [27 <./conteudo/3 - ages II/images/fig4-modelo-relacional.png>] [28 <./conteud
+o/3 - ages II/images/fig5-modelo-autenticacao.png (PNG copy)>] [29])
+(./conteudo/3 - ages II/conteudo/3 - atividades.tex
+(./conteudo/3 - ages II/conteudo/sprints/sprint 0.tex)
+(./conteudo/3 - ages II/conteudo/sprints/sprint 1.tex [30])
+(./conteudo/3 - ages II/conteudo/sprints/sprint 2.tex
 Package acronym Info: Label `acro:crud' newly defined as it shall be overridden
 
 although it is yet undefined on input line 5.
-)
-("./conteudo/3 - ages II/conteudo/sprints/sprint 3.tex" [30])
-("./conteudo/3 - ages II/conteudo/sprints/sprint 4.tex"
+ [31])
+(./conteudo/3 - ages II/conteudo/sprints/sprint 3.tex [32])
+(./conteudo/3 - ages II/conteudo/sprints/sprint 4.tex
 Package acronym Info: Label `acro:url' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:aws' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
- [31]))
-("./conteudo/3 - ages II/conteudo/4 - conclusao.tex" [32])) [33]
-\openout2 = conteudo/4 - ages III/index.aux
+))
+(./conteudo/3 - ages II/conteudo/4 - conclusao.tex [33])) [34]
+\openout2 = `"conteudo/4 - ages III/index.aux"'.
 
-("./conteudo/4 - ages III/index.tex"
+
+(./conteudo/4 - ages III/index.tex
 Cap\'{\i }tulo 4.
-("./conteudo/4 - ages III/conteudo/1 - introducao.tex"
-<conteudo/4 - ages III/images/fig6-time.jpg, id=408, 1284.8pt x 963.6pt>
+(./conteudo/4 - ages III/conteudo/1 - introducao.tex
+<conteudo/4 - ages III/images/fig6-time.jpg, id=443, 1284.8pt x 963.6pt>
 File: conteudo/4 - ages III/images/fig6-time.jpg Graphic file (type jpg)
 <use conteudo/4 - ages III/images/fig6-time.jpg>
-Package luatex.def Info: conteudo/4 - ages III/images/fig6-time.jpg  used on in
+Package pdftex.def Info: conteudo/4 - ages III/images/fig6-time.jpg  used on in
 put line 13.
-(luatex.def)             Requested size: 409.71692pt x 307.28496pt.
+(pdftex.def)             Requested size: 409.71692pt x 307.28496pt.
 )
-("./conteudo/4 - ages III/conteudo/2 - desenvolvimento.tex" [34
+(./conteudo/4 - ages III/conteudo/2 - desenvolvimento.tex [35
 
 
 
 
-] [35<./conteudo/4 - ages III/images/fig6-time.jpg>]
-<conteudo/4 - ages III/images/fig7-modelo-relacional.png, id=427, 944.02687pt x
+] [36 <./conteudo/4 - ages III/images/fig6-time.jpg>]
+<conteudo/4 - ages III/images/fig7-modelo-relacional.png, id=460, 944.02687pt x
  489.32813pt>
 File: conteudo/4 - ages III/images/fig7-modelo-relacional.png Graphic file (typ
 e png)
 <use conteudo/4 - ages III/images/fig7-modelo-relacional.png>
-Package luatex.def Info: conteudo/4 - ages III/images/fig7-modelo-relacional.pn
+Package pdftex.def Info: conteudo/4 - ages III/images/fig7-modelo-relacional.pn
 g  used on input line 27.
-(luatex.def)             Requested size: 409.71692pt x 212.37814pt.
- [36]
-Overfull \hbox (7.94994pt too wide) in paragraph at lines 36--37
-[]\T1/phv/m/n/12 O pro-jeto To-tem In-te-ra-tivo foi de-sen-vol-vido uti-li-zand
-o uma ar-qui-te-tura cliente-servidor
+(pdftex.def)             Requested size: 409.71692pt x 212.37814pt.
+ [37]
+Overfull \hbox (7.57475pt too wide) in paragraph at lines 36--37
+[]\T1/phv/m/n/12 O pro-jeto To-tem In-te-ra-tivo foi de-sen-vol-vido uti-li-zan
+do uma ar-qui-te-tura cliente-servidor
  []
 
-[37<./conteudo/4 - ages III/images/fig7-modelo-relacional.png>] [38] [39])
-("./conteudo/4 - ages III/conteudo/3 - atividades.tex" [40]
-("./conteudo/4 - ages III/conteudo/sprints/sprint 0.tex")
-("./conteudo/4 - ages III/conteudo/sprints/sprint 1.tex" [41] [42])
-("./conteudo/4 - ages III/conteudo/sprints/sprint 2.tex" [43])
-("./conteudo/4 - ages III/conteudo/sprints/sprint 3.tex" [44]
-<conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg, id=512, 1606.0pt x 80
+[38 <./conteudo/4 - ages III/images/fig7-modelo-relacional.png>] [39] [40])
+(./conteudo/4 - ages III/conteudo/3 - atividades.tex
+(./conteudo/4 - ages III/conteudo/sprints/sprint 0.tex [41])
+(./conteudo/4 - ages III/conteudo/sprints/sprint 1.tex [42])
+(./conteudo/4 - ages III/conteudo/sprints/sprint 2.tex [43])
+(./conteudo/4 - ages III/conteudo/sprints/sprint 3.tex [44]
+<conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg, id=517, 1606.0pt x 80
 9.0225pt>
 File: conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg Graphic file (typ
 e jpg)
 <use conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg>
-Package luatex.def Info: conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jp
+Package pdftex.def Info: conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jp
 g  used on input line 13.
-(luatex.def)             Requested size: 409.71692pt x 206.3906pt.
+(pdftex.def)             Requested size: 409.71692pt x 206.3906pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 15.
- [45<./conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg>]
-<conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg, id=522, 1224.575pt x 8
+ [45]
+<conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg, id=526, 1224.575pt x 8
 07.015pt>
 File: conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg Graphic file (type
  jpg)
 <use conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg>
-Package luatex.def Info: conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg
+Package pdftex.def Info: conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg
   used on input line 31.
-(luatex.def)             Requested size: 409.71692pt x 270.00998pt.
- [46<./conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg>])
-("./conteudo/4 - ages III/conteudo/sprints/sprint 4.tex"
-<conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png, id=536, 1072.75781
+(pdftex.def)             Requested size: 409.71692pt x 270.00998pt.
+ [46 <./conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg>] [47 <./conteu
+do/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg>])
+(./conteudo/4 - ages III/conteudo/sprints/sprint 4.tex
+<conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png, id=543, 1072.75781
 pt x 579.66562pt>
 File: conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png Graphic file (
 type png)
 <use conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png>
-Package luatex.def Info: conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final
+Package pdftex.def Info: conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final
 .png  used on input line 13.
-(luatex.def)             Requested size: 409.71692pt x 221.38968pt.
- [47] [48<./conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png>]))
-("./conteudo/4 - ages III/conteudo/4 - conclusao.tex"
-Overfull \hbox (2.49026pt too wide) in paragraph at lines 3--4
-[]\T1/phv/m/n/12 Mi-nha ex-pe-ri-ên-cia como [][] III no pro-jeto To-tem In-te-
-ra-tivo re-pre-sen-tou um marco
+(pdftex.def)             Requested size: 409.71692pt x 221.38968pt.
+ [48] [49 <./conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png>]))
+(./conteudo/4 - ages III/conteudo/4 - conclusao.tex
+Overfull \hbox (2.11508pt too wide) in paragraph at lines 3--4
+[]\T1/phv/m/n/12 Minha ex-pe-ri-�n-cia como [][] III no pro-jeto To-tem In-te-r
+a-tivo re-pre-sen-tou um marco
  []
 
-[49])) [50]
-\openout2 = conteudo/5 - ages IV/index.aux
- ("./conteudo/5 - ages IV/index.tex"
+[50])) [51]
+\openout2 = `"conteudo/5 - ages IV/index.aux"'.
+
+ (./conteudo/5 - ages IV/index.tex
 Cap\'{\i }tulo 5.
-("./conteudo/5 - ages IV/conteudo/1 - introducao.tex"
-<conteudo/5 - ages IV/images/fig11-time-estudify.png, id=572, 1284.8pt x 963.6p
+(./conteudo/5 - ages IV/conteudo/1 - introducao.tex
+<conteudo/5 - ages IV/images/fig11-time-estudify.png, id=574, 1284.8pt x 963.6p
 t>
 File: conteudo/5 - ages IV/images/fig11-time-estudify.png Graphic file (type pn
 g)
 <use conteudo/5 - ages IV/images/fig11-time-estudify.png>
-Package luatex.def Info: conteudo/5 - ages IV/images/fig11-time-estudify.png  u
+Package pdftex.def Info: conteudo/5 - ages IV/images/fig11-time-estudify.png  u
 sed on input line 13.
-(luatex.def)             Requested size: 409.71692pt x 307.28496pt.
+(pdftex.def)             Requested size: 409.71692pt x 307.28496pt.
 )
-("./conteudo/5 - ages IV/conteudo/2 - desenvolvimento.tex" [51
+(./conteudo/5 - ages IV/conteudo/2 - desenvolvimento.tex [52
 
 
 
 
-] [52<./conteudo/5 - ages IV/images/fig11-time-estudify.png>]
-<conteudo/5 - ages IV/images/fig12-modelo-conceitual.png, id=592, 1014.79124pt 
+] [53 <./conteudo/5 - ages IV/images/fig11-time-estudify.png (PNG copy)>]
+<conteudo/5 - ages IV/images/fig12-modelo-conceitual.png, id=591, 1014.79124pt 
 x 670.75594pt>
 File: conteudo/5 - ages IV/images/fig12-modelo-conceitual.png Graphic file (typ
 e png)
 <use conteudo/5 - ages IV/images/fig12-modelo-conceitual.png>
-Package luatex.def Info: conteudo/5 - ages IV/images/fig12-modelo-conceitual.pn
+Package pdftex.def Info: conteudo/5 - ages IV/images/fig12-modelo-conceitual.pn
 g  used on input line 22.
-(luatex.def)             Requested size: 409.71692pt x 270.8154pt.
+(pdftex.def)             Requested size: 409.71692pt x 270.8154pt.
 Package acronym Info: Label `acro:dto' newly defined as it shall be overridden
 although it is yet undefined on input line 29.
- [53<./conteudo/5 - ages IV/images/fig12-modelo-conceitual.png>]
-<conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png, id=604, 825.0825pt x 718
+ [54 <./conteudo/5 - ages IV/images/fig12-modelo-conceitual.png>]
+<conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png, id=600, 825.0825pt x 718
 .685pt>
 File: conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png Graphic file (type p
 ng)
 <use conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png>
-Package luatex.def Info: conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png  
+Package pdftex.def Info: conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png  
 used on input line 39.
-(luatex.def)             Requested size: 409.71692pt x 356.88518pt.
-<conteudo/5 - ages IV/images/fig14-prototipos.png, id=607, 475.02469pt x 539.76
+(pdftex.def)             Requested size: 409.71692pt x 356.88518pt.
+<conteudo/5 - ages IV/images/fig14-prototipos.png, id=603, 475.02469pt x 539.76
 656pt>
 File: conteudo/5 - ages IV/images/fig14-prototipos.png Graphic file (type png)
 <use conteudo/5 - ages IV/images/fig14-prototipos.png>
-Package luatex.def Info: conteudo/5 - ages IV/images/fig14-prototipos.png  used
+Package pdftex.def Info: conteudo/5 - ages IV/images/fig14-prototipos.png  used
  on input line 52.
-(luatex.def)             Requested size: 409.71692pt x 465.57387pt.
- [54<./conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png>] [55<./conteudo/5 -
- ages IV/images/fig14-prototipos.png>]
+(pdftex.def)             Requested size: 409.71692pt x 465.57387pt.
+ [55 <./conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png (PNG copy)>] [56 <
+./conteudo/5 - ages IV/images/fig14-prototipos.png>]
 Package acronym Info: Label `acro:orm' newly defined as it shall be overridden
-although it is yet undefined on input line 71.
+although it is yet undefined on input line 65.
+) (./conteudo/5 - ages IV/conteudo/3 - atividades.tex
+(./conteudo/5 - ages IV/conteudo/sprints/sprint 0.tex [57] [58] [59])
+(./conteudo/5 - ages IV/conteudo/sprints/sprint 1.tex [60] [61]))) [62]
+\openout2 = `"conteudo/6 - consideracoes/consideracoes.aux"'.
 
-Overfull \hbox (1.92085pt too wide) in paragraph at lines 71--72
-[]\T1/phv/m/n/12 Object-Relational Map-ping ([])[] (\T1/phv/m/sl/12 Object-Relat
-ional Map-per\T1/phv/m/n/12 ) que atua como ponte
- []
 
-[56]) ("./conteudo/5 - ages IV/conteudo/3 - atividades.tex"
-("./conteudo/5 - ages IV/conteudo/sprints/sprint 0.tex" [57] [58])
-("./conteudo/5 - ages IV/conteudo/sprints/sprint 1.tex" [59] [60]))) [61]
-[62]
-\openout2 = conteudo/6 - consideracoes/consideracoes.aux
- ("./conteudo/6 - consideracoes/consideracoes.tex"
+(./conteudo/6 - consideracoes/consideracoes.tex
 Cap\'{\i }tulo 6.
 ) [63
 
@@ -1723,78 +1563,69 @@ Cap\'{\i }tulo 6.
 
 
 ]
-\openout2 = conteudo/7 - pos/referencias.aux
- ("./conteudo/7 - pos/referencias.tex" [64
+\openout2 = `"conteudo/7 - pos/referencias.aux"'.
+
+ (./conteudo/7 - pos/referencias.tex [64
 
 
 
 
-] [65]) [66]
-\openout2 = conteudo/8 - apendices/apendices.aux
+]) [65]
+\openout2 = `"conteudo/8 - apendices/apendices.aux"'.
 
-("./conteudo/8 - apendices/apendices.tex")
-Missing character: There is no – (U+2013) in font phvr8t!
-Missing character: There is no – (U+2013) in font phvr8t!
-[67
+
+(./conteudo/8 - apendices/apendices.tex) [66
 
 
 
 
-
-Missing character: There is no – (U+2013) in font phvr8t!
 ]
 \tf@lof=\write5
+\openout5 = `main.lof'.
 
-\openout5 = main.lof
 \tf@lot=\write6
+\openout6 = `main.lot'.
 
-\openout6 = main.lot
 \tf@toc=\write7
+\openout7 = `main.toc'.
 
-\openout7 = main.toc
- (./main.aux ("./conteudo/0 - pre/0.1 - capa.aux")
-("./conteudo/0 - pre/0.2 - dedicatoria.aux")
-("./conteudo/0 - pre/0.3 - agradecimentos.aux")
-("./conteudo/0 - pre/0.4 - epigrafe.aux") ("./conteudo/0 - pre/0.5 - resumo.aux
-") ("./conteudo/0 - pre/0.6 - ilustracoes.aux")
-("./conteudo/0 - pre/0.7 - tabelas.aux") ("./conteudo/0 - pre/0.8 - siglas.aux"
-) ("./conteudo/0 - pre/0.9 - sumario.aux")
-("./conteudo/1 - apresentacao/apresentacao.aux")
-("./conteudo/2 - ages I/index.aux") ("./conteudo/3 - ages II/index.aux")
-("./conteudo/4 - ages III/index.aux") ("./conteudo/5 - ages IV/index.aux")
-("./conteudo/6 - consideracoes/consideracoes.aux")
-("./conteudo/7 - pos/referencias.aux") ("./conteudo/8 - apendices/apendices.aux
-"))
+ (./main.aux
+(./conteudo/0 - pre/0.1 - capa.aux) (./conteudo/0 - pre/0.2 - dedicatoria.aux)
+(./conteudo/0 - pre/0.3 - agradecimentos.aux)
+(./conteudo/0 - pre/0.4 - epigrafe.aux) (./conteudo/0 - pre/0.5 - resumo.aux)
+(./conteudo/0 - pre/0.6 - ilustracoes.aux)
+(./conteudo/0 - pre/0.7 - tabelas.aux) (./conteudo/0 - pre/0.8 - siglas.aux)
+(./conteudo/0 - pre/0.9 - sumario.aux)
+(./conteudo/1 - apresentacao/apresentacao.aux) (./conteudo/2 - ages I/index.aux
+) (./conteudo/3 - ages II/index.aux) (./conteudo/4 - ages III/index.aux)
+(./conteudo/5 - ages IV/index.aux)
+(./conteudo/6 - consideracoes/consideracoes.aux)
+(./conteudo/7 - pos/referencias.aux) (./conteudo/8 - apendices/apendices.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
-\openout1 = main.run.xml
-)
-
-Here is how much of LuaTeX's memory you used:
- 28150 strings out of 475921
- 125061,1648299 words of node,token memory allocated
- 4954 words of node memory still in use:
-   4 hlist, 1 vlist, 2 rule, 6 glue, 10 kern, 1 glyph, 1360 attribute, 198 glue_
-spec, 448 attribute_list, 4 write, 18 pdf_action nodes
-   avail lists: 1:7,2:18152,3:1320,4:77,5:385,6:52,7:6375,8:113,9:428,10:75,11:7
-60
- 49362 multiletter control sequences out of 65536+600000
- 44 fonts using 2961839 bytes
- 99i,12n,101p,1321b,4308s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2026/texmf-
-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2026/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt12.
-pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/
-2026/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2026/texmf-dist/
-fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (68 pages, 4043530 bytes).
-
-PDF statistics: 910 PDF objects out of 1000 (max. 8388607)
- 806 compressed objects within 9 object streams
- 235 named destinations out of 1000 (max. 1048576)
- 209 words of extra memory for PDF output out of 10000 (max. 100000000)
+ ) 
+Here is how much of TeX's memory you used:
+ 26872 strings out of 467343
+ 492189 string characters out of 5419647
+ 1481160 words of memory out of 5000000
+ 55230 multiletter control sequences out of 15000+600000
+ 652309 words of font info for 67 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,12n,107p,1320b,4312s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
+live/2026/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/texlive/2026/
+texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2026/texmf-dist/font
+s/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/hel
+vetic/uhvro8a.pfb>
+Output written on main.pdf (67 pages, 4046388 bytes).
+PDF statistics:
+ 1042 PDF objects out of 1200 (max. 8388607)
+ 933 compressed objects within 10 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 607 words of extra memory for PDF output out of 10000 (max. 10000000)
 
