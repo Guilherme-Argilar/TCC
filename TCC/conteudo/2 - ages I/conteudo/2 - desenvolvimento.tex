@@ -27,10 +27,68 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
   Durante a apresentação do projeto, o \textit{stakeholder} afirmou que não haveria a necessidade de armazenar os dados, pois caso fosse necessário o usuário poderia apenas reescrevê-los. Após uma conversa com o time, conseguimos mostrar como um banco de dados, mesmo que o mais simplificado possível, poderia agregar no seu aplicativo.
 
 \subsection{Arquitetura Utilizada}
-  Este projeto foi desenvolvido utilizando a arquitetura MVC (\textit{Model-View-Controller}) e é possível encontrar mais informações na página de arquitetura do projeto: \url{https://tools.ages.pucrs.br/projeto-focus/wiki/-/wikis/arquitetura}.
+  Este projeto foi desenvolvido utilizando a arquitetura MVC (\textit{Model-View-Controller}) no \textit{front-end}. Esse padrão arquitetural tem como objetivo separar as responsabilidades da aplicação em três camadas distintas, o que facilita a manutenção, a organização e o reuso do código. As camadas são:
+
+\begin{itemize}
+    \item \textbf{\textit{Model}:} camada de manipulação de dados, responsável pela leitura, escrita e validação das informações. É completamente independente das demais camadas;
+    \item \textbf{\textit{View}:} camada de interação com o usuário, que representa a parte visual da aplicação e é alimentada pela camada \textit{Controller} somente quando necessário;
+    \item \textbf{\textit{Controller}:} camada responsável por receber todas as requisições do usuário. Seus métodos controlam qual \textit{Model} utilizar e qual \textit{View} será apresentada ao usuário.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Diagrama do padrão arquitetural MVC}
+    \includegraphics[width=0.9\linewidth]{conteudo/2 - ages I/images/fig3-arquitetura-mvc-focus.png}
+
+    Fonte: Wiki do projeto
+    \label{fig:focus-mvc}
+\end{figure}
+
+  No \textit{front-end}, desenvolvido em Flutter, optou-se pela adoção do padrão MVC, enquanto no \textit{back-end} foram utilizadas as chamadas diretas ao Firebase. A comunicação da aplicação ainda contempla uma API externa do ChatGPT, implementada em Go, responsável por integrar recursos de chat baseados em inteligência artificial. Essa API é utilizada para gerar frases de acordo com os objetivos selecionados pelo usuário.
+
+  A Figura~\ref{fig:focus-sistema} apresenta a visão geral da arquitetura, evidenciando como ocorre a comunicação entre as partes do sistema. O aplicativo desenvolvido em Flutter atua como ponto central de interação com o usuário e se comunica com dois serviços distintos: o Firebase, utilizado para autenticação e armazenamento dos dados; e a API externa do ChatGPT, responsável por fornecer as frases motivacionais geradas por inteligência artificial. Dessa forma, o \textit{front-end} concentra a lógica de apresentação e orquestra as requisições, enquanto os serviços de \textit{back-end} ficam responsáveis, respectivamente, pela persistência das informações e pelo processamento das respostas baseadas em IA.
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Diagrama geral do sistema}
+    \includegraphics[width=0.9\linewidth]{conteudo/2 - ages I/images/fig4-arquitetura-sistema-focus.png}
+
+    Fonte: Wiki do projeto
+    \label{fig:focus-sistema}
+\end{figure}
+
+  Para a infraestrutura, foi utilizada a plataforma de \textit{cloud computing} EC2, da Amazon, com o propósito de alocar os \textit{runners} do GitLab e manter a \textit{pipeline} do projeto em execução. Informações adicionais, bem como os diagramas de arquitetura e de \textit{deploy}, podem ser encontradas na página de arquitetura do projeto: \url{https://tools.ages.pucrs.br/projeto-focus/wiki/-/wikis/arquitetura}.
 
 \subsection{Protótipos das Telas Desenvolvidas}
   Os protótipos deste projeto estão disponíveis no endereço a seguir: \url{https://tools.ages.pucrs.br/projeto-focus/wiki/-/wikis/design}.
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Protótipos das telas principais: inicial, frases, objetivos e notificação}
+    \includegraphics[height=0.33\textheight]{conteudo/2 - ages I/images/fig5-proto-tela-inicial.png}
+    \hfill
+    \includegraphics[height=0.33\textheight]{conteudo/2 - ages I/images/fig7-proto-frases.png}
+    \hfill
+    \includegraphics[height=0.33\textheight]{conteudo/2 - ages I/images/fig8-proto-objetivos.png}
+    \hfill
+    \includegraphics[height=0.33\textheight]{conteudo/2 - ages I/images/fig9-proto-notificacao.png}
+
+    Fonte: Wiki do projeto
+    \label{fig:focus-proto-telas}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Protótipo das telas de cadastro}
+    \includegraphics[width=0.85\linewidth]{conteudo/2 - ages I/images/fig6-proto-cadastro.png}
+
+    Fonte: Wiki do projeto
+    \label{fig:focus-proto-cadastro}
+\end{figure}
 
 \subsection{Tecnologias Utilizadas}
   Nesta seção será abordado um pouco sobre as tecnologias utilizadas ao longo do projeto.
