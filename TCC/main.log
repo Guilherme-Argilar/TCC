@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.20)  15 JUN 2026 10:26
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.20)  15 JUN 2026 15:57
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -798,7 +798,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 (c:/texlive/2026/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 29.
+Package hyperref Info: Option `colorlinks' set `true' on input line 32.
 
 (c:/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
@@ -1474,7 +1474,7 @@ although it is yet undefined on input line 5.
  ("./conteudo/2 - ages I/index.tex"
 Cap\'{\i }tulo 2.
 ("./conteudo/2 - ages I/conteudo/1 - introducao.tex"
-<conteudo/2 - ages I/images/fig1-time-focus.png, id=300, 1027.84pt x 578.16pt>
+<conteudo/2 - ages I/images/fig1-time-focus.png, id=310, 1027.84pt x 578.16pt>
 File: conteudo/2 - ages I/images/fig1-time-focus.png Graphic file (type png)
 <use conteudo/2 - ages I/images/fig1-time-focus.png>
 Package luatex.def Info: conteudo/2 - ages I/images/fig1-time-focus.png  used o
@@ -1500,7 +1500,7 @@ LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
 (c:/texlive/2026/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 ) [14<./conteudo/2 - ages I/images/fig1-time-focus.png>]
-<conteudo/2 - ages I/images/fig2-mer-focus.png, id=317, 455.20062pt x 247.42438
+<conteudo/2 - ages I/images/fig2-mer-focus.png, id=327, 455.20062pt x 247.42438
 pt>
 File: conteudo/2 - ages I/images/fig2-mer-focus.png Graphic file (type png)
 <use conteudo/2 - ages I/images/fig2-mer-focus.png>
@@ -1532,7 +1532,7 @@ although it is yet undefined on input line 18.
 ("./conteudo/3 - ages II/index.tex"
 Cap\'{\i }tulo 3.
 ("./conteudo/3 - ages II/conteudo/1 - introducao.tex"
-<conteudo/3 - ages II/images/fig3-time-decola.jpg, id=388, 1027.84pt x 441.65pt
+<conteudo/3 - ages II/images/fig3-time-decola.jpg, id=398, 1027.84pt x 441.65pt
 >
 File: conteudo/3 - ages II/images/fig3-time-decola.jpg Graphic file (type jpg)
 <use conteudo/3 - ages II/images/fig3-time-decola.jpg>
@@ -1546,7 +1546,7 @@ Package luatex.def Info: conteudo/3 - ages II/images/fig3-time-decola.jpg  used
 
 
 ] [25<./conteudo/3 - ages II/images/fig3-time-decola.jpg>]
-<conteudo/3 - ages II/images/fig4-modelo-relacional.png, id=408, 660.96938pt x 
+<conteudo/3 - ages II/images/fig4-modelo-relacional.png, id=418, 660.96938pt x 
 506.6428pt>
 File: conteudo/3 - ages II/images/fig4-modelo-relacional.png Graphic file (type
  png)
@@ -1555,7 +1555,7 @@ Package luatex.def Info: conteudo/3 - ages II/images/fig4-modelo-relacional.png
   used on input line 27.
 (luatex.def)             Requested size: 409.71692pt x 314.06117pt.
  [26]
-<conteudo/3 - ages II/images/fig5-modelo-autenticacao.png, id=413, 630.355pt x 
+<conteudo/3 - ages II/images/fig5-modelo-autenticacao.png, id=423, 630.355pt x 
 390.45876pt>
 File: conteudo/3 - ages II/images/fig5-modelo-autenticacao.png Graphic file (ty
 pe png)
@@ -1565,78 +1565,86 @@ ng  used on input line 42.
 (luatex.def)             Requested size: 409.71692pt x 253.78922pt.
  [27<./conteudo/3 - ages II/images/fig4-modelo-relacional.png>] [28<./conteudo/3
  - ages II/images/fig5-modelo-autenticacao.png>]
-<conteudo/3 - ages II/images/fig5a-tela-pagina-inicial.png, id=424, 1445.4pt x 
+<conteudo/3 - ages II/images/fig5a-tela-pagina-inicial.png, id=439, 1445.4pt x 
 1149.29375pt>
 File: conteudo/3 - ages II/images/fig5a-tela-pagina-inicial.png Graphic file (t
 ype png)
 <use conteudo/3 - ages II/images/fig5a-tela-pagina-inicial.png>
 Package luatex.def Info: conteudo/3 - ages II/images/fig5a-tela-pagina-inicial.
-png  used on input line 67.
-(luatex.def)             Requested size: 409.71692pt x 325.78091pt.
+png  used on input line 69.
+(luatex.def)             Requested size: 300.49937pt x 238.93874pt.
  [29]
-<conteudo/3 - ages II/images/fig5b-tela-administracao.png, id=432, 1445.4pt x 1
+<conteudo/3 - ages II/images/fig5b-tela-administracao.png, id=447, 1445.4pt x 1
 405.25pt>
 File: conteudo/3 - ages II/images/fig5b-tela-administracao.png Graphic file (ty
 pe png)
 <use conteudo/3 - ages II/images/fig5b-tela-administracao.png>
 Package luatex.def Info: conteudo/3 - ages II/images/fig5b-tela-administracao.p
-ng  used on input line 77.
-(luatex.def)             Requested size: 409.71692pt x 398.33473pt.
- [30<./conteudo/3 - ages II/images/fig5a-tela-pagina-inicial.png>]
-<conteudo/3 - ages II/images/fig5c-tela-areas.png, id=439, 1445.4pt x 1027.84pt
+ng  used on input line 79.
+(luatex.def)             Requested size: 245.75887pt x 238.93222pt.
+<conteudo/3 - ages II/images/fig5c-tela-areas.png, id=448, 1445.4pt x 1027.84pt
 >
 File: conteudo/3 - ages II/images/fig5c-tela-areas.png Graphic file (type png)
 <use conteudo/3 - ages II/images/fig5c-tela-areas.png>
 Package luatex.def Info: conteudo/3 - ages II/images/fig5c-tela-areas.png  used
- on input line 87.
-(luatex.def)             Requested size: 409.71692pt x 291.35341pt.
- [31<./conteudo/3 - ages II/images/fig5b-tela-administracao.png>]
-<conteudo/3 - ages II/images/fig5d-tela-multipla-escolha.png, id=445, 1445.4pt 
+ on input line 89.
+(luatex.def)             Requested size: 336.00792pt x 238.93896pt.
+ [30<./conteudo/3 - ages II/images/fig5a-tela-pagina-inicial.png><./conteudo/3 -
+ ages II/images/fig5b-tela-administracao.png>]
+<conteudo/3 - ages II/images/fig5d-tela-multipla-escolha.png, id=456, 1445.4pt 
 x 1027.84pt>
 File: conteudo/3 - ages II/images/fig5d-tela-multipla-escolha.png Graphic file 
 (type png)
 <use conteudo/3 - ages II/images/fig5d-tela-multipla-escolha.png>
 Package luatex.def Info: conteudo/3 - ages II/images/fig5d-tela-multipla-escolh
-a.png  used on input line 97.
-(luatex.def)             Requested size: 409.71692pt x 291.35341pt.
-
-[32<./conteudo/3 - ages II/images/fig5c-tela-areas.png><./conteudo/3 - ages II/i
-mages/fig5d-tela-multipla-escolha.png>])
-("./conteudo/3 - ages II/conteudo/3 - atividades.tex"
-("./conteudo/3 - ages II/conteudo/sprints/sprint 0.tex" [33])
-("./conteudo/3 - ages II/conteudo/sprints/sprint 1.tex" [34])
+a.png  used on input line 99.
+(luatex.def)             Requested size: 336.00792pt x 238.93896pt.
+<conteudo/3 - ages II/images/fig5e-tela-conteudo-externo.png, id=457, 1445.4pt 
+x 1027.84pt>
+File: conteudo/3 - ages II/images/fig5e-tela-conteudo-externo.png Graphic file 
+(type png)
+<use conteudo/3 - ages II/images/fig5e-tela-conteudo-externo.png>
+Package luatex.def Info: conteudo/3 - ages II/images/fig5e-tela-conteudo-extern
+o.png  used on input line 109.
+(luatex.def)             Requested size: 336.00792pt x 238.93896pt.
+ [31<./conteudo/3 - ages II/images/fig5c-tela-areas.png><./conteudo/3 - ages II/
+images/fig5d-tela-multipla-escolha.png>] [32<./conteudo/3 - ages II/images/fig5e
+-tela-conteudo-externo.png>]) ("./conteudo/3 - ages II/conteudo/3 - atividades.
+tex"
+("./conteudo/3 - ages II/conteudo/sprints/sprint 0.tex")
+("./conteudo/3 - ages II/conteudo/sprints/sprint 1.tex" [33])
 ("./conteudo/3 - ages II/conteudo/sprints/sprint 2.tex"
 Package acronym Info: Label `acro:crud' newly defined as it shall be overridden
 
 although it is yet undefined on input line 5.
-)
-("./conteudo/3 - ages II/conteudo/sprints/sprint 3.tex" [35])
-("./conteudo/3 - ages II/conteudo/sprints/sprint 4.tex"
+ [34])
+("./conteudo/3 - ages II/conteudo/sprints/sprint 3.tex")
+("./conteudo/3 - ages II/conteudo/sprints/sprint 4.tex" [35]
 Package acronym Info: Label `acro:url' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:aws' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
- [36]))
-("./conteudo/3 - ages II/conteudo/4 - conclusao.tex" [37])) [38]
+))
+("./conteudo/3 - ages II/conteudo/4 - conclusao.tex" [36])) [37]
 \openout2 = conteudo/4 - ages III/index.aux
 
 ("./conteudo/4 - ages III/index.tex"
 Cap\'{\i }tulo 4.
 ("./conteudo/4 - ages III/conteudo/1 - introducao.tex"
-<conteudo/4 - ages III/images/fig6-time.jpg, id=497, 1284.8pt x 963.6pt>
+<conteudo/4 - ages III/images/fig6-time.jpg, id=509, 1284.8pt x 963.6pt>
 File: conteudo/4 - ages III/images/fig6-time.jpg Graphic file (type jpg)
 <use conteudo/4 - ages III/images/fig6-time.jpg>
 Package luatex.def Info: conteudo/4 - ages III/images/fig6-time.jpg  used on in
 put line 13.
 (luatex.def)             Requested size: 409.71692pt x 307.28496pt.
 )
-("./conteudo/4 - ages III/conteudo/2 - desenvolvimento.tex" [39
+("./conteudo/4 - ages III/conteudo/2 - desenvolvimento.tex" [38
 
 
 
 
-] [40<./conteudo/4 - ages III/images/fig6-time.jpg>]
-<conteudo/4 - ages III/images/fig7-modelo-relacional.png, id=517, 944.02687pt x
+] [39<./conteudo/4 - ages III/images/fig6-time.jpg>]
+<conteudo/4 - ages III/images/fig7-modelo-relacional.png, id=528, 944.02687pt x
  489.32813pt>
 File: conteudo/4 - ages III/images/fig7-modelo-relacional.png Graphic file (typ
 e png)
@@ -1644,19 +1652,64 @@ e png)
 Package luatex.def Info: conteudo/4 - ages III/images/fig7-modelo-relacional.pn
 g  used on input line 27.
 (luatex.def)             Requested size: 409.71692pt x 212.37814pt.
- [41]
+ [40]
 Overfull \hbox (7.94994pt too wide) in paragraph at lines 36--37
 []\T1/phv/m/n/12 O pro-jeto To-tem In-te-ra-tivo foi de-sen-vol-vido uti-li-zand
 o uma ar-qui-te-tura cliente-servidor
  []
 
-[42<./conteudo/4 - ages III/images/fig7-modelo-relacional.png>] [43] [44])
+[41<./conteudo/4 - ages III/images/fig7-modelo-relacional.png>] [42]
+<conteudo/4 - ages III/images/tela-inicial-mapa.png, id=549, 1374.13374pt x 772
+.8875pt>
+File: conteudo/4 - ages III/images/tela-inicial-mapa.png Graphic file (type png
+)
+<use conteudo/4 - ages III/images/tela-inicial-mapa.png>
+Package luatex.def Info: conteudo/4 - ages III/images/tela-inicial-mapa.png  us
+ed on input line 95.
+(luatex.def)             Requested size: 386.95642pt x 217.64531pt.
+ [43]
+<conteudo/4 - ages III/images/menu-categorias.png, id=557, 370.38374pt x 376.40
+625pt>
+File: conteudo/4 - ages III/images/menu-categorias.png Graphic file (type png)
+<use conteudo/4 - ages III/images/menu-categorias.png>
+Package luatex.def Info: conteudo/4 - ages III/images/menu-categorias.png  used
+ on input line 107.
+(luatex.def)             Requested size: 172.99527pt x 175.8082pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 108.
+<conteudo/4 - ages III/images/menu-expositores.png, id=558, 350.30875pt x 419.5
+675pt>
+File: conteudo/4 - ages III/images/menu-expositores.png Graphic file (type png)
+
+<use conteudo/4 - ages III/images/menu-expositores.png>
+Package luatex.def Info: conteudo/4 - ages III/images/menu-expositores.png  use
+d on input line 111.
+(luatex.def)             Requested size: 172.99979pt x 207.20319pt.
+<conteudo/4 - ages III/images/busca-expositores.png, id=559, 1782.66pt x 333.24
+5pt>
+File: conteudo/4 - ages III/images/busca-expositores.png Graphic file (type png
+)
+<use conteudo/4 - ages III/images/busca-expositores.png>
+Package luatex.def Info: conteudo/4 - ages III/images/busca-expositores.png  us
+ed on input line 122.
+(luatex.def)             Requested size: 409.70396pt x 76.58879pt.
+<conteudo/4 - ages III/images/config-admin.png, id=560, 1927.2pt x 1084.05pt>
+File: conteudo/4 - ages III/images/config-admin.png Graphic file (type png)
+<use conteudo/4 - ages III/images/config-admin.png>
+Package luatex.def Info: conteudo/4 - ages III/images/config-admin.png  used on
+ input line 132.
+(luatex.def)             Requested size: 386.93292pt x 217.64977pt.
+
+[44<./conteudo/4 - ages III/images/tela-inicial-mapa.png><./conteudo/4 - ages II
+I/images/menu-categorias.png><./conteudo/4 - ages III/images/menu-expositores.pn
+g><./conteudo/4 - ages III/images/busca-expositores.png>] [45<./conteudo/4 - age
+s III/images/config-admin.png>])
 ("./conteudo/4 - ages III/conteudo/3 - atividades.tex"
-("./conteudo/4 - ages III/conteudo/sprints/sprint 0.tex" [45])
-("./conteudo/4 - ages III/conteudo/sprints/sprint 1.tex" [46])
-("./conteudo/4 - ages III/conteudo/sprints/sprint 2.tex" [47])
-("./conteudo/4 - ages III/conteudo/sprints/sprint 3.tex" [48]
-<conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg, id=578, 1606.0pt x 80
+("./conteudo/4 - ages III/conteudo/sprints/sprint 0.tex" [46])
+("./conteudo/4 - ages III/conteudo/sprints/sprint 1.tex" [47])
+("./conteudo/4 - ages III/conteudo/sprints/sprint 2.tex" [48])
+("./conteudo/4 - ages III/conteudo/sprints/sprint 3.tex" [49]
+<conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg, id=612, 1606.0pt x 80
 9.0225pt>
 File: conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg Graphic file (typ
 e jpg)
@@ -1666,8 +1719,8 @@ g  used on input line 13.
 (luatex.def)             Requested size: 409.71692pt x 206.3906pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 15.
- [49]
-<conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg, id=588, 1224.575pt x 8
+ [50<./conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg>]
+<conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg, id=623, 1224.575pt x 8
 07.015pt>
 File: conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg Graphic file (type
  jpg)
@@ -1675,10 +1728,9 @@ File: conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg Graphic file (type
 Package luatex.def Info: conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg
   used on input line 31.
 (luatex.def)             Requested size: 409.71692pt x 270.00998pt.
- [50<./conteudo/4 - ages III/images/fig8-mapa-desenvolvido.jpg>] [51<./conteudo/
-4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg>])
-("./conteudo/4 - ages III/conteudo/sprints/sprint 4.tex"
-<conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png, id=608, 1072.75781
+ [51<./conteudo/4 - ages III/images/fig9-mapa-tecnopuc-v1.jpg>])
+("./conteudo/4 - ages III/conteudo/sprints/sprint 4.tex" [52]
+<conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png, id=643, 1072.75781
 pt x 579.66562pt>
 File: conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png Graphic file (
 type png)
@@ -1686,19 +1738,19 @@ type png)
 Package luatex.def Info: conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final
 .png  used on input line 13.
 (luatex.def)             Requested size: 409.71692pt x 221.38968pt.
- [52] [53<./conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png>]))
-("./conteudo/4 - ages III/conteudo/4 - conclusao.tex"
+ [53<./conteudo/4 - ages III/images/fig10-mapa-tecnopuc-final.png>]))
+("./conteudo/4 - ages III/conteudo/4 - conclusao.tex" [54]
 Overfull \hbox (2.49026pt too wide) in paragraph at lines 3--4
 []\T1/phv/m/n/12 Mi-nha ex-pe-ri-ên-cia como [][] III no pro-jeto To-tem In-te-
 ra-tivo re-pre-sen-tou um marco
  []
 
-[54])) [55]
+)) [55]
 \openout2 = conteudo/5 - ages IV/index.aux
  ("./conteudo/5 - ages IV/index.tex"
 Cap\'{\i }tulo 5.
 ("./conteudo/5 - ages IV/conteudo/1 - introducao.tex"
-<conteudo/5 - ages IV/images/fig11-time-estudify.png, id=643, 1284.8pt x 963.6p
+<conteudo/5 - ages IV/images/fig11-time-estudify.png, id=672, 1284.8pt x 963.6p
 t>
 File: conteudo/5 - ages IV/images/fig11-time-estudify.png Graphic file (type pn
 g)
@@ -1713,7 +1765,7 @@ sed on input line 13.
 
 
 ] [57<./conteudo/5 - ages IV/images/fig11-time-estudify.png>]
-<conteudo/5 - ages IV/images/fig12-modelo-conceitual.png, id=662, 1014.79124pt 
+<conteudo/5 - ages IV/images/fig12-modelo-conceitual.png, id=691, 1014.79124pt 
 x 670.75594pt>
 File: conteudo/5 - ages IV/images/fig12-modelo-conceitual.png Graphic file (typ
 e png)
@@ -1724,7 +1776,7 @@ g  used on input line 22.
 Package acronym Info: Label `acro:dto' newly defined as it shall be overridden
 although it is yet undefined on input line 29.
  [58<./conteudo/5 - ages IV/images/fig12-modelo-conceitual.png>]
-<conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png, id=671, 825.0825pt x 718
+<conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png, id=700, 825.0825pt x 718
 .685pt>
 File: conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png Graphic file (type p
 ng)
@@ -1732,7 +1784,7 @@ ng)
 Package luatex.def Info: conteudo/5 - ages IV/images/fig13-diagrama-fluxo.png  
 used on input line 39.
 (luatex.def)             Requested size: 409.71692pt x 356.88518pt.
-<conteudo/5 - ages IV/images/fig14-prototipos.png, id=674, 475.02469pt x 539.76
+<conteudo/5 - ages IV/images/fig14-prototipos.png, id=703, 475.02469pt x 539.76
 656pt>
 File: conteudo/5 - ages IV/images/fig14-prototipos.png Graphic file (type png)
 <use conteudo/5 - ages IV/images/fig14-prototipos.png>
@@ -1809,15 +1861,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28193 strings out of 475892
+ 28269 strings out of 475892
  125061,1648299 words of node,token memory allocated
- 5070 words of node memory still in use:
-   4 hlist, 1 vlist, 2 rule, 6 glue, 14 kern, 1 glyph, 1396 attribute, 198 glue_
-spec, 460 attribute_list, 4 write, 18 pdf_action nodes
-   avail lists: 1:7,2:18800,3:1489,4:77,5:400,6:77,7:6085,8:113,9:576,10:75,11:7
-34
- 49436 multiletter control sequences out of 65536+600000
- 44 fonts using 2961839 bytes
+ 5258 words of node memory still in use:
+   4 hlist, 1 vlist, 2 rule, 6 glue, 18 kern, 1 glyph, 1459 attribute, 198 glue_
+spec, 481 attribute_list, 4 write, 18 pdf_action nodes
+   avail lists: 1:7,2:18800,3:1489,4:77,5:392,6:77,7:6085,8:102,9:576,10:75,11:7
+81
+ 49489 multiletter control sequences out of 65536+600000
+ 47 fonts using 3148591 bytes
  99i,12n,101p,1321b,4308s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2026/texmf-
 dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2026/texmf-dist/fonts/type1/public/
@@ -1825,10 +1877,10 @@ amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt12.
 pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/
 2026/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2026/texmf-dist/
 fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (71 pages, 4808956 bytes).
+Output written on main.pdf (71 pages, 6101281 bytes).
 
-PDF statistics: 1080 PDF objects out of 1200 (max. 8388607)
- 964 compressed objects within 10 object streams
- 216 named destinations out of 1000 (max. 1048576)
+PDF statistics: 1109 PDF objects out of 1200 (max. 8388607)
+ 981 compressed objects within 10 object streams
+ 221 named destinations out of 1000 (max. 1048576)
  537 words of extra memory for PDF output out of 10000 (max. 100000000)
 

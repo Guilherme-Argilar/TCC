@@ -308,6 +308,8 @@ INPUT ./conteudo/3 - ages II/images/fig5c-tela-areas.png
 INPUT ./conteudo/3 - ages II/images/fig5c-tela-areas.png
 INPUT ./conteudo/3 - ages II/images/fig5d-tela-multipla-escolha.png
 INPUT ./conteudo/3 - ages II/images/fig5d-tela-multipla-escolha.png
+INPUT ./conteudo/3 - ages II/images/fig5e-tela-conteudo-externo.png
+INPUT ./conteudo/3 - ages II/images/fig5e-tela-conteudo-externo.png
 INPUT ./conteudo/3 - ages II/conteudo/3 - atividades.tex
 INPUT ./conteudo/3 - ages II/conteudo/sprints/sprint 0.tex
 INPUT ./conteudo/3 - ages II/conteudo/sprints/sprint 1.tex
@@ -323,6 +325,19 @@ INPUT ./conteudo/4 - ages III/images/fig6-time.jpg
 INPUT ./conteudo/4 - ages III/conteudo/2 - desenvolvimento.tex
 INPUT ./conteudo/4 - ages III/images/fig7-modelo-relacional.png
 INPUT ./conteudo/4 - ages III/images/fig7-modelo-relacional.png
+INPUT ./conteudo/4 - ages III/images/tela-inicial-mapa.png
+INPUT ./conteudo/4 - ages III/images/tela-inicial-mapa.png
+INPUT ./conteudo/4 - ages III/images/menu-categorias.png
+INPUT ./conteudo/4 - ages III/images/menu-categorias.png
+INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT ./conteudo/4 - ages III/images/menu-expositores.png
+INPUT ./conteudo/4 - ages III/images/menu-expositores.png
+INPUT ./conteudo/4 - ages III/images/busca-expositores.png
+INPUT ./conteudo/4 - ages III/images/busca-expositores.png
+INPUT ./conteudo/4 - ages III/images/config-admin.png
+INPUT ./conteudo/4 - ages III/images/config-admin.png
 INPUT ./conteudo/4 - ages III/conteudo/3 - atividades.tex
 INPUT ./conteudo/4 - ages III/conteudo/sprints/sprint 0.tex
 INPUT ./conteudo/4 - ages III/conteudo/sprints/sprint 1.tex

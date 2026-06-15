@@ -1,0 +1,78 @@
+\changetocdepth {4}
+\setcounter {tocdepth}{3}
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{APRESENTAÇÃO DA TRAJETÓRIA DO ALUNO}}{11}{chapter.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{AGES I --- Projeto Focus}}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introdução}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Desenvolvimento do Projeto}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Repositório do Código Fonte do Projeto}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Banco de Dados Utilizado}{14}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Arquitetura Utilizada}{15}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Protótipos das Telas Desenvolvidas}{15}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Tecnologias Utilizadas}{16}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Atividades Desempenhadas Pelo Aluno no Projeto}{16}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}\textbf {Sprint 0}}{16}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}\textbf {Sprint 1}}{17}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}\textbf {Sprint 2}}{18}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}\textbf {Sprint 3}}{19}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}\textbf {Sprint 4}}{21}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Conclusão}{22}{section.2.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{AGES II --- Decola}}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introdução}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Desenvolvimento do Projeto}{25}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Repositório do Código Fonte do Projeto}{25}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Banco de Dados Utilizado}{25}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Arquitetura Utilizada}{27}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Backend}{27}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Frontend}{29}{subsubsection.3.2.3.2}%
+\contentsline {subsection}{\numberline {3.2.4}Protótipos das Telas Desenvolvidas}{29}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Tecnologias Utilizadas}{31}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Atividades Desempenhadas Pelo Aluno no Projeto}{32}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}\textbf {Sprint 0}}{32}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}\textbf {Sprint 1}}{33}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}\textbf {Sprint 2}}{34}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}\textbf {Sprint 3}}{34}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}\textbf {Sprint 4}}{35}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Conclusão}{36}{section.3.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{AGES III --- Totem Interativo}}{38}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introdução}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Desenvolvimento do Projeto}{39}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Repositório do Código Fonte do Projeto}{39}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Banco de Dados Utilizado}{40}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Arquitetura Utilizada}{41}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Frontend}{41}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}Backend}{42}{subsubsection.4.2.3.2}%
+\contentsline {subsection}{\numberline {4.2.4}Protótipos das Telas Desenvolvidas}{43}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Tecnologias Utilizadas}{45}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Atividades Desempenhadas Pelo Aluno no Projeto}{46}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}\textbf {Sprint 0}}{46}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}\textbf {Sprint 1}}{47}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}\textbf {Sprint 2}}{48}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}\textbf {Sprint 3}}{49}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}\textbf {Sprint 4}}{52}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Conclusão}{55}{section.4.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{AGES IV --- Estudify}}{56}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introdução}{56}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Desenvolvimento do Projeto}{57}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Repositório do Código Fonte do Projeto}{57}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Banco de Dados Utilizado}{58}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Arquitetura Utilizada}{58}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Protótipos das Telas Desenvolvidas}{59}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Tecnologias Utilizadas}{60}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}Atividades Desempenhadas Pelo Aluno no Projeto}{62}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}\textbf {Sprint 0}}{62}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}\textbf {Sprint 1}}{64}{subsection.5.3.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{67}{chapter.6}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Referências}{68}{section*.45}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
