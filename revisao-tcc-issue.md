@@ -44,5 +44,5 @@ Referência geral: [checklist do TCC](https://www.inf.pucrs.br/~yamaguti/tcc/che
 - [ ] **p.54** — Citar as figuras das telas e explicá-las brevemente
 
 ## Referências
-- [ ] **p.61** — Referências devem iniciar em nova página
+- [x] **p.61** — Referências devem iniciar em nova página
 - [ ] **p.61** — Verificar formatação conforme a ABNT

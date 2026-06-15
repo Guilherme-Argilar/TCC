@@ -33,7 +33,19 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
   A escolha do SQLite provou-se acertada para o contexto do projeto. Sua natureza \textit{serverless} elimina \textit{overhead} de comunicação, seu \textit{footprint} mínimo preserva recursos do sistema, e sua capacidade de operar em memória garante respostas rápidas. A estrutura foi projetada evitando junções múltiplas e subconsultas complexas, garantindo fluidez mesmo em \textit{hardware} básico. Essa combinação de banco leve com modelagem eficiente demonstrou que é possível criar sistemas robustos operando sob severas restrições de \textit{hardware}, proporcionando experiência responsiva aos usuários das feiras.
 
 \subsection{Arquitetura Utilizada}
-  O projeto Totem Interativo foi desenvolvido utilizando uma arquitetura cliente-servidor moderna, que estabelece uma clara separação entre \textit{frontend} e \textit{backend}. Essa abordagem otimizou o desenvolvimento paralelo das camadas, aumentou a manutenibilidade do sistema e conferiu flexibilidade para futuras expansões.
+  O Totem Interativo adota uma arquitetura cliente-servidor, com separação explícita entre o \textit{frontend} --- a aplicação que roda no próprio totem --- e o \textit{backend}, responsável pela lógica de negócio e pelo acesso aos dados. Os dois lados comunicam-se exclusivamente por uma API REST sobre HTTP, o que permitiu desenvolver as camadas em paralelo, isolar responsabilidades e evoluir cada parte de forma independente.
+
+  Essa separação atende a uma restrição central do projeto: como o totem precisa operar mesmo sem conexão externa, o \textit{frontend}, o \textit{backend} e o banco de dados são executados localmente no próprio equipamento, e a API atua como a única fronteira entre a interface e os dados. A Figura~\ref{fig:totem-arquitetura} ilustra esse fluxo: a interface em Next.js consome a API em NestJS por meio do cliente HTTP Axios, que por sua vez acessa o banco SQLite. O diagrama também distingue os dois perfis de uso --- o visitante, que consulta as informações no totem, e o administrador, que cadastra e gerencia os dados. As subseções seguintes detalham cada lado.
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Arquitetura do Totem Interativo e fluxo de comunicação do frontend}
+    \includegraphics[width=0.85\linewidth]{conteudo/4 - ages III/images/fig-arquitetura-fluxo.png}
+
+    Fonte: Wiki do projeto
+    \label{fig:totem-arquitetura}
+\end{figure}
 
 \subsubsection{Frontend}
   A arquitetura do \textit{frontend} foi concebida para oferecer uma aplicação interativa com renderização 3D. A estrutura modular facilitou tanto o desenvolvimento quanto a manutenção.
