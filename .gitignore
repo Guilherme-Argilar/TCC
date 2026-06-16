@@ -1,0 +1,38 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.run.xml
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.bbl-SAVE-ERROR
+*.fls-SAVE-ERROR
+
+# Compiled PDF output
+main.pdf
+main_preview.*
+
+# Editor / OS
+*.bak
+*~
+.DS_Store
+Thumbs.db
