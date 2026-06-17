@@ -15,7 +15,7 @@ Referência geral: [checklist do TCC](https://www.inf.pucrs.br/~yamaguti/tcc/che
 - [x] **Geral** — Padronizar espaçamento vertical (está diferente em alguns trechos)
 
 ## Apresentação / Trajetória
-- [ ] **p.2** — Como AGES IV, incluir página de agradecimentos / pensamento
+- [x] **p.2** — Como AGES IV, incluir página de agradecimentos / pensamento
 - [ ] **p.7** — Comentar experiências de estágio, bolsa, emprego na trajetória
 
 ## Projeto Focus (AGES I)
@@ -24,14 +24,14 @@ Referência geral: [checklist do TCC](https://www.inf.pucrs.br/~yamaguti/tcc/che
 - [x] **p.12** — Mostrar algumas telas importantes, citá-las e explicar brevemente cada uma (falta AGES III E IV)
 - [x] **p.12** — Transformar trechos em bullets para simplificar a leitura
 - [x] **p.12** — Colocar referência de cada tecnologia citada
-- [ ] **p.19 · Conclusão** — Reescrever a conclusão: crítica e autocrítica (técnica e soft skills); relação entre disciplinas cursadas e a AGES; se foi o melhor projeto e por quê; lições aprendidas (positivo e o que poderia ter sido melhor)
+- [x] **p.19 · Conclusão** — Reescrever a conclusão: crítica e autocrítica (técnica e soft skills); relação entre disciplinas cursadas e a AGES; se foi o melhor projeto e por quê; lições aprendidas (positivo e o que poderia ter sido melhor)
 
 ## Projeto Decola (AGES II)
 - [x] **p.20** — Verificar legenda/numeração da Figura 3
-- [ ] **p.21** — Como AGES II, detalhar bem mais esta seção (análise de dados)
+- [x] **p.21** — Como AGES II, detalhar bem mais esta seção (análise de dados)
 - [x] **p.22** — Revisar alinhamento do texto
 - [x] **p.24** — Usar bullets — padronizar em todos os projetos
-- [ ] **p.26** — Detalhar um pouco mais esta sprint
+- [-] **p.26** — Detalhar um pouco mais esta sprint
 - [x] **p.27** — Revisar alinhamento do texto
 
 ## Projeto Totem Interativo (AGES III)
