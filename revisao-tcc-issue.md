@@ -21,7 +21,7 @@ Referência geral: [checklist do TCC](https://www.inf.pucrs.br/~yamaguti/tcc/che
 ## Projeto Focus (AGES I)
 - [x] **p.9** — Corrigir nome do professor: Marcelo Hideki Yamaguti
 - [x] **p.11** — Incluir uma figura da arquitetura (vale para cada projeto)
-- [ ] **p.12** — Mostrar algumas telas importantes, citá-las e explicar brevemente cada uma (falta AGES III E IV)
+- [x] **p.12** — Mostrar algumas telas importantes, citá-las e explicar brevemente cada uma (falta AGES III E IV)
 - [x] **p.12** — Transformar trechos em bullets para simplificar a leitura
 - [x] **p.12** — Colocar referência de cada tecnologia citada
 - [ ] **p.19 · Conclusão** — Reescrever a conclusão: crítica e autocrítica (técnica e soft skills); relação entre disciplinas cursadas e a AGES; se foi o melhor projeto e por quê; lições aprendidas (positivo e o que poderia ter sido melhor)
@@ -41,7 +41,7 @@ Referência geral: [checklist do TCC](https://www.inf.pucrs.br/~yamaguti/tcc/che
 ## Projeto Estudify (AGES IV)
 - [ ] **p.51** — Atualizar a seção de banco de dados (há mais informações disponíveis)
 - [ ] **p.52** — Evitar "buracos" no texto — reposicionar as figuras
-- [ ] **p.54** — Citar as figuras das telas e explicá-las brevemente
+- [x] **p.54** — Citar as figuras das telas e explicá-las brevemente
 
 ## Referências
 - [x] **p.61** — Referências devem iniciar em nova página
