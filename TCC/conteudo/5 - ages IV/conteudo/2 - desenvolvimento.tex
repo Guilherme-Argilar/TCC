@@ -11,18 +11,32 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \end{itemize}
 
 \subsection{Banco de Dados Utilizado}
-  O banco de dados escolhido foi o PostgreSQL, um banco de dados transacional que possui todas as propriedades ACID. Com isso, garante a segurança das transações, sejam elas concorrentes ou não, mantendo o seu estado inalterado mesmo frente a falhas, além de garantir a aplicação total das operações.
+  O banco de dados escolhido foi o PostgreSQL, um banco de dados transacional que possui todas as propriedades ACID. A escolha se deu por sua robustez e confiabilidade, além de se tratar de um sistema de gerenciamento de banco de dados \textit{open source} amplamente utilizado no mercado, o que facilita a sua adoção, manutenção e escalabilidade.
 
-  Foi desenvolvido de maneira relacional, o que facilitou o tratamento dos relacionamentos entre as entidades da aplicação, como mostra o esquema conceitual desenvolvido, na Figura~\ref{fig:estudify-mc}.
+  A modelagem foi desenvolvida de maneira relacional, o que facilitou o tratamento dos relacionamentos entre as entidades da aplicação. As principais entidades do banco são: \textit{User}, que armazena as informações dos usuários, sejam eles administradores ou alunos; \textit{Subject} e \textit{Path}, que representam, respectivamente, as disciplinas e as trilhas de aprendizado que organizam seus conteúdos; \textit{Question} e \textit{Alternative}, que armazenam as questões e suas alternativas; \textit{Exam}, que representa os simulados; \textit{Attempt}, que registra as tentativas de realização dos simulados; \textit{Answer}, que guarda as respostas dos usuários, permitindo o acompanhamento de desempenho; \textit{StudyDay} e \textit{StudyLog}, que definem e registram o cronograma de estudos de cada usuário; e \textit{Subscription}, que gerencia as assinaturas e o controle de acesso aos recursos da plataforma.
+
+  A Figura~\ref{fig:estudify-mc} apresenta o modelo conceitual, que evidencia as entidades centrais do sistema e os relacionamentos entre elas em um nível mais abstrato.
 
 \begin{figure}[H]
     \centering
     \small
     \caption{Modelo Conceitual Estudify}
-    \includegraphics[width=0.9\linewidth]{conteudo/5 - ages IV/images/fig12-modelo-conceitual.png}
+    \includegraphics[width=0.9\linewidth]{conteudo/5 - ages IV/images/fig12-modelo-conceitual.jpeg}
 
     Fonte: Wiki do projeto
     \label{fig:estudify-mc}
+\end{figure}
+
+  Já a Figura~\ref{fig:estudify-mr} apresenta o modelo lógico relacional, detalhando as tabelas, seus atributos e respectivos tipos, bem como as chaves primárias e estrangeiras que materializam os relacionamentos no banco de dados.
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Modelo Lógico Relacional Estudify}
+    \includegraphics[width=0.9\linewidth]{conteudo/5 - ages IV/images/fig18-modelo-relacional.png}
+
+    Fonte: Wiki do projeto
+    \label{fig:estudify-mr}
 \end{figure}
 
 \subsection{Arquitetura Utilizada}
