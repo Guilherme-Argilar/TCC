@@ -39,8 +39,8 @@ Referência geral: [checklist do TCC](https://www.inf.pucrs.br/~yamaguti/tcc/che
 - [X] **p.34** — Incluir figuras para demonstrar a arquitetura
 
 ## Projeto Estudify (AGES IV)
-- [ ] **p.51** — Atualizar a seção de banco de dados (há mais informações disponíveis)
-- [ ] **p.52** — Evitar "buracos" no texto — reposicionar as figuras
+- [x] **p.51** — Atualizar a seção de banco de dados (há mais informações disponíveis)
+- [x] **p.52** — Evitar "buracos" no texto — reposicionar as figuras
 - [x] **p.54** — Citar as figuras das telas e explicá-las brevemente
 
 ## Referências

@@ -12,13 +12,15 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/home}.
 
 \subsection{Banco de Dados Utilizado}
-  O banco de dados está organizado e gerencia informações relacionadas a uma plataforma de aprendizado, onde usuários podem se inscrever em cursos, concluir módulos e atividades, e interagir com conteúdos educativos. Ele armazena informações sobre contas, que podem representar organizações, e os usuários associados a essas contas. Também define tipos de contas e papéis de usuários, como administradores e colaboradores.
+  O sistema de gerenciamento de banco de dados escolhido foi o PostgreSQL, um banco de dados relacional de código aberto reconhecido por sua robustez, desempenho e extensibilidade. Para a manipulação dos dados, foi utilizado o TypeORM, um \ac{orm} (\textit{Object-Relational Mapper}) que mapeia os objetos da aplicação para as entidades do banco, simplificando a comunicação entre a aplicação e o banco de dados relacional.
 
-  Dentro da plataforma, os cursos são estruturados e categorizados por tipos e grupos. Cada curso pode conter múltiplos módulos, que são unidades menores de aprendizado dentro do curso. Esses módulos incluem atividades que os usuários devem completar, como conteúdo de mídia ou questionários. O banco de dados rastreia o progresso dos usuários em cursos e módulos, registrando atividades concluídas e permitindo a avaliação de seu desempenho e progresso.
+  O banco de dados organiza e gerencia as informações de uma plataforma de aprendizado, na qual os usuários podem se inscrever em cursos, concluir módulos e atividades e interagir com conteúdos educativos. Ele armazena informações sobre contas, que podem representar organizações, e os usuários associados a elas, definindo tipos de conta e papéis de usuário, como administradores e colaboradores.
 
-  Os questionários, parte essencial das atividades, contêm perguntas com alternativas corretas e incorretas, permitindo a avaliação das respostas dos usuários. O banco de dados facilita a criação e organização de cursos, módulos e atividades, ajudando no gerenciamento de um currículo educativo.
+  Dentro da plataforma, os cursos são estruturados e categorizados por tipos e grupos. Cada curso pode conter múltiplos módulos, que são unidades menores de aprendizado, e cada módulo inclui atividades que os usuários devem completar, como conteúdo de mídia ou questionários. Os questionários, por sua vez, contêm perguntas com alternativas corretas e incorretas, permitindo a avaliação das respostas dos usuários.
 
-  Além de gerenciar conteúdo, o banco de dados mantém registros do progresso dos usuários, permitindo que administradores vejam quais cursos e módulos foram concluídos. Com contas e áreas associadas, diferentes organizações podem personalizar o conteúdo e gerenciar seus próprios usuários e materiais educativos. A inclusão de questionários e atividades interativas permite avaliar a compreensão e o aprendizado dos usuários de maneira dinâmica, tornando a plataforma mais interativa e eficiente.
+  O banco de dados também rastreia o progresso dos usuários em cursos e módulos, registrando as atividades concluídas e permitindo que os administradores acompanhem o desempenho de cada colaborador. Como as contas estão associadas a áreas, diferentes organizações podem personalizar o conteúdo e gerenciar seus próprios usuários e materiais educativos, tornando a plataforma mais interativa e eficiente.
+
+  A Figura~\ref{fig:decola-mr} apresenta o modelo relacional do banco de dados, evidenciando as principais entidades --- como \textit{Account}, \textit{User}, \textit{Area}, \textit{Course}, \textit{Module}, \textit{Activity}, \textit{Quiz} e \textit{Question} --- e os relacionamentos entre elas.
 
 \begin{figure}[H]
     \centering
@@ -35,6 +37,8 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \subsubsection{Backend}
   O \textit{backend} do projeto é uma API REST construída utilizando o NestJS, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
 
+  Utilizamos JWT (\textit{JSON Web Token}) para autenticação e autorização. O JWT é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato JSON, que podem ser usadas para autenticação de usuários em aplicativos web e \textit{mobile}, bem como para comunicação entre sistemas. O fluxo de autenticação entre cliente e servidor é ilustrado na Figura~\ref{fig:decola-auth}.
+
 \begin{figure}[H]
     \centering
     \small
@@ -44,8 +48,6 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     Fonte: Wiki do projeto
     \label{fig:decola-auth}
 \end{figure}
-
-  Utilizamos JWT (\textit{JSON Web Token}) para autenticação e autorização. O JWT é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato JSON, que podem ser usadas para autenticação de usuários em aplicativos web e \textit{mobile}, bem como para comunicação entre sistemas.
 
   O fluxo de trabalho do JWT é dividido em três etapas:
 \begin{itemize}
