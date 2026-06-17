@@ -18,12 +18,12 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 
   A tabela \textit{Lead} constitui o núcleo do sistema, armazenando dados completos dos visitantes --- informações pessoais, profissionais e suas interações com o totem. Cada \textit{lead} é vinculado às categorias de interesse e expositores pesquisados, criando um perfil detalhado de comportamento.
 
-  Os expositores são organizados com suporte a múltiplas categorias, incluindo o atributo ``Predio'' --- adição fundamental para o caso de uso do Tecnopuc, permitindo localização física precisa dentro do parque tecnológico. O sistema de categorização hierárquico (categorias e subcategorias) foi implementado priorizando \textit{performance}, com índices estratégicos para acelerar as buscas mais frequentes.
+  Os expositores são organizados com suporte a múltiplas categorias, incluindo o atributo ``Predio'' --- adição fundamental para o caso de uso do Tecnopuc, permitindo localização física precisa dentro do parque tecnológico. O sistema de categorização hierárquico (categorias e subcategorias) foi implementado priorizando \textit{performance}, com índices estratégicos para acelerar as buscas mais frequentes. A Figura~\ref{fig:totem-mr} apresenta o modelo relacional do banco de dados.
 
 \begin{figure}[H]
     \centering
     \small
-    \caption{Modelo Relacional do banco de dados}
+    \caption{Modelo relacional do banco de dados}
     \includegraphics[width=0.9\linewidth]{conteudo/4 - ages III/images/fig7-modelo-relacional.png}
 
     Fonte: Documentação do projeto
@@ -33,14 +33,14 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
   A escolha do SQLite provou-se acertada para o contexto do projeto. Sua natureza \textit{serverless} elimina \textit{overhead} de comunicação, seu \textit{footprint} mínimo preserva recursos do sistema, e sua capacidade de operar em memória garante respostas rápidas. A estrutura foi projetada evitando junções múltiplas e subconsultas complexas, garantindo fluidez mesmo em \textit{hardware} básico. Essa combinação de banco leve com modelagem eficiente demonstrou que é possível criar sistemas robustos operando sob severas restrições de \textit{hardware}, proporcionando experiência responsiva aos usuários das feiras.
 
 \subsection{Arquitetura Utilizada}
-  O Totem Interativo adota uma arquitetura cliente-servidor, com separação explícita entre o \textit{frontend} --- a aplicação que roda no próprio totem --- e o \textit{backend}, responsável pela lógica de negócio e pelo acesso aos dados. Os dois lados comunicam-se exclusivamente por uma API REST sobre HTTP, o que permitiu desenvolver as camadas em paralelo, isolar responsabilidades e evoluir cada parte de forma independente.
+  O Totem Interativo adota uma arquitetura cliente-servidor, com separação explícita entre o \textit{frontend} --- a aplicação que roda no próprio totem --- e o \textit{backend}, responsável pela lógica de negócio e pelo acesso aos dados. Os dois lados comunicam-se exclusivamente por uma \ac{api} \ac{rest} sobre \ac{http}, o que permitiu desenvolver as camadas em paralelo, isolar responsabilidades e evoluir cada parte de forma independente.
 
-  Essa separação atende a uma restrição central do projeto: como o totem precisa operar mesmo sem conexão externa, o \textit{frontend}, o \textit{backend} e o banco de dados são executados localmente no próprio equipamento, e a API atua como a única fronteira entre a interface e os dados. A Figura~\ref{fig:totem-arquitetura} ilustra esse fluxo: a interface em Next.js consome a API em NestJS por meio do cliente HTTP Axios, que por sua vez acessa o banco SQLite. O diagrama também distingue os dois perfis de uso --- o visitante, que consulta as informações no totem, e o administrador, que cadastra e gerencia os dados. As subseções seguintes detalham cada lado.
+  Essa separação atende a uma restrição central do projeto: como o totem precisa operar mesmo sem conexão externa, o \textit{frontend}, o \textit{backend} e o banco de dados são executados localmente no próprio equipamento, e a \ac{api} atua como a única fronteira entre a interface e os dados. A Figura~\ref{fig:totem-arquitetura} ilustra esse fluxo: a interface em Next.js consome a \ac{api} em NestJS por meio do cliente \ac{http} Axios, que por sua vez acessa o banco SQLite. O diagrama também distingue os dois perfis de uso --- o visitante, que consulta as informações no totem, e o administrador, que cadastra e gerencia os dados. As subseções seguintes detalham cada lado.
 
 \begin{figure}[H]
     \centering
     \small
-    \caption{Arquitetura do Totem Interativo e fluxo de comunicação do frontend}
+    \caption{Arquitetura do Totem Interativo e fluxo de comunicação do \textit{frontend}}
     \includegraphics[width=0.85\linewidth]{conteudo/4 - ages III/images/fig-arquitetura-fluxo.png}
 
     Fonte: Wiki do projeto
@@ -58,7 +58,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \item \textit{sidebar}: para navegação e exibição de informações contextuais.
 \end{itemize}
 
-  A comunicação com o \textit{backend} foi centralizada na camada de \textit{services}, atuando como um ponto único de integração com as APIs. O gerenciamento de estados globais é feito via \textit{contexts}, e lógicas reutilizáveis, como o \textit{logout} automático por inatividade, foram isoladas em \textit{hooks}.
+  A comunicação com o \textit{backend} foi centralizada na camada de \textit{services}, atuando como um ponto único de integração com as \acp{api}. O gerenciamento de estados globais é feito via \textit{contexts}, e lógicas reutilizáveis, como o \textit{logout} automático por inatividade, foram isoladas em \textit{hooks}.
 
   Recursos estáticos essenciais para o mapa 3D foram estrategicamente organizados:
 \begin{itemize}
@@ -75,7 +75,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 
   A estrutura de camadas implementada é composta por:
 \begin{itemize}
-    \item \textit{Controllers}: atuam como ponto de entrada para as requisições HTTP;
+    \item \textit{Controllers}: atuam como ponto de entrada para as requisições \ac{http};
     \item \textit{Services}: encapsulam toda a lógica de negócio da aplicação;
     \item \textit{DTOs}: definem os contratos de dados para entrada e saída;
     \item \textit{Entities}: representam as estruturas do banco de dados;
@@ -91,7 +91,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 
   O armazenamento local foi estruturado no diretório \textit{database}, contendo o arquivo principal SQLite.
 
-  O fluxo de dados segue um padrão consistente: as requisições chegam aos \textit{controllers}, são validadas pelos \textit{DTOs}, processadas pelos \textit{services} (que interagem com as \textit{entities}), e então retornam respostas estruturadas. As operações administrativas incluem \textit{endpoints} especializados para importação em massa via CSV e exportação de dados agregados.
+  O fluxo de dados segue um padrão consistente: as requisições chegam aos \textit{controllers}, são validadas pelos \textit{DTOs}, processadas pelos \textit{services} (que interagem com as \textit{entities}), e então retornam respostas estruturadas. As operações administrativas incluem \textit{endpoints} especializados para importação em massa via \ac{csv} e exportação de dados agregados.
 
   A estrutura de testes replica a organização principal, com diretórios específicos para \textit{controllers} e \textit{services}, assegurando uma cobertura adequada das funcionalidades críticas.
 
@@ -157,6 +157,6 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \item \textbf{Node.js} \parencite{nodejs}: Ambiente de execução JavaScript \textit{server-side} com natureza assíncrona e eficiência no gerenciamento de I/O, ideal para múltiplas requisições simultâneas.
     \item \textbf{NestJS} \parencite{nestjs}: \textit{Framework} progressivo para Node.js que permite construção de aplicativos escaláveis com arquitetura modular e suporte nativo para TypeScript.
     \item \textbf{TypeScript} \parencite{typescript}: \textit{Superset} do JavaScript que adiciona tipagem estática opcional, reduzindo \textit{bugs} em tempo de desenvolvimento e facilitando manutenção do código.
-    \item \textbf{Swagger} \parencite{swagger}: Ferramenta para documentação e testes interativos de APIs RESTful, integrada ao NestJS para gerar documentação automática dos \textit{endpoints}.
+    \item \textbf{Swagger} \parencite{swagger}: Ferramenta para documentação e testes interativos de \acp{api} RESTful, integrada ao NestJS para gerar documentação automática dos \textit{endpoints}.
     \item \textbf{SQLite} \parencite{sqlite}: Sistema de banco de dados relacional \textit{serverless} e baseado em arquivo único, escolhido por sua leveza e capacidade de operar sem dependências externas em ambiente \textit{offline}.
 \end{itemize}

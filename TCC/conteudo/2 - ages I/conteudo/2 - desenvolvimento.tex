@@ -12,12 +12,12 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto. A wiki encontra-se em: \url{https://tools.ages.pucrs.br/projeto-focus/wiki}.
 
 \subsection{Banco de Dados Utilizado}
-  Para a realização do projeto, escolhemos utilizar o banco de dados não relacional Firebase. A razão pela escolha deste modelo de banco de dados se deu principalmente pela escolha do time em aprender novas tecnologias, pela facilidade de integração com o \textit{backend} da aplicação e também devido ao projeto possuir somente uma entidade a ser armazenada, que é o usuário.
+  Para a realização do projeto, escolhemos utilizar o banco de dados não relacional Firebase. A razão pela escolha deste modelo de banco de dados se deu principalmente pela escolha do time em aprender novas tecnologias, pela facilidade de integração com o \textit{backend} da aplicação e também devido ao projeto possuir somente uma entidade a ser armazenada, que é o usuário. A Figura~\ref{fig:focus-mer} apresenta o modelo de dados da aplicação.
 
 \begin{figure}[H]
     \centering
     \small
-    \caption{Modelo Entidade-Relacionamento}
+    \caption{Modelo entidade-relacionamento}
     \includegraphics[width=0.9\linewidth]{conteudo/2 - ages I/images/fig2-mer-focus.png}
 
     Fonte: Wiki do projeto
@@ -27,13 +27,15 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
   Durante a apresentação do projeto, o \textit{stakeholder} afirmou que não haveria a necessidade de armazenar os dados, pois caso fosse necessário o usuário poderia apenas reescrevê-los. Após uma conversa com o time, conseguimos mostrar como um banco de dados, mesmo que o mais simplificado possível, poderia agregar no seu aplicativo.
 
 \subsection{Arquitetura Utilizada}
-  Este projeto foi desenvolvido utilizando a arquitetura MVC (\textit{Model-View-Controller}) no \textit{front-end}. Esse padrão arquitetural tem como objetivo separar as responsabilidades da aplicação em três camadas distintas, o que facilita a manutenção, a organização e o reuso do código. As camadas são:
+  Este projeto foi desenvolvido utilizando a arquitetura \ac{mvc} no \textit{front-end}. Esse padrão arquitetural tem como objetivo separar as responsabilidades da aplicação em três camadas distintas, o que facilita a manutenção, a organização e o reuso do código. As camadas são:
 
 \begin{itemize}
     \item \textbf{\textit{Model}:} camada de manipulação de dados, responsável pela leitura, escrita e validação das informações. É completamente independente das demais camadas;
     \item \textbf{\textit{View}:} camada de interação com o usuário, que representa a parte visual da aplicação e é alimentada pela camada \textit{Controller} somente quando necessário;
     \item \textbf{\textit{Controller}:} camada responsável por receber todas as requisições do usuário. Seus métodos controlam qual \textit{Model} utilizar e qual \textit{View} será apresentada ao usuário.
 \end{itemize}
+
+  A Figura~\ref{fig:focus-mvc} ilustra a organização dessas camadas no padrão \ac{mvc}.
 
 \begin{figure}[H]
     \centering
@@ -45,9 +47,9 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \label{fig:focus-mvc}
 \end{figure}
 
-  No \textit{front-end}, desenvolvido em Flutter, optou-se pela adoção do padrão MVC, enquanto no \textit{back-end} foram utilizadas as chamadas diretas ao Firebase. A comunicação da aplicação ainda contempla uma API externa do ChatGPT, implementada em Go, responsável por integrar recursos de chat baseados em inteligência artificial. Essa API é utilizada para gerar frases de acordo com os objetivos selecionados pelo usuário.
+  No \textit{front-end}, desenvolvido em Flutter, optou-se pela adoção do padrão \ac{mvc}, enquanto no \textit{back-end} foram utilizadas as chamadas diretas ao Firebase. A comunicação da aplicação ainda contempla uma \ac{api} externa do ChatGPT, implementada em Go, responsável por integrar recursos de chat baseados em inteligência artificial. Essa \ac{api} é utilizada para gerar frases de acordo com os objetivos selecionados pelo usuário.
 
-  A Figura~\ref{fig:focus-sistema} apresenta a visão geral da arquitetura, evidenciando como ocorre a comunicação entre as partes do sistema. O aplicativo desenvolvido em Flutter atua como ponto central de interação com o usuário e se comunica com dois serviços distintos: o Firebase, utilizado para autenticação e armazenamento dos dados; e a API externa do ChatGPT, responsável por fornecer as frases motivacionais geradas por inteligência artificial. Dessa forma, o \textit{front-end} concentra a lógica de apresentação e orquestra as requisições, enquanto os serviços de \textit{back-end} ficam responsáveis, respectivamente, pela persistência das informações e pelo processamento das respostas baseadas em IA.
+  A Figura~\ref{fig:focus-sistema} apresenta a visão geral da arquitetura, evidenciando como ocorre a comunicação entre as partes do sistema. O aplicativo desenvolvido em Flutter atua como ponto central de interação com o usuário e se comunica com dois serviços distintos: o Firebase, utilizado para autenticação e armazenamento dos dados; e a \ac{api} externa do ChatGPT, responsável por fornecer as frases motivacionais geradas por inteligência artificial. Dessa forma, o \textit{front-end} concentra a lógica de apresentação e orquestra as requisições, enquanto os serviços de \textit{back-end} ficam responsáveis, respectivamente, pela persistência das informações e pelo processamento das respostas baseadas em IA.
 
 \begin{figure}[H]
     \centering
@@ -59,7 +61,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \label{fig:focus-sistema}
 \end{figure}
 
-  Para a infraestrutura, foi utilizada a plataforma de \textit{cloud computing} EC2, da Amazon, com o propósito de alocar os \textit{runners} do GitLab e manter a \textit{pipeline} do projeto em execução. Informações adicionais, bem como os diagramas de arquitetura e de \textit{deploy}, podem ser encontradas na página de arquitetura do projeto: \url{https://tools.ages.pucrs.br/projeto-focus/wiki/-/wikis/arquitetura}.
+  Para a infraestrutura, foi utilizada a plataforma de \textit{cloud computing} \ac{ec2}, da Amazon, com o propósito de alocar os \textit{runners} do GitLab e manter a \textit{pipeline} do projeto em execução. Informações adicionais, bem como os diagramas de arquitetura e de \textit{deploy}, podem ser encontradas na página de arquitetura do projeto: \url{https://tools.ages.pucrs.br/projeto-focus/wiki/-/wikis/arquitetura}.
 
 \subsection{Protótipos das Telas Desenvolvidas}
   Os protótipos deste projeto estão disponíveis no endereço a seguir: \url{https://tools.ages.pucrs.br/projeto-focus/wiki/-/wikis/design}. As Figuras \ref{fig:focus-proto-telas} e \ref{fig:focus-proto-cadastro} apresentam uma amostra das telas desenvolvidas. A Figura \ref{fig:focus-proto-telas} contempla o fluxo principal de uso, com a tela inicial, a exibição das frases motivacionais, a seleção de objetivos e a configuração de notificações. Já a Figura \ref{fig:focus-proto-cadastro} abrange o fluxo de cadastro e autenticação do usuário.
@@ -94,7 +96,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
   Nesta seção será abordado um pouco sobre as tecnologias utilizadas ao longo do projeto.
 
 \begin{itemize}
-    \item \textbf{Flutter} \parencite{flutter}: O Flutter foi criado pela Google, sendo um framework mais voltado para desenvolvimento de aplicativos móveis. Ele permite a criação de aplicativos compilados nativamente para iOS, Android, Windows, Mac, Linux e Web. Utilizando a linguagem de programação Dart, o Flutter se diferencia de outros frameworks por utilizar uma abordagem de desenvolvimento baseada em \textit{Widgets}, que são elementos gráficos reutilizáveis e personalizáveis.
+    \item \textbf{Flutter} \parencite{flutter}: O Flutter foi criado pela Google, sendo um \textit{framework} mais voltado para desenvolvimento de aplicativos móveis. Ele permite a criação de aplicativos compilados nativamente para iOS, Android, Windows, Mac, Linux e Web. Utilizando a linguagem de programação Dart, o Flutter se diferencia de outros \textit{frameworks} por utilizar uma abordagem de desenvolvimento baseada em \textit{Widgets}, que são elementos gráficos reutilizáveis e personalizáveis.
     \item \textbf{Firebase} \parencite{firebase}: O Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web da Google, que fornece diversos recursos para ajudar os desenvolvedores a criar aplicações de forma efetiva, rápida e simples. Ele inclui diversas funcionalidades, incluindo armazenamento de dados em tempo real, autenticação de usuários, hospedagem, mensagens e notificações, análise de dados, entre outros.
     \item \textbf{Go} \parencite{golang}: O Go, também conhecido como Golang, é uma linguagem de programação de código aberto criada pelo Google. Ela foi projetada para oferecer eficiência, simplicidade e escalabilidade, tornando-se uma escolha popular para o desenvolvimento de aplicativos de servidor e sistemas de rede.
 \end{itemize}

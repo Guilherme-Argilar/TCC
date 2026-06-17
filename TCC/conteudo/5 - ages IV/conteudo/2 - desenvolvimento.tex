@@ -11,7 +11,7 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \end{itemize}
 
 \subsection{Banco de Dados Utilizado}
-  O banco de dados escolhido foi o PostgreSQL, um banco de dados transacional que possui todas as propriedades ACID. A escolha se deu por sua robustez e confiabilidade, além de se tratar de um sistema de gerenciamento de banco de dados \textit{open source} amplamente utilizado no mercado, o que facilita a sua adoção, manutenção e escalabilidade.
+  O banco de dados escolhido foi o PostgreSQL, um banco de dados transacional que possui todas as propriedades \ac{acid}. A escolha se deu por sua robustez e confiabilidade, além de se tratar de um sistema de gerenciamento de banco de dados \textit{open source} amplamente utilizado no mercado, o que facilita a sua adoção, manutenção e escalabilidade.
 
   A modelagem foi desenvolvida de maneira relacional, o que facilitou o tratamento dos relacionamentos entre as entidades da aplicação. As principais entidades do banco são: \textit{User}, que armazena as informações dos usuários, sejam eles administradores ou alunos; \textit{Subject} e \textit{Path}, que representam, respectivamente, as disciplinas e as trilhas de aprendizado que organizam seus conteúdos; \textit{Question} e \textit{Alternative}, que armazenam as questões e suas alternativas; \textit{Exam}, que representa os simulados; \textit{Attempt}, que registra as tentativas de realização dos simulados; \textit{Answer}, que guarda as respostas dos usuários, permitindo o acompanhamento de desempenho; \textit{StudyDay} e \textit{StudyLog}, que definem e registram o cronograma de estudos de cada usuário; e \textit{Subscription}, que gerencia as assinaturas e o controle de acesso aos recursos da plataforma.
 
@@ -20,7 +20,7 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \begin{figure}[H]
     \centering
     \small
-    \caption{Modelo Conceitual Estudify}
+    \caption{Modelo conceitual Estudify}
     \includegraphics[width=0.9\linewidth]{conteudo/5 - ages IV/images/fig12-modelo-conceitual.jpeg}
 
     Fonte: Wiki do projeto
@@ -32,7 +32,7 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \begin{figure}[H]
     \centering
     \small
-    \caption{Modelo Lógico Relacional Estudify}
+    \caption{Modelo lógico relacional Estudify}
     \includegraphics[width=0.9\linewidth]{conteudo/5 - ages IV/images/fig18-modelo-relacional.png}
 
     Fonte: Wiki do projeto
@@ -40,11 +40,11 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \end{figure}
 
 \subsection{Arquitetura Utilizada}
-  A arquitetura do projeto segue o padrão de Monólito Modular no \textit{back-end}, em que as funcionalidades são segregadas por domínio. Cada módulo é composto por \textit{Controllers}, responsáveis pelas rotas e requisições HTTP; \textit{Services}, que concentram as regras de negócio; \textit{Repositories}, camada isolada que utiliza o Prisma para a comunicação com o banco de dados; e \ac{dto} (\textit{Data Transfer Objects}), que definem os contratos de entrada com validações integradas.
+  A arquitetura do projeto segue o padrão de Monólito Modular no \textit{back-end}, em que as funcionalidades são segregadas por domínio. Cada módulo é composto por \textit{Controllers}, responsáveis pelas rotas e requisições \ac{http}; \textit{Services}, que concentram as regras de negócio; \textit{Repositories}, camada isolada que utiliza o Prisma para a comunicação com o banco de dados; e \ac{dto} (\textit{Data Transfer Objects}), que definem os contratos de entrada com validações integradas.
 
   A aplicação \textit{mobile} e o painel administrativo web adotam uma estrutura de pastas análoga entre si (\textit{components}, \textit{hooks}, \textit{services} e \textit{contexts}), mantendo a consistência técnica entre as frentes e permitindo que qualquer integrante do time atue em ambas.
 
-  O fluxo de comunicação entre as camadas está ilustrado no diagrama da Figura~\ref{fig:estudify-fluxo}, evidenciando a separação entre os clientes (\textit{mobile} e web), a API e o banco de dados.
+  O fluxo de comunicação entre as camadas está ilustrado no diagrama da Figura~\ref{fig:estudify-fluxo}, evidenciando a separação entre os clientes (\textit{mobile} e web), a \ac{api} e o banco de dados.
 
 \begin{figure}[H]
     \centering
@@ -56,9 +56,9 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
     \label{fig:estudify-fluxo}
 \end{figure}
 
-  No que se refere à infraestrutura, a aplicação é hospedada na nuvem da \ac{aws}, que fornece serviços gerenciados voltados à disponibilidade, à segurança e à escalabilidade. O aplicativo \textit{mobile}, desenvolvido em React Native com Expo, é compilado e publicado diretamente nas lojas oficiais (\textit{App Store} e \textit{Google Play Store}) e consome a API por meio de requisições HTTPS. O painel administrativo web, por sua vez, é tratado como um site estático: os arquivos gerados no \textit{build} do React são hospedados no \textit{Amazon S3} e distribuídos pelo \textit{CloudFront}, que atua como \ac{cdn} e provê o certificado SSL.
+  No que se refere à infraestrutura, a aplicação é hospedada na nuvem da \ac{aws}, que fornece serviços gerenciados voltados à disponibilidade, à segurança e à escalabilidade. O aplicativo \textit{mobile}, desenvolvido em React Native com Expo, é compilado e publicado diretamente nas lojas oficiais (\textit{App Store} e \textit{Google Play Store}) e consome a \ac{api} por meio de requisições \ac{https}. O painel administrativo web, por sua vez, é tratado como um site estático: os arquivos gerados no \textit{build} do React são hospedados no \textit{Amazon S3} e distribuídos pelo \textit{CloudFront}, que atua como \ac{cdn} e provê o certificado \ac{ssl}.
 
-  As requisições à API passam por um \textit{Load Balancer}, responsável por distribuir o tráfego entre as instâncias da API em NestJS, mantendo o sistema operante mesmo em picos de acesso. A camada de persistência é composta pelo PostgreSQL, utilizado para os dados estruturados, e pelo \textit{Amazon S3}, empregado no armazenamento de arquivos mais pesados, como imagens. Esse isolamento entre o banco de dados e o armazenamento de arquivos permite que cada camada escale de forma independente. A Figura~\ref{fig:estudify-deploy} apresenta o diagrama de \textit{deploy}, evidenciando como esses componentes se comunicam.
+  As requisições à \ac{api} passam por um \textit{Load Balancer}, responsável por distribuir o tráfego entre as instâncias da \ac{api} em NestJS, mantendo o sistema operante mesmo em picos de acesso. A camada de persistência é composta pelo PostgreSQL, utilizado para os dados estruturados, e pelo \textit{Amazon S3}, empregado no armazenamento de arquivos mais pesados, como imagens. Esse isolamento entre o banco de dados e o armazenamento de arquivos permite que cada camada escale de forma independente. A Figura~\ref{fig:estudify-deploy} apresenta o diagrama de \textit{deploy}, evidenciando como esses componentes se comunicam.
 
 \begin{figure}[H]
     \centering
@@ -85,7 +85,7 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
     \label{fig:estudify-prototipos}
 \end{figure}
 
-  Além do aplicativo \textit{mobile}, o projeto conta com um painel administrativo web, destinado à gestão de conteúdo da plataforma. As Figuras \ref{fig:estudify-admin-questoes}, \ref{fig:estudify-admin-simulados} e \ref{fig:estudify-admin-importacao} apresentam as principais telas desse painel. A Figura~\ref{fig:estudify-admin-questoes} exibe a tela de gestão de questões, com busca, filtro por categoria e a listagem de todas as questões cadastradas. A Figura~\ref{fig:estudify-admin-simulados} apresenta a tela de gestão de simulados, em que é possível organizar os simulados e definir a ordem das questões que os compõem. Por fim, a Figura~\ref{fig:estudify-admin-importacao} mostra a tela de revisão das questões importadas em lote via CSV, sinalizando o \textit{status} de cada uma (sucesso, falta de imagem ou erro) para que os ajustes necessários sejam feitos antes da confirmação.
+  Além do aplicativo \textit{mobile}, o projeto conta com um painel administrativo web, destinado à gestão de conteúdo da plataforma. As Figuras \ref{fig:estudify-admin-questoes}, \ref{fig:estudify-admin-simulados} e \ref{fig:estudify-admin-importacao} apresentam as principais telas desse painel. A Figura~\ref{fig:estudify-admin-questoes} exibe a tela de gestão de questões, com busca, filtro por categoria e a listagem de todas as questões cadastradas. A Figura~\ref{fig:estudify-admin-simulados} apresenta a tela de gestão de simulados, em que é possível organizar os simulados e definir a ordem das questões que os compõem. Por fim, a Figura~\ref{fig:estudify-admin-importacao} mostra a tela de revisão das questões importadas em lote via \ac{csv}, sinalizando o \textit{status} de cada uma (sucesso, falta de imagem ou erro) para que os ajustes necessários sejam feitos antes da confirmação.
 
 \begin{figure}[H]
     \centering
@@ -123,9 +123,9 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \begin{itemize}
     \item \textbf{TypeScript} \parencite{typescript}: \textit{Superset} do JavaScript que adiciona tipagem estática opcional, reduzindo \textit{bugs} em tempo de desenvolvimento e facilitando a manutenção do código. Foi adotado como linguagem base em todas as camadas da aplicação (\textit{back-end}, \textit{mobile} e web), permitindo o compartilhamento de tipos e interfaces entre as frentes do projeto.
     \item \textbf{Node.js} \parencite{nodejs}: Ambiente de execução JavaScript \textit{server-side} com natureza assíncrona e eficiência no gerenciamento de I/O, ideal para o processamento de múltiplas requisições simultâneas. Serve como base para a execução do NestJS.
-    \item \textbf{NestJS} \parencite{nestjs}: \textit{Framework} progressivo para Node.js que permite a construção de aplicações escaláveis com arquitetura modular e suporte nativo a TypeScript. Foi utilizado na construção da API do projeto, oferecendo recursos como injeção de dependência, \textit{decorators} e validação integrada de \ac{dto}.
+    \item \textbf{NestJS} \parencite{nestjs}: \textit{Framework} progressivo para Node.js que permite a construção de aplicações escaláveis com arquitetura modular e suporte nativo a TypeScript. Foi utilizado na construção da \ac{api} do projeto, oferecendo recursos como injeção de dependência, \textit{decorators} e validação integrada de \ac{dto}.
     \item \textbf{Prisma} \parencite{prisma}: \ac{orm} (\textit{Object-Relational Mapper}) que atua como ponte entre a aplicação e o banco de dados relacional. Gera tipos automaticamente a partir do \textit{schema} do banco, garantindo \textit{type-safety} nas consultas, além de simplificar a criação e execução de \textit{migrations}.
-    \item \textbf{PostgreSQL} \parencite{postgresql}: Sistema de gerenciamento de banco de dados relacional \textit{open source} que implementa as propriedades ACID, garantindo a integridade e a consistência dos dados armazenados. Escolhido por sua robustez, confiabilidade e maturidade no mercado.
+    \item \textbf{PostgreSQL} \parencite{postgresql}: Sistema de gerenciamento de banco de dados relacional \textit{open source} que implementa as propriedades \ac{acid}, garantindo a integridade e a consistência dos dados armazenados. Escolhido por sua robustez, confiabilidade e maturidade no mercado.
     \item \textbf{React Native} \parencite{reactnative}: \textit{Framework} para desenvolvimento de aplicações \textit{mobile} nativas a partir de uma única base de código em TypeScript, permitindo a entrega simultânea para iOS e Android. Foi utilizado na construção do aplicativo principal do Estudify.
     \item \textbf{Expo} \parencite{expo}: Plataforma e ecossistema construído sobre o React Native que agiliza o desenvolvimento \textit{mobile}, fornecendo ferramentas integradas de \textit{build}, execução e distribuição, além do Expo Router para roteamento baseado em arquivos.
     \item \textbf{React} \parencite{react}: Biblioteca JavaScript de código aberto para construção de interfaces de usuário reativas e componentes reutilizáveis. Foi utilizada no desenvolvimento do painel administrativo web, destinado à gestão de conteúdo e acompanhamento dos usuários.

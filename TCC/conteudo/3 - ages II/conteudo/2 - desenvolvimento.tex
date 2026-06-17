@@ -25,7 +25,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \begin{figure}[H]
     \centering
     \small
-    \caption{Modelo Relacional do banco de dados}
+    \caption{Modelo relacional do banco de dados}
     \includegraphics[width=0.9\linewidth]{conteudo/3 - ages II/images/fig4-modelo-relacional.png}
 
     Fonte: Wiki do projeto
@@ -35,9 +35,9 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \subsection{Arquitetura Utilizada}
 
 \subsubsection{Backend}
-  O \textit{backend} do projeto é uma API REST construída utilizando o NestJS, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
+  O \textit{backend} do projeto é uma \ac{api} \ac{rest} construída utilizando o NestJS, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
 
-  Utilizamos JWT (\textit{JSON Web Token}) para autenticação e autorização. O JWT é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato JSON, que podem ser usadas para autenticação de usuários em aplicativos web e \textit{mobile}, bem como para comunicação entre sistemas. O fluxo de autenticação entre cliente e servidor é ilustrado na Figura~\ref{fig:decola-auth}.
+  Utilizamos \ac{jwt} para autenticação e autorização. O \ac{jwt} é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato \ac{json}, que podem ser usadas para autenticação de usuários em aplicativos web e \textit{mobile}, bem como para comunicação entre sistemas. O fluxo de autenticação entre cliente e servidor é ilustrado na Figura~\ref{fig:decola-auth}.
 
 \begin{figure}[H]
     \centering
@@ -49,15 +49,15 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \label{fig:decola-auth}
 \end{figure}
 
-  O fluxo de trabalho do JWT é dividido em três etapas:
+  O fluxo de trabalho do \ac{jwt} é dividido em três etapas:
 \begin{itemize}
-    \item \textbf{Geração do Token:} a primeira etapa é a geração do token JWT. Um servidor ou aplicativo gera um token JWT contendo as informações necessárias para autenticar o usuário. O token é geralmente gerado após o usuário fornecer suas credenciais (como nome de usuário e senha) e o servidor verificar essas credenciais. O token é assinado com uma chave secreta conhecida apenas pelo servidor ou aplicativo que o gerou.
-    \item \textbf{Envio do Token:} a segunda etapa é o envio do token JWT. O servidor ou aplicativo envia o token JWT para o cliente, geralmente em um cabeçalho HTTP \texttt{Authorization}. O cliente armazena o token para uso posterior, como em solicitações subsequentes para o servidor.
-    \item \textbf{Verificação do Token:} a terceira etapa é a verificação do token JWT. O servidor ou aplicativo verifica se o token JWT enviado pelo cliente é válido. A verificação da assinatura do token é feita usando a chave secreta. Se a assinatura estiver correta, o servidor extrai as informações do token e verifica se o usuário tem permissão para acessar o recurso solicitado. Se o token for inválido ou expirado, o servidor nega o acesso ao recurso solicitado.
+    \item \textbf{Geração do Token:} a primeira etapa é a geração do token \ac{jwt}. Um servidor ou aplicativo gera um token \ac{jwt} contendo as informações necessárias para autenticar o usuário. O token é geralmente gerado após o usuário fornecer suas credenciais (como nome de usuário e senha) e o servidor verificar essas credenciais. O token é assinado com uma chave secreta conhecida apenas pelo servidor ou aplicativo que o gerou.
+    \item \textbf{Envio do Token:} a segunda etapa é o envio do token \ac{jwt}. O servidor ou aplicativo envia o token \ac{jwt} para o cliente, geralmente em um cabeçalho \ac{http} \texttt{Authorization}. O cliente armazena o token para uso posterior, como em solicitações subsequentes para o servidor.
+    \item \textbf{Verificação do Token:} a terceira etapa é a verificação do token \ac{jwt}. O servidor ou aplicativo verifica se o token \ac{jwt} enviado pelo cliente é válido. A verificação da assinatura do token é feita usando a chave secreta. Se a assinatura estiver correta, o servidor extrai as informações do token e verifica se o usuário tem permissão para acessar o recurso solicitado. Se o token for inválido ou expirado, o servidor nega o acesso ao recurso solicitado.
 \end{itemize}
 
 \subsubsection{Frontend}
-  Nossa arquitetura de \textit{frontend} aplica os conceitos de \textit{Domain Driven Development} (DDD) e \textit{Separation of Concerns} (SoC). Com DDD, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com SoC, nosso objetivo é separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao MVC (\textit{Model-View-Controller}).
+  Nossa arquitetura de \textit{frontend} aplica os conceitos de \ac{ddd} e \ac{soc}. Com \ac{ddd}, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com \ac{soc}, nosso objetivo é separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao \ac{mvc}.
 
 \subsection{Protótipos das Telas Desenvolvidas}
   Os protótipos deste projeto estão disponíveis na Wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/mockups}.
@@ -67,7 +67,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \begin{figure}[H]
     \centering
     \small
-    \caption{Tela de Página Inicial}
+    \caption{Tela de página inicial}
     \includegraphics[width=0.8\linewidth,height=0.34\textheight,keepaspectratio]{conteudo/3 - ages II/images/fig5a-tela-pagina-inicial.png}
 
     Fonte: Wiki do projeto
@@ -77,7 +77,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \begin{figure}[H]
     \centering
     \small
-    \caption{Tela de Administração}
+    \caption{Tela de administração}
     \includegraphics[width=0.8\linewidth,height=0.34\textheight,keepaspectratio]{conteudo/3 - ages II/images/fig5b-tela-administracao.png}
 
     Fonte: Wiki do projeto
@@ -87,7 +87,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \begin{figure}[H]
     \centering
     \small
-    \caption{Tela de Áreas}
+    \caption{Tela de áreas}
     \includegraphics[width=0.9\linewidth,height=0.34\textheight,keepaspectratio]{conteudo/3 - ages II/images/fig5c-tela-areas.png}
 
     Fonte: Wiki do projeto
@@ -97,7 +97,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \begin{figure}[H]
     \centering
     \small
-    \caption{Tela de Atividade de Múltipla Escolha}
+    \caption{Tela de atividade de múltipla escolha}
     \includegraphics[width=0.8\linewidth,height=0.34\textheight,keepaspectratio]{conteudo/3 - ages II/images/fig5d-tela-multipla-escolha.png}
 
     Fonte: Wiki do projeto
@@ -107,7 +107,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \begin{figure}[H]
     \centering
     \small
-    \caption{Tela de Atividade de Conteúdo Externo}
+    \caption{Tela de atividade de conteúdo externo}
     \includegraphics[width=0.8\linewidth,height=0.34\textheight,keepaspectratio]{conteudo/3 - ages II/images/fig5e-tela-conteudo-externo.png}
 
     Fonte: Wiki do projeto
@@ -117,11 +117,11 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \subsection{Tecnologias Utilizadas}
 
 \begin{itemize}
-    \item \textbf{PostgreSQL} \parencite{postgresql}: Sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, extensibilidade e conformidade com os padrões SQL.
-    \item \textbf{TypeORM} \parencite{typeorm}: Biblioteca ORM para TypeScript e JavaScript que facilita a interação com bancos de dados relacionais através de um mapeamento objeto-relacional eficiente e intuitivo.
+    \item \textbf{PostgreSQL} \parencite{postgresql}: Sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, extensibilidade e conformidade com os padrões \ac{sql}.
+    \item \textbf{TypeORM} \parencite{typeorm}: Biblioteca \ac{orm} para TypeScript e JavaScript que facilita a interação com bancos de dados relacionais através de um mapeamento objeto-relacional eficiente e intuitivo.
     \item \textbf{AWS} \parencite{aws}: Plataforma de computação em nuvem fornecida pela Amazon, oferecendo uma ampla gama de serviços, incluindo armazenamento, redes, bancos de dados e ferramentas de desenvolvimento, para escalabilidade e flexibilidade na construção de aplicações.
     \item \textbf{TypeScript} \parencite{typescript}: Linguagem de programação de código aberto desenvolvida pela Microsoft que adiciona tipagem estática opcional ao JavaScript, melhorando a produtividade e a qualidade do código.
-    \item \textbf{NestJS} \parencite{nestjs}: Framework progressivo para Node.js que permite a construção de aplicativos do lado do servidor escaláveis e eficientes utilizando TypeScript.
+    \item \textbf{NestJS} \parencite{nestjs}: \textit{Framework} progressivo para Node.js que permite a construção de aplicativos do lado do servidor escaláveis e eficientes utilizando TypeScript.
     \item \textbf{React} \parencite{react}: Biblioteca JavaScript de código aberto para a construção de interfaces de usuário, desenvolvida pelo Facebook, amplamente utilizada para criar aplicações web e \textit{mobile} dinâmicas e interativas.
     \item \textbf{Sass} \parencite{sass}: Extensão do CSS que permite o uso de variáveis, aninhamento e \textit{mixins}, facilitando a escrita e manutenção de estilos, tornando o desenvolvimento \textit{front-end} mais eficiente.
 \end{itemize}
