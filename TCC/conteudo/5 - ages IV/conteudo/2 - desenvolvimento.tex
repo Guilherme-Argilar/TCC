@@ -40,7 +40,7 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \end{figure}
 
 \subsection{Arquitetura Utilizada}
-  A arquitetura do projeto segue o padrão de Monólito Modular no \textit{back-end}, em que as funcionalidades são segregadas por domínio. Cada módulo é composto por \textit{Controllers}, responsáveis pelas rotas e requisições HTTP; \textit{Services}, que concentram as regras de negócio; \textit{Repositories}, camada isolada de comunicação com o banco de dados; e \ac{dto} (\textit{Data Transfer Objects}), que definem os contratos de entrada com validações integradas.
+  A arquitetura do projeto segue o padrão de Monólito Modular no \textit{back-end}, em que as funcionalidades são segregadas por domínio. Cada módulo é composto por \textit{Controllers}, responsáveis pelas rotas e requisições HTTP; \textit{Services}, que concentram as regras de negócio; \textit{Repositories}, camada isolada que utiliza o Prisma para a comunicação com o banco de dados; e \ac{dto} (\textit{Data Transfer Objects}), que definem os contratos de entrada com validações integradas.
 
   A aplicação \textit{mobile} e o painel administrativo web adotam uma estrutura de pastas análoga entre si (\textit{components}, \textit{hooks}, \textit{services} e \textit{contexts}), mantendo a consistência técnica entre as frentes e permitindo que qualquer integrante do time atue em ambas.
 
@@ -54,6 +54,20 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 
     Fonte: Wiki do projeto
     \label{fig:estudify-fluxo}
+\end{figure}
+
+  No que se refere à infraestrutura, a aplicação é hospedada na nuvem da \ac{aws}, que fornece serviços gerenciados voltados à disponibilidade, à segurança e à escalabilidade. O aplicativo \textit{mobile}, desenvolvido em React Native com Expo, é compilado e publicado diretamente nas lojas oficiais (\textit{App Store} e \textit{Google Play Store}) e consome a API por meio de requisições HTTPS. O painel administrativo web, por sua vez, é tratado como um site estático: os arquivos gerados no \textit{build} do React são hospedados no \textit{Amazon S3} e distribuídos pelo \textit{CloudFront}, que atua como \ac{cdn} e provê o certificado SSL.
+
+  As requisições à API passam por um \textit{Load Balancer}, responsável por distribuir o tráfego entre as instâncias da API em NestJS, mantendo o sistema operante mesmo em picos de acesso. A camada de persistência é composta pelo PostgreSQL, utilizado para os dados estruturados, e pelo \textit{Amazon S3}, empregado no armazenamento de arquivos mais pesados, como imagens. Esse isolamento entre o banco de dados e o armazenamento de arquivos permite que cada camada escale de forma independente. A Figura~\ref{fig:estudify-deploy} apresenta o diagrama de \textit{deploy}, evidenciando como esses componentes se comunicam.
+
+\begin{figure}[H]
+    \centering
+    \small
+    \caption{Diagrama de \textit{deploy} da aplicação}
+    \includegraphics[width=\linewidth]{conteudo/5 - ages IV/images/fig19-diagrama-deploy.png}
+
+    Fonte: Wiki do projeto
+    \label{fig:estudify-deploy}
 \end{figure}
 
 \subsection{Protótipos das Telas Desenvolvidas}
