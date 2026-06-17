@@ -23,7 +23,7 @@ Referência geral: [checklist do TCC](https://www.inf.pucrs.br/~yamaguti/tcc/che
 - [x] **p.11** — Incluir uma figura da arquitetura (vale para cada projeto)
 - [ ] **p.12** — Mostrar algumas telas importantes, citá-las e explicar brevemente cada uma (falta AGES III E IV)
 - [x] **p.12** — Transformar trechos em bullets para simplificar a leitura
-- [ ] **p.12** — Colocar referência de cada tecnologia citada
+- [x] **p.12** — Colocar referência de cada tecnologia citada
 - [ ] **p.19 · Conclusão** — Reescrever a conclusão: crítica e autocrítica (técnica e soft skills); relação entre disciplinas cursadas e a AGES; se foi o melhor projeto e por quê; lições aprendidas (positivo e o que poderia ter sido melhor)
 
 ## Projeto Decola (AGES II)
