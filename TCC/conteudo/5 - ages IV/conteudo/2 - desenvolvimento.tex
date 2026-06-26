@@ -40,7 +40,7 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \end{figure}
 
 \subsection{Arquitetura Utilizada}
-  A arquitetura do projeto segue o padrão de Monólito Modular no \textit{back-end}, em que as funcionalidades são segregadas por domínio. Cada módulo é composto por \textit{Controllers}, responsáveis pelas rotas e requisições \ac{http}; \textit{Services}, que concentram as regras de negócio; \textit{Repositories}, camada isolada que utiliza o Prisma para a comunicação com o banco de dados; e \ac{dto} (\textit{Data Transfer Objects}), que definem os contratos de entrada com validações integradas.
+  A arquitetura do projeto segue o padrão de Monólito Modular no \textit{back-end}, em que as funcionalidades são segregadas por domínio. Cada módulo é composto por \textit{Controllers}, responsáveis pelas rotas e requisições \ac{http}; \textit{Services}, que concentram as regras de negócio; \textit{Repositories}, camada isolada que utiliza o Prisma para a comunicação com o banco de dados; e \textit{DTOs}, que definem os contratos de entrada com validações integradas.
 
   A aplicação \textit{mobile} e o painel administrativo web adotam uma estrutura de pastas análoga entre si (\textit{components}, \textit{hooks}, \textit{services} e \textit{contexts}), mantendo a consistência técnica entre as frentes e permitindo que qualquer integrante do time atue em ambas.
 
@@ -118,7 +118,7 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 \end{figure}
 
 \subsection{Tecnologias Utilizadas}
-  Nesta seção serão apresentadas as principais tecnologias empregadas no desenvolvimento do projeto Estudify, destacando suas contribuições para o sucesso da implementação. As ferramentas estão organizadas conforme a camada da aplicação em que foram utilizadas.
+  Nesta seção são apresentadas as principais tecnologias empregadas no desenvolvimento do projeto Estudify, destacando suas contribuições para o sucesso da implementação. As ferramentas estão organizadas conforme a camada da aplicação em que foram utilizadas.
 
 \begin{itemize}
     \item \textbf{TypeScript} \parencite{typescript}: \textit{Superset} do JavaScript que adiciona tipagem estática opcional, reduzindo \textit{bugs} em tempo de desenvolvimento e facilitando a manutenção do código. Foi adotado como linguagem base em todas as camadas da aplicação (\textit{back-end}, \textit{mobile} e web), permitindo o compartilhamento de tipos e interfaces entre as frentes do projeto.
