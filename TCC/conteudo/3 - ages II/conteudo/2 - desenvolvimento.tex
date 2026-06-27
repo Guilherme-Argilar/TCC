@@ -12,13 +12,11 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/home}.
 
 \subsection{Banco de Dados Utilizado}
-  O sistema de gerenciamento de banco de dados escolhido foi o PostgreSQL, um banco de dados relacional de código aberto reconhecido por sua robustez, desempenho e extensibilidade. Para a manipulação dos dados, foi utilizado o TypeORM, um \ac{orm} que mapeia os objetos da aplicação para as entidades do banco, simplificando a comunicação entre a aplicação e o banco de dados relacional.
+  O sistema de gerenciamento de banco de dados escolhido foi o PostgreSQL, um banco de dados relacional de código aberto reconhecido por sua robustez, desempenho e extensibilidade, que assegurava as propriedades \ac{acid} nas transações e a integridade referencial entre as tabelas por meio de chaves primárias e estrangeiras. O acesso aos dados foi intermediado pelo TypeORM, um \ac{orm} adotado em uma abordagem \textit{code-first}: cada entidade era declarada como uma classe anotada por \textit{decorators}, a evolução do esquema era versionada por \textit{migrations} e o acesso aos registros seguia o padrão \textit{repository}, que encapsulava as operações \ac{crud} e preservava a tipagem estática do TypeScript ao abstrair o \ac{sql} gerado.
 
-  O banco de dados organiza e gerencia as informações de uma plataforma de aprendizado, na qual os usuários podem se inscrever em cursos, concluir módulos e atividades e interagir com conteúdos educativos. Ele armazena informações sobre contas, que podem representar organizações, e os usuários associados a elas, definindo tipos de conta e papéis de usuário, como administradores e colaboradores.
+  A modelagem foi normalizada para atender ao domínio de uma plataforma de aprendizado. No centro do esquema estava a entidade \textit{Account}, que representava as organizações e à qual se associavam os registros de \textit{User} em uma relação de um-para-muitos, diferenciados por tipos de conta e papéis --- como administradores e colaboradores. As contas vinculavam-se ainda às \textit{Areas}, o que permitia segmentar e personalizar o conteúdo por organização, bem como gerenciar de forma isolada seus usuários e materiais.
 
-  Dentro da plataforma, os cursos são estruturados e categorizados por tipos e grupos. Cada curso pode conter múltiplos módulos, que são unidades menores de aprendizado, e cada módulo inclui atividades que os usuários devem completar, como conteúdo de mídia ou questionários. Os questionários, por sua vez, contêm perguntas com alternativas corretas e incorretas, permitindo a avaliação das respostas dos usuários.
-
-  O banco de dados também rastreia o progresso dos usuários em cursos e módulos, registrando as atividades concluídas e permitindo que os administradores acompanhem o desempenho de cada colaborador. Como as contas estão associadas a áreas, diferentes organizações podem personalizar o conteúdo e gerenciar seus próprios usuários e materiais educativos, tornando a plataforma mais interativa e eficiente.
+  O conteúdo educativo era organizado de forma hierárquica por meio de relações de um-para-muitos: um \textit{Course}, classificado por tipos e grupos, agregava diversos \textit{Modules}, e cada \textit{Module} reunia múltiplas \textit{Activities} --- que podiam assumir a forma de conteúdo de mídia ou de questionário. Nos questionários, cada \textit{Quiz} continha um conjunto de \textit{Questions} com alternativas corretas e incorretas, viabilizando a avaliação automática das respostas. O progresso de cada colaborador era materializado por associações que registravam os cursos, módulos e atividades concluídos, dando suporte ao acompanhamento de desempenho.
 
   A Figura~\ref{fig:decola-mr} apresenta o modelo relacional do banco de dados, evidenciando as principais entidades --- como \textit{Account}, \textit{User}, \textit{Area}, \textit{Course}, \textit{Module}, \textit{Activity}, \textit{Quiz} e \textit{Question} --- e os relacionamentos entre elas. A modelagem completa do banco de dados está disponível na wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/database}.
 
@@ -35,7 +33,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \subsection{Arquitetura Utilizada}
 
 \subsubsection{Backend}
-  O \textit{backend} do projeto é uma \ac{api} \ac{rest} construída utilizando o NestJS, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
+  O \textit{backend} do projeto foi construído como uma \ac{api} \ac{rest} utilizando o NestJS, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
 
   Utilizamos \ac{jwt} para autenticação e autorização. O \ac{jwt} é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato \ac{json}, que podem ser usadas para autenticação de usuários em aplicativos web e \textit{mobile}, bem como para comunicação entre sistemas. O fluxo de autenticação entre cliente e servidor é ilustrado na Figura~\ref{fig:decola-auth}.
 
@@ -57,7 +55,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \end{itemize}
 
 \subsubsection{Frontend}
-  Nossa arquitetura de \textit{frontend} aplica os conceitos de \ac{ddd} e \ac{soc}. Com \ac{ddd}, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com \ac{soc}, nosso objetivo é separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao \ac{mvc}.
+  A arquitetura de \textit{frontend} foi estruturada aplicando os conceitos de \ac{ddd} e \ac{soc}. Com \ac{ddd}, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com \ac{soc}, nosso objetivo era separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao \ac{mvc}.
 
 \subsection{Protótipos das Telas Desenvolvidas}
   Os protótipos deste projeto estão disponíveis na Wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/mockups}.
