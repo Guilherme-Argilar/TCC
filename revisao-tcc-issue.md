@@ -58,7 +58,7 @@ Comentários extraídos do PDF revisado (81 páginas). As páginas mudaram em re
 ### Linguagem e tempo verbal (valem para todo o texto)
 - [x] **p.13** — Padronizar abertura das seções: usar "Este capítulo apresenta..." e atualizar nos demais capítulos (estava "Esta seção busca apresentar")
 - [x] **p.13 · Geral** — Substituir "através" por "por meio" ("através" é quando algo atravessa)
-- [ ] **p.13 · Geral** — Revisar o tempo verbal em todo o texto: usar passado, pois retrata algo já ocorrido (ex.: "tem" → "teve", "permite", "apresentará")
+- [x] **p.13 · Geral** — Revisar o tempo verbal em todo o texto: usar passado, pois retrata algo já ocorrido (ex.: "tem" → "teve", "permite", "apresentará")
 - [x] **p.27 · Geral** — Termos estrangeiros: grafar em itálico (ex.: "onboarding")
 - [ ] **p.64 · Geral** — Siglas: apresentar por extenso apenas uma vez (na primeira ocorrência); revisar todas as siglas do texto (ex.: DTO / "Data Transfer Objects")
 
