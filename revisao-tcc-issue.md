@@ -76,8 +76,8 @@ Comentários extraídos do PDF revisado (81 páginas). As páginas mudaram em re
 - [ ] **p.79** — Quando tiver uma prévia final, enviar ao professor
 
 ### Correções pontuais (riscadas no PDF)
-- [ ] **p.11** — Corrigir texto duplicado no nome da PUCRS ("Pontifícia Universidade Católica do Rio Grande do Sul (...)")
-- [ ] **p.41** — Revisar trecho riscado ("Dr. A...")
+- [x] **p.11** — Corrigir texto duplicado no nome da PUCRS ("Pontifícia Universidade Católica do Rio Grande do Sul (...)")
+- [x] **p.41** — Revisar trecho riscado ("Dr. A...")
 
 ## Já estavam na lista (reincidências nesta revisão)
 - [ ] **p.11** (antes p.7) — Comentar experiências de estágio, bolsa, emprego na trajetória — *ainda pendente*
