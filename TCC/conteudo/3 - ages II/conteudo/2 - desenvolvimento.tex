@@ -12,7 +12,7 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/home}.
 
 \subsection{Banco de Dados Utilizado}
-  O sistema de gerenciamento de banco de dados escolhido foi o PostgreSQL, um banco de dados relacional de código aberto reconhecido por sua robustez, desempenho e extensibilidade. Para a manipulação dos dados, foi utilizado o TypeORM, um \ac{orm} (\textit{Object-Relational Mapper}) que mapeia os objetos da aplicação para as entidades do banco, simplificando a comunicação entre a aplicação e o banco de dados relacional.
+  O sistema de gerenciamento de banco de dados escolhido foi o PostgreSQL, um banco de dados relacional de código aberto reconhecido por sua robustez, desempenho e extensibilidade. Para a manipulação dos dados, foi utilizado o TypeORM, um \ac{orm} que mapeia os objetos da aplicação para as entidades do banco, simplificando a comunicação entre a aplicação e o banco de dados relacional.
 
   O banco de dados organiza e gerencia as informações de uma plataforma de aprendizado, na qual os usuários podem se inscrever em cursos, concluir módulos e atividades e interagir com conteúdos educativos. Ele armazena informações sobre contas, que podem representar organizações, e os usuários associados a elas, definindo tipos de conta e papéis de usuário, como administradores e colaboradores.
 
@@ -20,7 +20,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 
   O banco de dados também rastreia o progresso dos usuários em cursos e módulos, registrando as atividades concluídas e permitindo que os administradores acompanhem o desempenho de cada colaborador. Como as contas estão associadas a áreas, diferentes organizações podem personalizar o conteúdo e gerenciar seus próprios usuários e materiais educativos, tornando a plataforma mais interativa e eficiente.
 
-  A Figura~\ref{fig:decola-mr} apresenta o modelo relacional do banco de dados, evidenciando as principais entidades --- como \textit{Account}, \textit{User}, \textit{Area}, \textit{Course}, \textit{Module}, \textit{Activity}, \textit{Quiz} e \textit{Question} --- e os relacionamentos entre elas.
+  A Figura~\ref{fig:decola-mr} apresenta o modelo relacional do banco de dados, evidenciando as principais entidades --- como \textit{Account}, \textit{User}, \textit{Area}, \textit{Course}, \textit{Module}, \textit{Activity}, \textit{Quiz} e \textit{Question} --- e os relacionamentos entre elas. A modelagem completa do banco de dados está disponível na wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/database}.
 
 \begin{figure}[H]
     \centering
