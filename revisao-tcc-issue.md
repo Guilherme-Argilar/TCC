@@ -60,20 +60,17 @@ Comentários extraídos do PDF revisado (81 páginas). As páginas mudaram em re
 - [x] **p.13 · Geral** — Substituir "através" por "por meio" ("através" é quando algo atravessa)
 - [x] **p.13 · Geral** — Revisar o tempo verbal em todo o texto: usar passado, pois retrata algo já ocorrido (ex.: "tem" → "teve", "permite", "apresentará")
 - [x] **p.27 · Geral** — Termos estrangeiros: grafar em itálico (ex.: "onboarding")
-- [ ] **p.64 · Geral** — Siglas: apresentar por extenso apenas uma vez (na primeira ocorrência); revisar todas as siglas do texto (ex.: DTO / "Data Transfer Objects")
+- [x] **p.64 · Geral** — Siglas: apresentar por extenso apenas uma vez (na primeira ocorrência); revisar todas as siglas do texto (ex.: DTO / "Data Transfer Objects")
 
 ### Formatação
 - [x] **p.14 · Geral** — Links: grafar com sublinhado (ex.: URLs da wiki dos projetos)
 - [x] **p.80 · Referências** — Manter referências em ordem alfabética
-- [ ] **p.80 · Referências** — Cuidar também o alinhamento à direita
+- [x] **p.80 · Referências** — Cuidar também o alinhamento à direita
 
 ### Conteúdo dos projetos
 - [ ] **p.26 · Conclusões** — Escrever as conclusões dos projetos com bastante "carinho", pois certamente são analisadas
 - [ ] **p.26 · Conclusões** — (Opcional) Adicionar e comentar um gráfico de radar mostrando o crescimento em algumas dimensões a cada AGES
 - [x] **p.29 · Dados** — Faltou o link para o banco de dados do projeto; revisar em TODAS as AGES se cada seção tem o link correspondente
-
-### Processo
-- [ ] **p.79** — Quando tiver uma prévia final, enviar ao professor
 
 ### Correções pontuais (riscadas no PDF)
 - [x] **p.11** — Corrigir texto duplicado no nome da PUCRS ("Pontifícia Universidade Católica do Rio Grande do Sul (...)")
