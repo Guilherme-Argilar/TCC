@@ -69,7 +69,7 @@ Comentários extraídos do PDF revisado (81 páginas). As páginas mudaram em re
 
 ### Conteúdo dos projetos
 - [ ] **p.26 · Conclusões** — Escrever as conclusões dos projetos com bastante "carinho", pois certamente são analisadas
-- [ ] **p.26 · Conclusões** — (Opcional) Adicionar e comentar um gráfico de radar mostrando o crescimento em algumas dimensões a cada AGES
+- [x] **p.26 · Conclusões** — (Opcional) Adicionar e comentar um gráfico de radar mostrando o crescimento em algumas dimensões a cada AGES
 - [x] **p.29 · Dados** — Faltou o link para o banco de dados do projeto; revisar em TODAS as AGES se cada seção tem o link correspondente
 
 ### Correções pontuais (riscadas no PDF)
