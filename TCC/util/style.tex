@@ -74,5 +74,14 @@
 % Posicionamento de Figuras - Importantíssimo
 \usepackage{float}
 
+% Quadro: float próprio para informação qualitativa/textual (ABNT distingue
+% "Quadro" de "Tabela", reservada a dados numéricos). Usa o pacote float já
+% carregado; a referência é feita normalmente com \ref e \label. O estilo
+% "plaintop" coloca a legenda ACIMA do corpo, como exige a ABNT.
+\floatstyle{plaintop}
+\newfloat{quadro}{H}{loq}
+\floatname{quadro}{Quadro}
+\restylefloat{quadro}
+
 % Espaçamento de 1,5
 \renewcommand{\baselinestretch}{1.5}

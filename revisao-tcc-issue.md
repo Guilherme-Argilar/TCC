@@ -81,4 +81,4 @@ Comentários extraídos do PDF revisado (81 páginas). As páginas mudaram em re
 - [ ] **p.26** (antes p.19) — Conclusão deve cobrir: crítica/autocrítica (técnica e soft skills); relação entre disciplinas cursadas e a AGES; se foi o melhor projeto e por quê; lições aprendidas (positivo e o que poderia melhorar) — *reforçado pelo professor*
 - [ ] **p.28** (antes p.21) — Como AGES II, detalhar mais a seção de dados — agora pede explicitamente: detalhar as entidades identificadas e comentar a decisão técnica de escolha do SGBD
 - [ ] **p.35** (antes p.26) — Relato de sprint está curto — pelo menos uma página para cada sprint
-- [ ] **p.47 e p.66** (antes p.52) — Evitar "buracos" no texto: reposicionar ou redimensionar as figuras
+- [x] **p.47 e p.66** (antes p.52) — Evitar "buracos" no texto: reposicionar ou redimensionar as figuras
