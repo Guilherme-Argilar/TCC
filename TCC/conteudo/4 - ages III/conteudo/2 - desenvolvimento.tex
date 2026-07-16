@@ -20,15 +20,18 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 
   Os expositores eram organizados com suporte a múltiplas categorias, incluindo o atributo ``Predio'' --- adição fundamental para o caso de uso do Tecnopuc, permitindo localização física precisa dentro do parque tecnológico. O sistema de categorização hierárquico (categorias e subcategorias) foi implementado priorizando \textit{performance}, com índices estratégicos para acelerar as buscas mais frequentes. A Figura~\ref{fig:totem-mr} apresenta o modelo relacional do banco de dados. A modelagem completa do banco de dados está disponível na wiki do projeto: \url{https://tools.ages.pucrs.br/totem-interativo/wiki/-/wikis/banco-de-dados}.
 
+\begingroup
+\setlength{\intextsep}{6pt}
 \begin{figure}[H]
     \centering
     \small
     \caption{Modelo relacional do banco de dados}
-    \includegraphics[width=0.8\linewidth]{conteudo/4 - ages III/images/fig7-modelo-relacional.png}
+    \includegraphics[width=0.72\linewidth]{conteudo/4 - ages III/images/fig7-modelo-relacional.png}
 
     Fonte: Documentação do projeto
     \label{fig:totem-mr}
 \end{figure}
+\endgroup
 
   A escolha do SQLite provou-se acertada para o contexto do projeto. Sua natureza \textit{serverless} elimina \textit{overhead} de comunicação, seu \textit{footprint} mínimo preserva recursos do sistema, e sua capacidade de operar em memória garante respostas rápidas. A estrutura foi projetada evitando junções múltiplas e subconsultas complexas, garantindo fluidez mesmo em \textit{hardware} básico. Essa combinação de banco leve com modelagem eficiente demonstrou que é possível criar sistemas robustos operando sob severas restrições de \textit{hardware}, proporcionando experiência responsiva aos usuários das feiras.
 
@@ -102,15 +105,18 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 
   A Figura \ref{fig:totem-tela-inicial} apresenta a tela inicial do totem, com o mapa interativo utilizado para orientar o visitante pelo espaço do evento.
 
+\begingroup
+\setlength{\intextsep}{6pt}
 \begin{figure}[H]
     \centering
     \small
     \caption{Tela inicial com mapa interativo}
-    \includegraphics[width=0.85\linewidth,height=0.21\textheight,keepaspectratio]{conteudo/4 - ages III/images/tela-inicial-mapa.png}
+    \includegraphics[width=0.9\linewidth,height=0.28\textheight,keepaspectratio]{conteudo/4 - ages III/images/tela-inicial-mapa.png}
 
     Fonte: Wiki do projeto
     \label{fig:totem-tela-inicial}
 \end{figure}
+\endgroup
 
   A Figura \ref{fig:totem-menus} exibe os menus de categorias e de expositores, que organizam a navegação pelo conteúdo disponível.
 
