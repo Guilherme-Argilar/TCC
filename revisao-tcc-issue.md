@@ -56,32 +56,29 @@ Comentários extraídos do PDF revisado (81 páginas). As páginas mudaram em re
 ## Novos apontamentos
 
 ### Linguagem e tempo verbal (valem para todo o texto)
-- [ ] **p.13** — Padronizar abertura das seções: usar "Este capítulo apresenta..." e atualizar nos demais capítulos (estava "Esta seção busca apresentar")
-- [ ] **p.13 · Geral** — Substituir "através" por "por meio" ("através" é quando algo atravessa)
-- [ ] **p.13 · Geral** — Revisar o tempo verbal em todo o texto: usar passado, pois retrata algo já ocorrido (ex.: "tem" → "teve", "permite", "apresentará")
-- [ ] **p.27 · Geral** — Termos estrangeiros: grafar em itálico (ex.: "onboarding")
-- [ ] **p.64 · Geral** — Siglas: apresentar por extenso apenas uma vez (na primeira ocorrência); revisar todas as siglas do texto (ex.: DTO / "Data Transfer Objects")
+- [x] **p.13** — Padronizar abertura das seções: usar "Este capítulo apresenta..." e atualizar nos demais capítulos (estava "Esta seção busca apresentar")
+- [x] **p.13 · Geral** — Substituir "através" por "por meio" ("através" é quando algo atravessa)
+- [x] **p.13 · Geral** — Revisar o tempo verbal em todo o texto: usar passado, pois retrata algo já ocorrido (ex.: "tem" → "teve", "permite", "apresentará")
+- [x] **p.27 · Geral** — Termos estrangeiros: grafar em itálico (ex.: "onboarding")
+- [x] **p.64 · Geral** — Siglas: apresentar por extenso apenas uma vez (na primeira ocorrência); revisar todas as siglas do texto (ex.: DTO / "Data Transfer Objects")
 
 ### Formatação
-- [ ] **p.14 · Geral** — Links: grafar com sublinhado (ex.: URLs da wiki dos projetos)
-- [ ] **p.80 · Referências** — Manter referências em ordem alfabética
-- [ ] **p.80 · Referências** — Cuidar também o alinhamento à direita
+- [x] **p.14 · Geral** — Links: grafar com sublinhado (ex.: URLs da wiki dos projetos)
+- [x] **p.80 · Referências** — Manter referências em ordem alfabética
+- [x] **p.80 · Referências** — Cuidar também o alinhamento à direita
 
 ### Conteúdo dos projetos
 - [ ] **p.26 · Conclusões** — Escrever as conclusões dos projetos com bastante "carinho", pois certamente são analisadas
-- [ ] **p.26 · Conclusões** — (Opcional) Adicionar e comentar um gráfico de radar mostrando o crescimento em algumas dimensões a cada AGES
-- [ ] **p.29 · Dados** — Faltou o link para o banco de dados do projeto; revisar em TODAS as AGES se cada seção tem o link correspondente
-
-### Processo
-- [ ] **p.79** — Quando tiver uma prévia final, enviar ao professor
+- [x] **p.26 · Conclusões** — (Opcional) Adicionar e comentar um gráfico de radar mostrando o crescimento em algumas dimensões a cada AGES
+- [x] **p.29 · Dados** — Faltou o link para o banco de dados do projeto; revisar em TODAS as AGES se cada seção tem o link correspondente
 
 ### Correções pontuais (riscadas no PDF)
-- [ ] **p.11** — Corrigir texto duplicado no nome da PUCRS ("Pontifícia Universidade Católica do Rio Grande do Sul (...)")
-- [ ] **p.41** — Revisar trecho riscado ("Dr. A...")
+- [x] **p.11** — Corrigir texto duplicado no nome da PUCRS ("Pontifícia Universidade Católica do Rio Grande do Sul (...)")
+- [x] **p.41** — Revisar trecho riscado ("Dr. A...")
 
 ## Já estavam na lista (reincidências nesta revisão)
 - [ ] **p.11** (antes p.7) — Comentar experiências de estágio, bolsa, emprego na trajetória — *ainda pendente*
 - [ ] **p.26** (antes p.19) — Conclusão deve cobrir: crítica/autocrítica (técnica e soft skills); relação entre disciplinas cursadas e a AGES; se foi o melhor projeto e por quê; lições aprendidas (positivo e o que poderia melhorar) — *reforçado pelo professor*
 - [ ] **p.28** (antes p.21) — Como AGES II, detalhar mais a seção de dados — agora pede explicitamente: detalhar as entidades identificadas e comentar a decisão técnica de escolha do SGBD
 - [ ] **p.35** (antes p.26) — Relato de sprint está curto — pelo menos uma página para cada sprint
-- [ ] **p.47 e p.66** (antes p.52) — Evitar "buracos" no texto: reposicionar ou redimensionar as figuras
+- [x] **p.47 e p.66** (antes p.52) — Evitar "buracos" no texto: reposicionar ou redimensionar as figuras

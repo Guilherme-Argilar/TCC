@@ -1,6 +1,6 @@
 \section[Desenvolvimento do Projeto]{Desenvolvimento do Projeto}
 
-Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Toda a documentação do projeto pode ser encontrada na wiki do mesmo: \url{https://tools.ages.pucrs.br/totem-interativo/wiki/-/wikis/home}.
+Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Todas essas informações podem ser encontradas na wiki: \url{https://tools.ages.pucrs.br/totem-interativo/wiki/-/wikis/home}.
 
 \subsection{Repositório do Código Fonte do Projeto}
   Todo o código do projeto encontra-se distribuído em dois repositórios:
@@ -14,28 +14,31 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \subsection{Banco de Dados Utilizado}
   Para o desenvolvimento do projeto, optamos pelo SQLite como sistema de gerenciamento de banco de dados. Essa escolha foi estratégica, considerando dois fatores críticos: a necessidade de operação \textit{offline} e as limitações de \textit{hardware} dos totens. O SQLite, sendo extremamente leve e eficiente, consome recursos mínimos de memória e processamento, ideal para dispositivos com capacidade limitada.
 
-  O banco foi estruturado para gerenciar informações de feiras e eventos de forma otimizada. A arquitetura prioriza consultas rápidas e diretas, organizando dados de visitantes (\textit{leads}), expositores, produtos e categorias para minimizar operações complexas.
+  O banco foi estruturado para gerenciar informações de feiras e eventos de forma otimizada. A arquitetura priorizava consultas rápidas e diretas, organizando dados de visitantes (\textit{leads}), expositores, produtos e categorias para minimizar operações complexas.
 
-  A tabela \textit{Lead} constitui o núcleo do sistema, armazenando dados completos dos visitantes --- informações pessoais, profissionais e suas interações com o totem. Cada \textit{lead} é vinculado às categorias de interesse e expositores pesquisados, criando um perfil detalhado de comportamento.
+  A tabela \textit{Lead} constituía o núcleo do sistema, armazenando dados completos dos visitantes --- informações pessoais, profissionais e suas interações com o totem. Cada \textit{lead} era vinculado às categorias de interesse e expositores pesquisados, criando um perfil detalhado de comportamento.
 
-  Os expositores são organizados com suporte a múltiplas categorias, incluindo o atributo ``Predio'' --- adição fundamental para o caso de uso do Tecnopuc, permitindo localização física precisa dentro do parque tecnológico. O sistema de categorização hierárquico (categorias e subcategorias) foi implementado priorizando \textit{performance}, com índices estratégicos para acelerar as buscas mais frequentes. A Figura~\ref{fig:totem-mr} apresenta o modelo relacional do banco de dados.
+  Os expositores eram organizados com suporte a múltiplas categorias, incluindo o atributo ``Predio'' --- adição fundamental para o caso de uso do Tecnopuc, permitindo localização física precisa dentro do parque tecnológico. O sistema de categorização hierárquico (categorias e subcategorias) foi implementado priorizando \textit{performance}, com índices estratégicos para acelerar as buscas mais frequentes. A Figura~\ref{fig:totem-mr} apresenta o modelo relacional do banco de dados. A modelagem completa do banco de dados está disponível na wiki do projeto: \url{https://tools.ages.pucrs.br/totem-interativo/wiki/-/wikis/banco-de-dados}.
 
+\begingroup
+\setlength{\intextsep}{6pt}
 \begin{figure}[H]
     \centering
     \small
     \caption{Modelo relacional do banco de dados}
-    \includegraphics[width=0.9\linewidth]{conteudo/4 - ages III/images/fig7-modelo-relacional.png}
+    \includegraphics[width=0.72\linewidth]{conteudo/4 - ages III/images/fig7-modelo-relacional.png}
 
     Fonte: Documentação do projeto
     \label{fig:totem-mr}
 \end{figure}
+\endgroup
 
   A escolha do SQLite provou-se acertada para o contexto do projeto. Sua natureza \textit{serverless} elimina \textit{overhead} de comunicação, seu \textit{footprint} mínimo preserva recursos do sistema, e sua capacidade de operar em memória garante respostas rápidas. A estrutura foi projetada evitando junções múltiplas e subconsultas complexas, garantindo fluidez mesmo em \textit{hardware} básico. Essa combinação de banco leve com modelagem eficiente demonstrou que é possível criar sistemas robustos operando sob severas restrições de \textit{hardware}, proporcionando experiência responsiva aos usuários das feiras.
 
 \subsection{Arquitetura Utilizada}
-  O Totem Interativo adota uma arquitetura cliente-servidor, com separação explícita entre o \textit{frontend} --- a aplicação que roda no próprio totem --- e o \textit{backend}, responsável pela lógica de negócio e pelo acesso aos dados. Os dois lados comunicam-se exclusivamente por uma \ac{api} \ac{rest} sobre \ac{http}, o que permitiu desenvolver as camadas em paralelo, isolar responsabilidades e evoluir cada parte de forma independente.
+  O Totem Interativo adotou uma arquitetura cliente-servidor, com separação explícita entre o \textit{frontend} --- a aplicação que rodava no próprio totem --- e o \textit{backend}, responsável pela lógica de negócio e pelo acesso aos dados. Os dois lados comunicavam-se exclusivamente por uma \ac{api} \ac{rest} sobre \ac{http}, o que permitiu desenvolver as camadas em paralelo, isolar responsabilidades e evoluir cada parte de forma independente.
 
-  Essa separação atende a uma restrição central do projeto: como o totem precisa operar mesmo sem conexão externa, o \textit{frontend}, o \textit{backend} e o banco de dados são executados localmente no próprio equipamento, e a \ac{api} atua como a única fronteira entre a interface e os dados. A Figura~\ref{fig:totem-arquitetura} ilustra esse fluxo: a interface em Next.js consome a \ac{api} em NestJS por meio do cliente \ac{http} Axios, que por sua vez acessa o banco SQLite. O diagrama também distingue os dois perfis de uso --- o visitante, que consulta as informações no totem, e o administrador, que cadastra e gerencia os dados. As subseções seguintes detalham cada lado.
+  Essa separação atendia a uma restrição central do projeto: como o totem precisava operar mesmo sem conexão externa, o \textit{frontend}, o \textit{backend} e o banco de dados eram executados localmente no próprio equipamento, e a \ac{api} atuava como a única fronteira entre a interface e os dados. A Figura~\ref{fig:totem-arquitetura} ilustra esse fluxo: a interface em Next.js consome a \ac{api} em NestJS por meio do cliente \ac{http} Axios, que por sua vez acessa o banco SQLite. O diagrama também distingue os dois perfis de uso --- o visitante, que consulta as informações no totem, e o administrador, que cadastra e gerencia os dados. As subseções seguintes detalham cada lado.
 
 \begin{figure}[H]
     \centering
@@ -58,7 +61,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \item \textit{sidebar}: para navegação e exibição de informações contextuais.
 \end{itemize}
 
-  A comunicação com o \textit{backend} foi centralizada na camada de \textit{services}, atuando como um ponto único de integração com as \acp{api}. O gerenciamento de estados globais é feito via \textit{contexts}, e lógicas reutilizáveis, como o \textit{logout} automático por inatividade, foram isoladas em \textit{hooks}.
+  A comunicação com o \textit{backend} foi centralizada na camada de \textit{services}, atuando como um ponto único de integração com as \acp{api}. O gerenciamento de estados globais foi feito via \textit{contexts}, e lógicas reutilizáveis, como o \textit{logout} automático por inatividade, foram isoladas em \textit{hooks}.
 
   Recursos estáticos essenciais para o mapa 3D foram estrategicamente organizados:
 \begin{itemize}
@@ -68,18 +71,18 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \item \textit{assets}: recursos gráficos gerais da aplicação.
 \end{itemize}
 
-  As rotas da aplicação são diferenciadas conforme o perfil do usuário: visitantes acessam a interface principal do totem, enquanto administradores dispõem de páginas específicas para importação de dados (\textit{admin-import}) e exportação de relatórios (\textit{admin}). A funcionalidade de \textit{QR Code} possui um módulo próprio com componentes dedicados.
+  As rotas da aplicação eram diferenciadas conforme o perfil do usuário: visitantes acessavam a interface principal do totem, enquanto administradores contavam com páginas específicas para importação de dados (\textit{admin-import}) e exportação de relatórios (\textit{admin}). A funcionalidade de \textit{QR Code} possuía um módulo próprio com componentes dedicados.
 
 \subsubsection{Backend}
   A arquitetura do \textit{backend} adotou padrões de desenvolvimento em camadas, garantindo uma clara segregação de responsabilidades e facilitando os processos de teste e manutenção.
 
-  A estrutura de camadas implementada é composta por:
+  A estrutura de camadas implementada era composta por:
 \begin{itemize}
-    \item \textit{Controllers}: atuam como ponto de entrada para as requisições \ac{http};
-    \item \textit{Services}: encapsulam toda a lógica de negócio da aplicação;
-    \item \textit{DTOs}: definem os contratos de dados para entrada e saída;
-    \item \textit{Entities}: representam as estruturas do banco de dados;
-    \item \textit{Modules}: agrupam logicamente as funcionalidades.
+    \item \textit{Controllers}: atuavam como ponto de entrada para as requisições \ac{http};
+    \item \textit{Services}: encapsulavam toda a lógica de negócio da aplicação;
+    \item \textit{\acp{dto}}: definiam os contratos de dados para entrada e saída;
+    \item \textit{Entities}: representavam as estruturas do banco de dados;
+    \item \textit{Modules}: agrupavam logicamente as funcionalidades.
 \end{itemize}
 
   Aspectos transversais foram concentrados no diretório \textit{common}:
@@ -91,24 +94,31 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 
   O armazenamento local foi estruturado no diretório \textit{database}, contendo o arquivo principal SQLite.
 
-  O fluxo de dados segue um padrão consistente: as requisições chegam aos \textit{controllers}, são validadas pelos \textit{DTOs}, processadas pelos \textit{services} (que interagem com as \textit{entities}), e então retornam respostas estruturadas. As operações administrativas incluem \textit{endpoints} especializados para importação em massa via \ac{csv} e exportação de dados agregados.
+  O fluxo de dados seguia um padrão consistente: as requisições chegavam aos \textit{controllers}, eram validadas pelos \textit{DTOs}, processadas pelos \textit{services} (que interagiam com as \textit{entities}), e então retornavam respostas estruturadas. As operações administrativas incluíam \textit{endpoints} especializados para importação em massa via \ac{csv} e exportação de dados agregados.
 
-  A estrutura de testes replica a organização principal, com diretórios específicos para \textit{controllers} e \textit{services}, assegurando uma cobertura adequada das funcionalidades críticas.
+  A estrutura de testes replicava a organização principal, com diretórios específicos para \textit{controllers} e \textit{services}, assegurando uma cobertura adequada das funcionalidades críticas.
 
 \subsection{Protótipos das Telas Desenvolvidas}
   Os protótipos deste projeto estão disponíveis na wiki do projeto: \url{https://tools.ages.pucrs.br/totem-interativo/wiki/-/wikis/mockups}.
 
-  O design da aplicação, como pode ser visto a seguir, poderia ser aprimorado, porém à época era considerado agradável, algo que o cliente aprovou bastante. As Figuras \ref{fig:totem-tela-inicial}, \ref{fig:totem-menus} e \ref{fig:totem-busca} tangem o fluxo do visitante, contemplando a tela inicial com o mapa interativo, os menus de categorias e expositores, e a busca de expositores no totem. Já a Figura \ref{fig:totem-config-admin} abrange o fluxo do administrador, responsável pela importação dos dados e pela configuração do evento.
+  O \textit{design} da aplicação, como pode ser visto a seguir, poderia ser aprimorado, porém à época era considerado agradável, algo que o cliente aprovou bastante. As telas apresentadas a seguir contemplam o fluxo do visitante --- composto pela tela inicial, pelos menus e pela busca de expositores --- e o fluxo do administrador, responsável pela importação dos dados e pela configuração do evento.
 
+  A Figura \ref{fig:totem-tela-inicial} apresenta a tela inicial do totem, com o mapa interativo utilizado para orientar o visitante pelo espaço do evento.
+
+\begingroup
+\setlength{\intextsep}{6pt}
 \begin{figure}[H]
     \centering
     \small
     \caption{Tela inicial com mapa interativo}
-    \includegraphics[width=0.85\linewidth,height=0.34\textheight,keepaspectratio]{conteudo/4 - ages III/images/tela-inicial-mapa.png}
+    \includegraphics[width=0.9\linewidth,height=0.28\textheight,keepaspectratio]{conteudo/4 - ages III/images/tela-inicial-mapa.png}
 
     Fonte: Wiki do projeto
     \label{fig:totem-tela-inicial}
 \end{figure}
+\endgroup
+
+  A Figura \ref{fig:totem-menus} exibe os menus de categorias e de expositores, que organizam a navegação pelo conteúdo disponível.
 
 \begin{figure}[H]
     \centering
@@ -127,6 +137,8 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \label{fig:totem-menus}
 \end{figure}
 
+  A Figura \ref{fig:totem-busca} mostra a busca de expositores no totem, que permite localizar rapidamente um expositor específico.
+
 \begin{figure}[H]
     \centering
     \small
@@ -136,6 +148,8 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     Fonte: Wiki do projeto
     \label{fig:totem-busca}
 \end{figure}
+
+  Por fim, a Figura \ref{fig:totem-config-admin} abrange o fluxo do administrador, responsável pela importação dos dados e pela configuração do evento.
 
 \begin{figure}[H]
     \centering
@@ -148,7 +162,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \end{figure}
 
 \subsection{Tecnologias Utilizadas}
-  Nesta seção serão apresentadas as principais tecnologias empregadas no desenvolvimento do projeto Totem Interativo, destacando suas contribuições para o sucesso da implementação.
+  Nesta seção são apresentadas as principais tecnologias empregadas no desenvolvimento do projeto Totem Interativo, destacando suas contribuições para o sucesso da implementação.
 
 \begin{itemize}
     \item \textbf{React} \parencite{react}: Biblioteca JavaScript de código aberto para construção de interfaces de usuário reativas e componentes reutilizáveis, fundamental para criar a interface interativa do totem com atualizações dinâmicas.

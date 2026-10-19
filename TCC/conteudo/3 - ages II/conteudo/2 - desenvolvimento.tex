@@ -1,6 +1,6 @@
 \section[Desenvolvimento do Projeto]{Desenvolvimento do Projeto}
 
-Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Toda a documentação do projeto pode ser encontrada na wiki do mesmo: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/home}.
+Esta seção apresenta informações relativas ao desenvolvimento do projeto: localização do código-fonte e documentação, arquitetura e tecnologias utilizadas, e protótipos de tela desenvolvidos. Todas essas informações podem ser encontradas na wiki: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/home}.
 
 \subsection{Repositório do Código Fonte do Projeto}
   Todo o código do projeto encontra-se distribuído em dois repositórios:
@@ -12,30 +12,81 @@ Esta seção apresenta informações relativas ao desenvolvimento do projeto: lo
 Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/home}.
 
 \subsection{Banco de Dados Utilizado}
-  O sistema de gerenciamento de banco de dados escolhido foi o PostgreSQL, um banco de dados relacional de código aberto reconhecido por sua robustez, desempenho e extensibilidade. Para a manipulação dos dados, foi utilizado o TypeORM, um \ac{orm} (\textit{Object-Relational Mapper}) que mapeia os objetos da aplicação para as entidades do banco, simplificando a comunicação entre a aplicação e o banco de dados relacional.
+  O \ac{sgbd} escolhido foi o PostgreSQL, um banco de dados relacional de código aberto reconhecido por sua robustez, desempenho e extensibilidade, que assegurava as propriedades \ac{acid} nas transações e a integridade referencial entre as tabelas por meio de chaves primárias e estrangeiras. O acesso aos dados foi intermediado pelo TypeORM, um \ac{orm} adotado em uma abordagem \textit{code-first}: cada entidade era declarada como uma classe anotada por \textit{decorators}, a evolução do esquema era versionada por \textit{migrations} e o acesso aos registros seguia o padrão \textit{repository}, que encapsulava as operações \ac{crud} e preservava a tipagem estática do TypeScript ao abstrair o \ac{sql} gerado.
 
-  O banco de dados organiza e gerencia as informações de uma plataforma de aprendizado, na qual os usuários podem se inscrever em cursos, concluir módulos e atividades e interagir com conteúdos educativos. Ele armazena informações sobre contas, que podem representar organizações, e os usuários associados a elas, definindo tipos de conta e papéis de usuário, como administradores e colaboradores.
+  A opção por um \ac{sgbd} relacional, em vez de uma alternativa não relacional, decorreu da própria natureza do domínio. Os dados da plataforma eram fortemente estruturados e interligados (organizações, usuários, áreas e a hierarquia de cursos, módulos e atividades), com numerosos relacionamentos que exigiam integridade referencial e consistência transacional, sobretudo no registro do progresso dos colaboradores. Esse cenário favorecia o modelo relacional, no qual tais garantias são nativas, ao passo que um banco orientado a documentos transferiria para a aplicação a responsabilidade de assegurar manualmente essas restrições. Entre as opções relacionais, o PostgreSQL foi preferido principalmente por já ser de amplo conhecimento da equipe, que possuía experiência prévia com a ferramenta, além de ser maduro, contar com ampla comunidade, ter conformidade com o padrão \ac{sql} e oferecer integração consolidada com o ecossistema Node.js e com o TypeORM já adotados no \textit{backend}.
 
-  Dentro da plataforma, os cursos são estruturados e categorizados por tipos e grupos. Cada curso pode conter múltiplos módulos, que são unidades menores de aprendizado, e cada módulo inclui atividades que os usuários devem completar, como conteúdo de mídia ou questionários. Os questionários, por sua vez, contêm perguntas com alternativas corretas e incorretas, permitindo a avaliação das respostas dos usuários.
+  A modelagem foi normalizada para atender ao domínio de uma plataforma de aprendizado. No centro do esquema estava a entidade \textit{Account}, que representava o locatário do sistema (tanto a conta administradora geral quanto cada organização cliente) e à qual se associavam os registros de \textit{User} em uma relação de um-para-muitos, diferenciados pelo papel exercido, como administradores e colaboradores. As contas vinculavam-se ainda às \textit{Areas}, o que permitia segmentar e personalizar o conteúdo por organização, bem como gerenciar de forma isolada seus usuários e materiais.
 
-  O banco de dados também rastreia o progresso dos usuários em cursos e módulos, registrando as atividades concluídas e permitindo que os administradores acompanhem o desempenho de cada colaborador. Como as contas estão associadas a áreas, diferentes organizações podem personalizar o conteúdo e gerenciar seus próprios usuários e materiais educativos, tornando a plataforma mais interativa e eficiente.
+  O conteúdo educativo era organizado de forma hierárquica por meio de relações de um-para-muitos: um \textit{Course}, classificado por tipo e grupo, agregava diversos \textit{Modules}, e cada \textit{Module} reunia múltiplas \textit{Activities}, que podiam assumir a forma de conteúdo de mídia ou de questionário. Nos questionários, cada \textit{Quiz} continha um conjunto de \textit{Questions}, e cada \textit{Question} oferecia \textit{Alternatives} marcadas como corretas ou incorretas, viabilizando a avaliação automática das respostas. O progresso de cada colaborador era materializado por entidades associativas que registravam os cursos, módulos e atividades concluídos, dando suporte ao acompanhamento de desempenho.
 
-  A Figura~\ref{fig:decola-mr} apresenta o modelo relacional do banco de dados, evidenciando as principais entidades --- como \textit{Account}, \textit{User}, \textit{Area}, \textit{Course}, \textit{Module}, \textit{Activity}, \textit{Quiz} e \textit{Question} --- e os relacionamentos entre elas.
+  A Figura~\ref{fig:decola-mr} apresenta o modelo relacional do banco de dados, evidenciando essas entidades e os relacionamentos entre elas. A modelagem completa do banco de dados está disponível na wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/database}.
 
 \begin{figure}[H]
     \centering
     \small
-    \caption{Modelo relacional do banco de dados}
+    \caption{Modelo lógico relacional do banco de dados}
     \includegraphics[width=0.9\linewidth]{conteudo/3 - ages II/images/fig4-modelo-relacional.png}
 
     Fonte: Wiki do projeto
     \label{fig:decola-mr}
 \end{figure}
 
+  O Quadro~\ref{quadro:decola-entidades} detalha as principais entidades identificadas na modelagem e a responsabilidade de cada uma no domínio.
+
+\begin{quadro}[H]
+    \centering
+    \small
+    \caption{Entidades do modelo de dados}
+    {\renewcommand{\baselinestretch}{1.0}\selectfont
+    \begin{tabular}{|l|p{10.2cm}|}
+        \hline
+        \textbf{Entidade} & \textbf{Descrição} \\
+        \hline
+        \textit{Account} & Locatário do sistema; representa tanto a conta administradora geral quanto cada organização cliente, servindo de raiz para o isolamento dos dados por organização. \\
+        \hline
+        \textit{User} & Usuário da plataforma, vinculado a uma conta, com credenciais de acesso e papel de administrador ou colaborador. \\
+        \hline
+        \textit{Area} & Subdivisão de uma organização, usada para segmentar colaboradores e direcionar conteúdos específicos. \\
+        \hline
+        \textit{CourseType} & Classificação dos cursos por grupo (pré-\textit{onboarding}, \textit{onboarding} e pós-\textit{onboarding}) e por natureza (institucional ou de área). \\
+        \hline
+        \textit{Course} & Curso, ou trilha de aprendizado, associado a um tipo e composto por módulos. \\
+        \hline
+        \textit{Module} & Módulo que integra um curso e agrupa um conjunto ordenado de atividades. \\
+        \hline
+        \textit{Activity} & Atividade de aprendizado, podendo ser de conteúdo de mídia ou de questionário. \\
+        \hline
+        \textit{Content} & Conteúdo de mídia de uma atividade, com a referência ao arquivo armazenado. \\
+        \hline
+        \textit{Quiz} & Questionário associado a uma atividade do tipo questionário. \\
+        \hline
+        \textit{Question} & Pergunta pertencente a um questionário. \\
+        \hline
+        \textit{Alternative} & Alternativa de resposta de uma pergunta, sinalizada como correta ou incorreta. \\
+        \hline
+        \textit{Track} & Trilha nomeada que agrupa cursos de um mesmo tipo. \\
+        \hline
+        \textit{AreaCourse} & Entidade associativa entre área e curso; define quais cursos pertencem a cada área, sua ordem e a exigência de pré-requisito. \\
+        \hline
+        \textit{ModuleActivity} & Entidade associativa entre módulo e atividade; define a ordem das atividades dentro do módulo. \\
+        \hline
+        \textit{UserCourse} & Registro do progresso de um usuário em um curso (concluído ou não). \\
+        \hline
+        \textit{UserModule} & Registro do progresso de um usuário em um módulo. \\
+        \hline
+        \textit{UserModuleActivity} & Registro da conclusão de cada atividade, por módulo, por um usuário. \\
+        \hline
+    \end{tabular}\par}
+
+    Fonte: Elaborado pelo autor
+    \label{quadro:decola-entidades}
+\end{quadro}
+
 \subsection{Arquitetura Utilizada}
 
 \subsubsection{Backend}
-  O \textit{backend} do projeto é uma \ac{api} \ac{rest} construída utilizando o NestJS, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
+  O \textit{backend} do projeto foi construído como uma \ac{api} \ac{rest} utilizando o NestJS, uma estrutura para criar aplicativos Node.js eficientes e escaláveis do lado do servidor.
 
   Utilizamos \ac{jwt} para autenticação e autorização. O \ac{jwt} é um padrão aberto (RFC 7519) para transmitir informações seguras e confiáveis entre partes. Ele consiste em uma cadeia compacta e auto-assinada de informações codificadas em formato \ac{json}, que podem ser usadas para autenticação de usuários em aplicativos web e \textit{mobile}, bem como para comunicação entre sistemas. O fluxo de autenticação entre cliente e servidor é ilustrado na Figura~\ref{fig:decola-auth}.
 
@@ -57,12 +108,14 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 \end{itemize}
 
 \subsubsection{Frontend}
-  Nossa arquitetura de \textit{frontend} aplica os conceitos de \ac{ddd} e \ac{soc}. Com \ac{ddd}, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com \ac{soc}, nosso objetivo é separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao \ac{mvc}.
+  A arquitetura de \textit{frontend} foi estruturada aplicando os conceitos de \ac{ddd} e \ac{soc}. Com \ac{ddd}, agrupamos funcionalidades com comportamentos similares e desacoplamos esses grupos ao máximo de outros componentes. Com \ac{soc}, nosso objetivo era separar lógica, \textit{views} e modelos de dados, seguindo um padrão semelhante ao \ac{mvc}.
 
 \subsection{Protótipos das Telas Desenvolvidas}
   Os protótipos deste projeto estão disponíveis na Wiki do projeto: \url{https://tools.ages.pucrs.br/plataforma-onboarding-para-novos-colaboradores/decola-wiki/-/wikis/mockups}.
 
-  O design da aplicação, como pode ser visto a seguir, poderia ser aprimorado, porém à época era considerado agradável, algo que os \textit{stakeholders} aprovaram bastante. As Figuras \ref{fig:decola-tela-pagina-inicial}, \ref{fig:decola-tela-administracao} e \ref{fig:decola-tela-areas} tangem o fluxo do RH, contemplando a página inicial, a administração de colaboradores e contas, e a gestão das áreas e dos níveis de acesso. Já as Figuras \ref{fig:decola-tela-multipla-escolha} e \ref{fig:decola-tela-conteudo-externo} abrangem o fluxo do colaborador, apresentando uma atividade de múltipla escolha e uma atividade de conteúdo externo tal como elas são exibidas ao usuário durante a realização de um módulo.
+  O \textit{design} da aplicação, como pode ser visto a seguir, poderia ser aprimorado, porém à época era considerado agradável, algo que os \textit{stakeholders} aprovaram bastante. As telas apresentadas a seguir contemplam o fluxo do RH --- página inicial, administração e áreas --- e o fluxo do colaborador --- as atividades realizadas durante um módulo.
+
+  A Figura \ref{fig:decola-tela-pagina-inicial} apresenta a página inicial, ponto de entrada do fluxo do RH na plataforma.
 
 \begin{figure}[H]
     \centering
@@ -74,6 +127,8 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \label{fig:decola-tela-pagina-inicial}
 \end{figure}
 
+  A Figura \ref{fig:decola-tela-administracao} exibe a tela de administração de colaboradores e contas.
+
 \begin{figure}[H]
     \centering
     \small
@@ -83,6 +138,8 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     Fonte: Wiki do projeto
     \label{fig:decola-tela-administracao}
 \end{figure}
+
+  A Figura \ref{fig:decola-tela-areas} mostra tela de gestão das áreas.
 
 \begin{figure}[H]
     \centering
@@ -94,6 +151,8 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     \label{fig:decola-tela-areas}
 \end{figure}
 
+  Já no fluxo do colaborador, a Figura \ref{fig:decola-tela-multipla-escolha} apresenta uma atividade de múltipla escolha tal como é exibida ao usuário durante a realização de um módulo.
+
 \begin{figure}[H]
     \centering
     \small
@@ -103,6 +162,8 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
     Fonte: Wiki do projeto
     \label{fig:decola-tela-multipla-escolha}
 \end{figure}
+
+  Por fim, a Figura \ref{fig:decola-tela-conteudo-externo} apresenta uma atividade de conteúdo externo, também exibida ao colaborador durante a realização de um módulo.
 
 \begin{figure}[H]
     \centering
@@ -118,7 +179,7 @@ Há, ainda, um terceiro repositório, usado somente para abrigar a wiki do proje
 
 \begin{itemize}
     \item \textbf{PostgreSQL} \parencite{postgresql}: Sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, extensibilidade e conformidade com os padrões \ac{sql}.
-    \item \textbf{TypeORM} \parencite{typeorm}: Biblioteca \ac{orm} para TypeScript e JavaScript que facilita a interação com bancos de dados relacionais através de um mapeamento objeto-relacional eficiente e intuitivo.
+    \item \textbf{TypeORM} \parencite{typeorm}: Biblioteca \ac{orm} para TypeScript e JavaScript que facilita a interação com bancos de dados relacionais por meio de um mapeamento objeto-relacional eficiente e intuitivo.
     \item \textbf{AWS} \parencite{aws}: Plataforma de computação em nuvem fornecida pela Amazon, oferecendo uma ampla gama de serviços, incluindo armazenamento, redes, bancos de dados e ferramentas de desenvolvimento, para escalabilidade e flexibilidade na construção de aplicações.
     \item \textbf{TypeScript} \parencite{typescript}: Linguagem de programação de código aberto desenvolvida pela Microsoft que adiciona tipagem estática opcional ao JavaScript, melhorando a produtividade e a qualidade do código.
     \item \textbf{NestJS} \parencite{nestjs}: \textit{Framework} progressivo para Node.js que permite a construção de aplicativos do lado do servidor escaláveis e eficientes utilizando TypeScript.

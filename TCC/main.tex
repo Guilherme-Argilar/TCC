@@ -41,7 +41,7 @@
 \usepackage[printonlyused]{acronym}
 
 % Se o style=abnt não funcionar, utilize o style=numeric
-\usepackage[style=abnt,sorting=none]{biblatex}
+\usepackage[style=abnt,sorting=nyt,justify=true]{biblatex}
 \usepackage{csquotes}
 \addbibresource{bibliografia/bibliografia.bib}
 
@@ -53,7 +53,9 @@
   % Opcional (removida): \include{conteudo/0 - pre/0.4 - epigrafe}
   \include{conteudo/0 - pre/0.5 - resumo}
   \include{conteudo/0 - pre/0.6 - ilustracoes}
-  % Removida: \include{conteudo/0 - pre/0.7 - tabelas}
+  % Removida: \include{conteudo/0 - pre/0.7 - tabelas} (não há tabelas; o
+  % elemento de entidades do Decola é um Quadro — ver Lista de Quadros abaixo)
+  \include{conteudo/0 - pre/0.7 - quadros}
   \include{conteudo/0 - pre/0.8 - siglas}
   \include{conteudo/0 - pre/0.9 - sumario}
 
@@ -69,7 +71,7 @@
   \include{conteudo/3 - ages II/index}
   \include{conteudo/4 - ages III/index}
   \include{conteudo/5 - ages IV/index}
-  % \include{conteudo/6 - consideracoes/consideracoes}
+  \include{conteudo/6 - consideracoes/consideracoes}
 
   \include{conteudo/7 - pos/referencias}
 
